@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PBL3.DTO.DTO_ShowTime
+{
+    public sealed class Movie
+    {
+        public Movie()
+        {
+            ShowTimes = new HashSet<ShowTime>();
+        }
+        [Key]
+        [Required]
+        public string IdMovie { get; set; }
+        public string NameMovie { get; set; }
+        public string Director { get; set; }
+        public TimeSpan Duration { get; set; }
+        public string Actor { get; set; }
+        public string Category { get; set; }
+        public double Rate { get; set; }
+        public string Description { get; set; }
+        //Navigation Properties
+        public ICollection<ShowTime> ShowTimes { get; set; }
+    }
+}
