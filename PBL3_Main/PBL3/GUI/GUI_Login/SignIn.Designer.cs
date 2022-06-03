@@ -40,26 +40,17 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.buttonMinimize = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.pictureBoxPass = new System.Windows.Forms.PictureBox();
+            this.textBoxWarnPass = new System.Windows.Forms.TextBox();
+            this.textBoxWarnUser = new System.Windows.Forms.TextBox();
             this.pictureBoxUser = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPass = new System.Windows.Forms.PictureBox();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelSignIn = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBoxWarnUser = new System.Windows.Forms.TextBox();
-            this.textBoxWarnPass = new System.Windows.Forms.TextBox();
             this.panelTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.panelSignIn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxUser
@@ -215,16 +206,31 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // pictureBoxPass
+            // textBoxWarnPass
             // 
-            this.pictureBoxPass.BackgroundImage = global::PBL3.Properties.Resources.padlock;
-            this.pictureBoxPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxPass.Location = new System.Drawing.Point(78, 152);
-            this.pictureBoxPass.Name = "pictureBoxPass";
-            this.pictureBoxPass.Size = new System.Drawing.Size(24, 24);
-            this.pictureBoxPass.TabIndex = 3;
-            this.pictureBoxPass.TabStop = false;
-            this.pictureBoxPass.Click += new System.EventHandler(this.pbPass_Click);
+            this.textBoxWarnPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxWarnPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxWarnPass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxWarnPass.ForeColor = System.Drawing.Color.OrangeRed;
+            this.textBoxWarnPass.Location = new System.Drawing.Point(88, 191);
+            this.textBoxWarnPass.Name = "textBoxWarnPass";
+            this.textBoxWarnPass.ReadOnly = true;
+            this.textBoxWarnPass.Size = new System.Drawing.Size(250, 18);
+            this.textBoxWarnPass.TabIndex = 8;
+            this.textBoxWarnPass.Text = "! Invalid Username/Email address";
+            // 
+            // textBoxWarnUser
+            // 
+            this.textBoxWarnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxWarnUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxWarnUser.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxWarnUser.ForeColor = System.Drawing.Color.OrangeRed;
+            this.textBoxWarnUser.Location = new System.Drawing.Point(88, 122);
+            this.textBoxWarnUser.Name = "textBoxWarnUser";
+            this.textBoxWarnUser.ReadOnly = true;
+            this.textBoxWarnUser.Size = new System.Drawing.Size(250, 18);
+            this.textBoxWarnUser.TabIndex = 8;
+            this.textBoxWarnUser.Text = "! Invalid Username/Email address";
             // 
             // pictureBoxUser
             // 
@@ -236,6 +242,17 @@
             this.pictureBoxUser.Size = new System.Drawing.Size(24, 24);
             this.pictureBoxUser.TabIndex = 0;
             this.pictureBoxUser.TabStop = false;
+            // 
+            // pictureBoxPass
+            // 
+            this.pictureBoxPass.BackgroundImage = global::PBL3.Properties.Resources.padlock;
+            this.pictureBoxPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxPass.Location = new System.Drawing.Point(78, 152);
+            this.pictureBoxPass.Name = "pictureBoxPass";
+            this.pictureBoxPass.Size = new System.Drawing.Size(24, 24);
+            this.pictureBoxPass.TabIndex = 3;
+            this.pictureBoxPass.TabStop = false;
+            this.pictureBoxPass.Click += new System.EventHandler(this.pbPass_Click);
             // 
             // pictureBoxLogo
             // 
@@ -267,117 +284,6 @@
             this.panelSignIn.Size = new System.Drawing.Size(400, 510);
             this.panelSignIn.TabIndex = 10;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Location = new System.Drawing.Point(26, 172);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 1);
-            this.panel1.TabIndex = 5;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.HideSelection = false;
-            this.textBox1.Location = new System.Drawing.Point(63, 146);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 22);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = "Password";
-            this.textBox1.Click += new System.EventHandler(this.tbPass_Click);
-            this.textBox1.TextChanged += new System.EventHandler(this.tbPass_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::PBL3.Properties.Resources.padlock;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 142);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pbPass_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.panel2.Location = new System.Drawing.Point(26, 114);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 1);
-            this.panel2.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.HideSelection = false;
-            this.textBox2.Location = new System.Drawing.Point(63, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 22);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TabStop = false;
-            this.textBox2.Text = "Username or email address";
-            this.textBox2.Click += new System.EventHandler(this.tbUser_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.pictureBox2.BackgroundImage = global::PBL3.Properties.Resources.man;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 84);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(164)))), ((int)(((byte)(172)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.button1.Location = new System.Drawing.Point(289, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 35);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Sign in";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnSignIn_Click);
-            // 
-            // textBoxWarnUser
-            // 
-            this.textBoxWarnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxWarnUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxWarnUser.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxWarnUser.ForeColor = System.Drawing.Color.OrangeRed;
-            this.textBoxWarnUser.Location = new System.Drawing.Point(88, 122);
-            this.textBoxWarnUser.Name = "textBoxWarnUser";
-            this.textBoxWarnUser.ReadOnly = true;
-            this.textBoxWarnUser.Size = new System.Drawing.Size(250, 18);
-            this.textBoxWarnUser.TabIndex = 8;
-            this.textBoxWarnUser.Text = "! Invalid Username/Email address";
-            // 
-            // textBoxWarnPass
-            // 
-            this.textBoxWarnPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxWarnPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxWarnPass.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxWarnPass.ForeColor = System.Drawing.Color.OrangeRed;
-            this.textBoxWarnPass.Location = new System.Drawing.Point(88, 191);
-            this.textBoxWarnPass.Name = "textBoxWarnPass";
-            this.textBoxWarnPass.ReadOnly = true;
-            this.textBoxWarnPass.Size = new System.Drawing.Size(250, 18);
-            this.textBoxWarnPass.TabIndex = 8;
-            this.textBoxWarnPass.Text = "! Invalid Username/Email address";
-            // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,30 +291,20 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(400, 750);
             this.Controls.Add(this.panelSignIn);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panelTitle);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.pictureBoxLogo);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TopMost = true;
             this.panelTitle.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelSignIn.ResumeLayout(false);
             this.panelSignIn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -428,16 +324,9 @@
         private System.Windows.Forms.Button buttonMinimize;
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.Panel panelSignIn;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxWarnUser;
         private System.Windows.Forms.TextBox textBoxWarnPass;
+        private System.Windows.Forms.Panel panelSignIn;
     }
 }
 
