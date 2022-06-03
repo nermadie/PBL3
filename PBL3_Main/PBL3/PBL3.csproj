@@ -39,11 +39,17 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +59,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\CreateDB.cs" />
@@ -72,6 +79,54 @@
     <Compile Include="GUI\GUI_Login\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Movie.Designer.cs">
+      <DependentUpon>Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\PopcornDrink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\PopcornDrink.Designer.cs">
+      <DependentUpon>PopcornDrink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Room.Designer.cs">
+      <DependentUpon>Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\ShowTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\ShowTime.Designer.cs">
+      <DependentUpon>ShowTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUI_Test\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +138,12 @@
     <Compile Include="DAL\QLRapChieuPhim.cs" />
     <EmbeddedResource Include="GUI\GUI_Login\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\MainForm_ChildForm\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_Test\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -113,51 +174,49 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BLL\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Image\Icon\close.png" />
+    <None Include="Image\Logo\Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Image\Icon\failed.png" />
+    <None Include="Image\Logo\TestLogo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Image\Icon\film.png" />
+    <None Include="Image\Logo\LogoTest1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Image\Icon\man.png" />
+    <None Include="Image\Icon\Login_Icon\close.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Image\Icon\minimize.png" />
+    <None Include="Image\Icon\Login_Icon\failed.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Image\Icon\minus-button.png" />
+    <None Include="Image\Icon\Login_Icon\film.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Image\Icon\padlock.png" />
+    <None Include="Image\Icon\Login_Icon\man.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\film-reel.png" />
+    <None Include="Image\Icon\Login_Icon\minimize.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\close.png" />
+    <None Include="Image\Icon\Login_Icon\minus-button.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\failed.png" />
+    <None Include="Image\Icon\Login_Icon\padlock.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\film.png" />
+    <None Include="Image\Icon\MainForm_Icon\close.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\man.png" />
+    <None Include="Image\Icon\MainForm_Icon\closemini.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\minimize.png" />
+    <None Include="Image\Icon\MainForm_Icon\maximizemini.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\minus-button.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\padlock.png" />
+    <None Include="Image\Icon\MainForm_Icon\minimizemini.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
