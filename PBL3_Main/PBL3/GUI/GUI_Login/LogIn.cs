@@ -4,17 +4,23 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.GUI.GUI_Login.LogIn_ChildForm;
 
 namespace PBL3.GUI.GUI_Login
 {
-    public partial class SignIn : Form
+    public partial class LogIn : Form
     {
-        public SignIn()
+        public LogIn()
         {
             InitializeComponent();
+            SignIn signin = new SignIn();
+            OpenChildForm(signin);
+            signin.DelPanelCreate = new SignIn.DelTriggerButton(labelCreateACC_DelegateClick);
+            signin.DelPanelForgot = new SignIn.DelTriggerButton(labelForgotPass_DelegateClick);
         }
         //=============================================================//MOVE THE FORM
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -44,63 +50,43 @@ namespace PBL3.GUI.GUI_Login
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        //============================================================//
+        //============================================================/LOGIN FORM
+        //Child form for SignUp and Forgot Password
+        private Form _currentChildForm;
+        private void OpenChildForm(Form childForm)
         {
-            if (e.KeyCode == Keys.Enter)
-                buttonSignIn.PerformClick();
+            if (_currentChildForm != null)
+            {
+                //open only form
+                _currentChildForm.Close();
+            }
+
+            _currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelLogIn.Controls.Add(childForm);
+            panelLogIn.Tag = childForm;//Associate the form to the panel
+            childForm.BringToFront();
+            childForm.Show();
         }
         //============================================================//
         //============================================================//SIGN IN FORM
-        private void lbForgotPass_Click(object sender, EventArgs e)
+        private void labelForgotPass_DelegateClick()
         {
-
+            MessageBox.Show("Forgot Password");
+            OpenChildForm(new ForgotPassword());
         }
-
-        private void btnSignIn_Click(object sender, EventArgs e)
+        private void labelCreateACC_DelegateClick()
         {
-            //Goi BLL cua Sign In
-        }
-
-        private void lbCreateACC_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbUser_Click(object sender, EventArgs e)
-        {
-            textBoxUser.Clear();
-            panelUser.BackColor = Color.FromArgb(113, 231, 232);
-            textBoxUser.ForeColor = Color.FromArgb(113, 231, 232);
-
-            panelPass.BackColor = Color.WhiteSmoke;
-            textBoxPass.ForeColor = Color.WhiteSmoke;
-        }
-
-        private void tbPass_Click(object sender, EventArgs e)
-        {
-            textBoxPass.Clear();
-            textBoxPass.PasswordChar = '•';
-            panelPass.BackColor = Color.FromArgb(113, 231, 232);
-            textBoxPass.ForeColor = Color.FromArgb(113, 231, 232);
-
-            panelUser.BackColor = Color.WhiteSmoke;
-            textBoxUser.ForeColor = Color.WhiteSmoke;
-
-        }
-
-
-        private void tbPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbPass_Click(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("CreateAccount");
+            OpenChildForm(new SignUp());
         }
         //============================================================//
 
         //============================================================//SIGN UP FORM
+
         //============================================================//
 
         //============================================================//FORGOT PASSWORD FORM

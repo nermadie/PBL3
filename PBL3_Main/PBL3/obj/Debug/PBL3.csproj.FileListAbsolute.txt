@@ -11,8 +11,11 @@ C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.CopyComplete
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.exe
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.pdb
-C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.SignIn.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Test.Form1.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.MainForm.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.MainForm_ChildForm.Customer.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.LogIn.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.LogIn_ChildForm.SignIn.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.LogIn_ChildForm.ForgotPassword.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.LogIn_ChildForm.SignUp.resources
