@@ -98,6 +98,25 @@ namespace PBL3.GUI.GUI_Login
         {
 
         }
+
+        private void buttonEye_Click(object sender, EventArgs e)
+        {
+            if (textBoxPass.PasswordChar == '•')
+            {
+                buttonEyeSlash.BringToFront();
+                textBoxPass.PasswordChar = '\0';
+            }
+        }
+
+        private void buttonEyeSlash_Click(object sender, EventArgs e)
+        {
+
+            if (textBoxPass.PasswordChar == '\0')
+            {
+                buttonEye.BringToFront();
+                textBoxPass.PasswordChar = '•';
+            }
+        }
         //============================================================//
 
         //============================================================//SIGN UP FORM

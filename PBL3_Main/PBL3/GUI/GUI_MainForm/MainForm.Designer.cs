@@ -46,6 +46,7 @@
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.buttonMenu = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
@@ -67,11 +68,12 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 741);
+            this.panelMenu.Size = new System.Drawing.Size(230, 741);
             this.panelMenu.TabIndex = 0;
             // 
             // iconButtonStatistic
             // 
+            this.iconButtonStatistic.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonStatistic.FlatAppearance.BorderSize = 0;
             this.iconButtonStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonStatistic.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,11 +83,12 @@
             this.iconButtonStatistic.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonStatistic.IconSize = 32;
             this.iconButtonStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonStatistic.Location = new System.Drawing.Point(0, 550);
+            this.iconButtonStatistic.Location = new System.Drawing.Point(0, 487);
             this.iconButtonStatistic.Name = "iconButtonStatistic";
             this.iconButtonStatistic.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonStatistic.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonStatistic.Size = new System.Drawing.Size(230, 60);
             this.iconButtonStatistic.TabIndex = 1;
+            this.iconButtonStatistic.Tag = "   Statistic";
             this.iconButtonStatistic.Text = "Statistic";
             this.iconButtonStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonStatistic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -96,6 +99,7 @@
             // 
             // iconButtonEmployee
             // 
+            this.iconButtonEmployee.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonEmployee.FlatAppearance.BorderSize = 0;
             this.iconButtonEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonEmployee.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -105,11 +109,12 @@
             this.iconButtonEmployee.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonEmployee.IconSize = 32;
             this.iconButtonEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonEmployee.Location = new System.Drawing.Point(0, 490);
+            this.iconButtonEmployee.Location = new System.Drawing.Point(0, 427);
             this.iconButtonEmployee.Name = "iconButtonEmployee";
             this.iconButtonEmployee.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonEmployee.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonEmployee.Size = new System.Drawing.Size(230, 60);
             this.iconButtonEmployee.TabIndex = 1;
+            this.iconButtonEmployee.Tag = "   Employee";
             this.iconButtonEmployee.Text = "Employee";
             this.iconButtonEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -120,6 +125,7 @@
             // 
             // iconButtonCustomer
             // 
+            this.iconButtonCustomer.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonCustomer.FlatAppearance.BorderSize = 0;
             this.iconButtonCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonCustomer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -129,11 +135,12 @@
             this.iconButtonCustomer.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonCustomer.IconSize = 32;
             this.iconButtonCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonCustomer.Location = new System.Drawing.Point(0, 430);
+            this.iconButtonCustomer.Location = new System.Drawing.Point(0, 367);
             this.iconButtonCustomer.Name = "iconButtonCustomer";
             this.iconButtonCustomer.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonCustomer.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonCustomer.Size = new System.Drawing.Size(230, 60);
             this.iconButtonCustomer.TabIndex = 1;
+            this.iconButtonCustomer.Tag = "   Customer";
             this.iconButtonCustomer.Text = "Customer";
             this.iconButtonCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -144,6 +151,7 @@
             // 
             // iconButtonPCDrink
             // 
+            this.iconButtonPCDrink.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonPCDrink.FlatAppearance.BorderSize = 0;
             this.iconButtonPCDrink.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonPCDrink.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,11 +161,12 @@
             this.iconButtonPCDrink.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonPCDrink.IconSize = 32;
             this.iconButtonPCDrink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonPCDrink.Location = new System.Drawing.Point(0, 370);
+            this.iconButtonPCDrink.Location = new System.Drawing.Point(0, 307);
             this.iconButtonPCDrink.Name = "iconButtonPCDrink";
             this.iconButtonPCDrink.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonPCDrink.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonPCDrink.Size = new System.Drawing.Size(230, 60);
             this.iconButtonPCDrink.TabIndex = 1;
+            this.iconButtonPCDrink.Tag = "   PopcornDrink";
             this.iconButtonPCDrink.Text = "PopcornDrink";
             this.iconButtonPCDrink.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonPCDrink.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -168,6 +177,7 @@
             // 
             // iconButtonRoom
             // 
+            this.iconButtonRoom.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonRoom.FlatAppearance.BorderSize = 0;
             this.iconButtonRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonRoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -177,11 +187,12 @@
             this.iconButtonRoom.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonRoom.IconSize = 32;
             this.iconButtonRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonRoom.Location = new System.Drawing.Point(0, 310);
+            this.iconButtonRoom.Location = new System.Drawing.Point(0, 247);
             this.iconButtonRoom.Name = "iconButtonRoom";
             this.iconButtonRoom.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonRoom.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonRoom.Size = new System.Drawing.Size(230, 60);
             this.iconButtonRoom.TabIndex = 1;
+            this.iconButtonRoom.Tag = "   Room";
             this.iconButtonRoom.Text = "Room";
             this.iconButtonRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonRoom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -192,6 +203,7 @@
             // 
             // iconButtonShowTime
             // 
+            this.iconButtonShowTime.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonShowTime.FlatAppearance.BorderSize = 0;
             this.iconButtonShowTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonShowTime.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -201,11 +213,12 @@
             this.iconButtonShowTime.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonShowTime.IconSize = 32;
             this.iconButtonShowTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonShowTime.Location = new System.Drawing.Point(0, 250);
+            this.iconButtonShowTime.Location = new System.Drawing.Point(0, 187);
             this.iconButtonShowTime.Name = "iconButtonShowTime";
             this.iconButtonShowTime.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonShowTime.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonShowTime.Size = new System.Drawing.Size(230, 60);
             this.iconButtonShowTime.TabIndex = 1;
+            this.iconButtonShowTime.Tag = "   ShowTime";
             this.iconButtonShowTime.Text = "ShowTime";
             this.iconButtonShowTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonShowTime.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -216,6 +229,7 @@
             // 
             // iconButtonMovie
             // 
+            this.iconButtonMovie.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButtonMovie.FlatAppearance.BorderSize = 0;
             this.iconButtonMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButtonMovie.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -225,11 +239,12 @@
             this.iconButtonMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButtonMovie.IconSize = 32;
             this.iconButtonMovie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonMovie.Location = new System.Drawing.Point(0, 190);
+            this.iconButtonMovie.Location = new System.Drawing.Point(0, 127);
             this.iconButtonMovie.Name = "iconButtonMovie";
             this.iconButtonMovie.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonMovie.Size = new System.Drawing.Size(220, 60);
+            this.iconButtonMovie.Size = new System.Drawing.Size(230, 60);
             this.iconButtonMovie.TabIndex = 1;
+            this.iconButtonMovie.Tag = "   Movie";
             this.iconButtonMovie.Text = "Movie";
             this.iconButtonMovie.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButtonMovie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -240,20 +255,21 @@
             // 
             // panelLogo
             // 
+            this.panelLogo.Controls.Add(this.buttonMenu);
             this.panelLogo.Controls.Add(this.pictureBoxLogo);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 140);
+            this.panelLogo.Size = new System.Drawing.Size(230, 127);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.BackgroundImage = global::PBL3.Properties.Resources.LogoTest1;
             this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(14, 51);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(3, 3);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(188, 73);
+            this.pictureBoxLogo.Size = new System.Drawing.Size(157, 52);
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
             this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
@@ -267,9 +283,9 @@
             this.panelTitleBar.Controls.Add(this.labelTitleChildForm);
             this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1064, 75);
+            this.panelTitleBar.Size = new System.Drawing.Size(1054, 60);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -280,7 +296,7 @@
             this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinimize.Image = global::PBL3.Properties.Resources.minimizemini;
             this.buttonMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonMinimize.Location = new System.Drawing.Point(902, 0);
+            this.buttonMinimize.Location = new System.Drawing.Point(892, 0);
             this.buttonMinimize.Name = "buttonMinimize";
             this.buttonMinimize.Size = new System.Drawing.Size(50, 30);
             this.buttonMinimize.TabIndex = 2;
@@ -294,7 +310,7 @@
             this.buttonMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMaximize.Image = global::PBL3.Properties.Resources.maximizemini;
             this.buttonMaximize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonMaximize.Location = new System.Drawing.Point(958, 0);
+            this.buttonMaximize.Location = new System.Drawing.Point(948, 0);
             this.buttonMaximize.Name = "buttonMaximize";
             this.buttonMaximize.Size = new System.Drawing.Size(50, 30);
             this.buttonMaximize.TabIndex = 2;
@@ -308,7 +324,7 @@
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Image = global::PBL3.Properties.Resources.closemini;
             this.buttonClose.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonClose.Location = new System.Drawing.Point(1014, 0);
+            this.buttonClose.Location = new System.Drawing.Point(1004, 0);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(50, 30);
             this.buttonClose.TabIndex = 2;
@@ -322,7 +338,7 @@
             this.labelTitleChildForm.AutoSize = true;
             this.labelTitleChildForm.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelTitleChildForm.Location = new System.Drawing.Point(73, 27);
+            this.labelTitleChildForm.Location = new System.Drawing.Point(64, 13);
             this.labelTitleChildForm.Name = "labelTitleChildForm";
             this.labelTitleChildForm.Size = new System.Drawing.Size(72, 30);
             this.labelTitleChildForm.TabIndex = 1;
@@ -336,7 +352,7 @@
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.Gainsboro;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCurrentChildForm.IconSize = 40;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(30, 26);
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(21, 12);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
             this.iconCurrentChildForm.TabIndex = 0;
@@ -346,19 +362,34 @@
             // 
             this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
             this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(220, 75);
+            this.panelShadow.Location = new System.Drawing.Point(230, 60);
             this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(1064, 9);
+            this.panelShadow.Size = new System.Drawing.Size(1054, 9);
             this.panelShadow.TabIndex = 2;
             // 
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(220, 84);
+            this.panelDesktop.Location = new System.Drawing.Point(230, 69);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1064, 657);
+            this.panelDesktop.Size = new System.Drawing.Size(1054, 672);
             this.panelDesktop.TabIndex = 3;
+            // 
+            // buttonMenu
+            // 
+            this.buttonMenu.FlatAppearance.BorderSize = 0;
+            this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMenu.IconChar = FontAwesome.Sharp.IconChar.Bars;
+            this.buttonMenu.IconColor = System.Drawing.Color.Turquoise;
+            this.buttonMenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.buttonMenu.IconSize = 30;
+            this.buttonMenu.Location = new System.Drawing.Point(162, 2);
+            this.buttonMenu.Name = "buttonMenu";
+            this.buttonMenu.Size = new System.Drawing.Size(55, 53);
+            this.buttonMenu.TabIndex = 1;
+            this.buttonMenu.UseVisualStyleBackColor = true;
+            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
             // 
             // MainForm
             // 
@@ -402,5 +433,6 @@
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonMinimize;
         private System.Windows.Forms.Button buttonMaximize;
+        private FontAwesome.Sharp.IconButton buttonMenu;
     }
 }

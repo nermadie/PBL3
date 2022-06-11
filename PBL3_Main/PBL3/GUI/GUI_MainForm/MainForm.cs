@@ -23,6 +23,7 @@ namespace PBL3.GUI.GUI_MainForm
         public MainForm()
         {
             InitializeComponent();
+            CollapseMenu();
             _leftBorderButton = new Panel();
             _leftBorderButton.Size = new Size(7, 60);
             panelMenu.Controls.Add(_leftBorderButton);
@@ -219,6 +220,39 @@ namespace PBL3.GUI.GUI_MainForm
         private void buttonClose_MouseLeave(object sender, EventArgs e)
         {
             ((Button)sender).BackColor = Color.FromArgb(26, 25, 62);
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            CollapseMenu();
+        }
+
+        private void CollapseMenu()
+        {
+            if(this.panelMenu.Width > 200)
+            {
+                panelMenu.Width = 100;
+                pictureBoxLogo.Visible = false;
+                buttonMenu.Dock = DockStyle.Top;
+                foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = "";
+                    menuButton.ImageAlign = ContentAlignment.MiddleCenter;
+                    menuButton.Padding =new Padding(0);
+                }
+            }
+            else
+            {
+                panelMenu.Width = 230;
+                pictureBoxLogo.Visible = true;
+                buttonMenu.Dock = DockStyle.None;
+                foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text ="   " + menuButton.Tag.ToString();
+                    menuButton.ImageAlign = ContentAlignment.MiddleLeft;
+                    menuButton.Padding = new Padding(10, 0, 20, 0);
+                }
+            }
         }
     }
 }

@@ -46,6 +46,8 @@
             this.pictureBoxPass = new System.Windows.Forms.PictureBox();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelSignIn = new System.Windows.Forms.Panel();
+            this.buttonEye = new FontAwesome.Sharp.IconButton();
+            this.buttonEyeSlash = new FontAwesome.Sharp.IconButton();
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPass)).BeginInit();
@@ -258,7 +260,7 @@
             // 
             this.pictureBoxLogo.BackgroundImage = global::PBL3.Properties.Resources.film;
             this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(140, 94);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(139, 56);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(130, 130);
             this.pictureBoxLogo.TabIndex = 0;
@@ -266,6 +268,8 @@
             // 
             // panelSignIn
             // 
+            this.panelSignIn.Controls.Add(this.buttonEye);
+            this.panelSignIn.Controls.Add(this.buttonEyeSlash);
             this.panelSignIn.Controls.Add(this.textBoxWarnPass);
             this.panelSignIn.Controls.Add(this.textBoxWarnUser);
             this.panelSignIn.Controls.Add(this.labelSignIn);
@@ -279,17 +283,47 @@
             this.panelSignIn.Controls.Add(this.textBoxPass);
             this.panelSignIn.Controls.Add(this.buttonSignIn);
             this.panelSignIn.Controls.Add(this.panelPass);
-            this.panelSignIn.Location = new System.Drawing.Point(0, 240);
+            this.panelSignIn.Location = new System.Drawing.Point(0, 198);
             this.panelSignIn.Name = "panelSignIn";
             this.panelSignIn.Size = new System.Drawing.Size(400, 510);
             this.panelSignIn.TabIndex = 10;
+            // 
+            // buttonEye
+            // 
+            this.buttonEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEye.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.buttonEye.IconChar = FontAwesome.Sharp.IconChar.Eye;
+            this.buttonEye.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonEye.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.buttonEye.IconSize = 22;
+            this.buttonEye.Location = new System.Drawing.Point(306, 158);
+            this.buttonEye.Name = "buttonEye";
+            this.buttonEye.Size = new System.Drawing.Size(22, 22);
+            this.buttonEye.TabIndex = 9;
+            this.buttonEye.UseVisualStyleBackColor = true;
+            this.buttonEye.Click += new System.EventHandler(this.buttonEye_Click);
+            // 
+            // buttonEyeSlash
+            // 
+            this.buttonEyeSlash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEyeSlash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.buttonEyeSlash.IconChar = FontAwesome.Sharp.IconChar.EyeSlash;
+            this.buttonEyeSlash.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonEyeSlash.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.buttonEyeSlash.IconSize = 22;
+            this.buttonEyeSlash.Location = new System.Drawing.Point(306, 157);
+            this.buttonEyeSlash.Name = "buttonEyeSlash";
+            this.buttonEyeSlash.Size = new System.Drawing.Size(22, 22);
+            this.buttonEyeSlash.TabIndex = 9;
+            this.buttonEyeSlash.UseVisualStyleBackColor = true;
+            this.buttonEyeSlash.Click += new System.EventHandler(this.buttonEyeSlash_Click);
             // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(400, 750);
+            this.ClientSize = new System.Drawing.Size(400, 709);
             this.Controls.Add(this.panelSignIn);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.pictureBoxLogo);
@@ -327,6 +361,8 @@
         private System.Windows.Forms.TextBox textBoxWarnUser;
         private System.Windows.Forms.TextBox textBoxWarnPass;
         private System.Windows.Forms.Panel panelSignIn;
+        private FontAwesome.Sharp.IconButton buttonEye;
+        private FontAwesome.Sharp.IconButton buttonEyeSlash;
     }
 }
 
