@@ -34,3 +34,21 @@ C:\Users\84916\OneDrive - The University of Technology\Máy tính\PBL3-main\PBL3
 C:\Users\84916\OneDrive - The University of Technology\Máy tính\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.CopyComplete
 C:\Users\84916\OneDrive - The University of Technology\Máy tính\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.exe
 C:\Users\84916\OneDrive - The University of Technology\Máy tính\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.pdb
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\bin\Debug\PBL3.exe.config
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\bin\Debug\PBL3.exe
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\bin\Debug\PBL3.pdb
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\bin\Debug\EntityFramework.xml
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.AssemblyReference.cache
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.SuggestedBindingRedirects.cache
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.SignIn.resources
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.MainForm.resources
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.MainForm_ChildForm.Customer.resources
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Test.Form1.resources
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.Properties.Resources.resources
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.GenerateResource.cache
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.CoreCompileInputs.cache
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.CopyComplete
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.exe
+C:\Users\minhh\Downloads\PBL3-main\PBL3_Main\PBL3\obj\Debug\PBL3.pdb
