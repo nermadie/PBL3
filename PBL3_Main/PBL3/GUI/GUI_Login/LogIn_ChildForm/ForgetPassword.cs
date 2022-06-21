@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PBL3.GUI.GUI_Login.LogIn_ChildForm
 {
-    public partial class ForgotPassword : UserControl
+    public partial class ForgetPassword : UserControl
     {
-        public ForgotPassword()
+        public ForgetPassword()
         {
             InitializeComponent();
         }

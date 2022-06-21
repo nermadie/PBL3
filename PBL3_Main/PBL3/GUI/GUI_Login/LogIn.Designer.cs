@@ -28,24 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.buttonMinimize = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelLogIn = new System.Windows.Forms.Panel();
+            this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTitle
             // 
+            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(29)))), ((int)(((byte)(40)))));
             this.panelTitle.Controls.Add(this.buttonMinimize);
             this.panelTitle.Controls.Add(this.buttonClose);
             this.panelTitle.Location = new System.Drawing.Point(0, 0);
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Size = new System.Drawing.Size(400, 50);
             this.panelTitle.TabIndex = 9;
-            this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             // 
             // buttonMinimize
             // 
@@ -96,6 +99,21 @@
             this.panelLogIn.Size = new System.Drawing.Size(400, 510);
             this.panelLogIn.TabIndex = 10;
             // 
+            // kryptonPalette1
+            // 
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Rounding = 20;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 1D;
+            this.guna2DragControl1.TargetControl = this.panelTitle;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
             // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,7 +124,11 @@
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.pictureBoxLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "LogIn";
+            this.Palette = this.kryptonPalette1;
+            this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TopMost = true;
@@ -122,6 +144,8 @@
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Panel panelLogIn;
+        private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }
 

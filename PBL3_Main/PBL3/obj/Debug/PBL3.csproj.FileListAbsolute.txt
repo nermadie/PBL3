@@ -17,5 +17,13 @@ C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.MainForm_ChildForm.Customer.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.LogIn.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.LogIn_ChildForm.SignIn.resources
-C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.LogIn_ChildForm.ForgotPassword.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.LogIn_ChildForm.SignUp.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Docking.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\Guna.UI2.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Alert.Alert.resources

@@ -8,38 +8,36 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Input;
+using ComponentFactory.Krypton.Toolkit;
 using PBL3.GUI.GUI_Login.LogIn_ChildForm;
+using PBL3.GUI.GUI_MainForm;
+using KeyEventArgs = System.Windows.Forms.KeyEventArgs;
 
 namespace PBL3.GUI.GUI_Login
 {
-    public partial class LogIn : Form
+    public partial class LogIn : KryptonForm
     {
+        private SignIn signIn = new SignIn();
+        private ForgotPassword forgotPassword = new ForgotPassword();
+        private SignUp signUp = new SignUp();
         public LogIn()
         {
             InitializeComponent();
-            SignIn signin = new SignIn();
-            OpenChildForm(signin);
-            signin.DelPanelCreate = new SignIn.DelTriggerButton(labelCreateACC_DelegateClick);
-            signin.DelPanelForgot = new SignIn.DelTriggerButton(labelForgotPass_DelegateClick);
+            addUserControl(signIn);
+            signIn.hideLoginForm = new SignIn.Del_String(ShowMainForm);
+            signIn.showSignup = new SignIn.Del_Void(labelCreateACC_DelegateClick);
+            signIn.showForgot = new SignIn.Del_Void(labelForgotPass_DelegateClick);
         }
-        //=============================================================//MOVE THE FORM
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
-
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
-        public static extern bool ReleaseCapture();
-
-        private void Panel1_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
+        //Add UserControl
+        private void addUserControl(UserControl userControl)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
+            userControl.Dock = DockStyle.Fill;
+            panelLogIn.Controls.Clear();
+            panelLogIn.Controls.Add(userControl);
+            userControl.BringToFront();
         }
-        //============================================================//
+        //============================================================/LOGIN FORM
         //============================================================//PANEL TITLE
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -51,37 +49,22 @@ namespace PBL3.GUI.GUI_Login
             this.WindowState = FormWindowState.Minimized;
         }
         //============================================================//
-        //============================================================/LOGIN FORM
-        //Child form for SignUp and Forgot Password
-        private Form _currentChildForm;
-        private void OpenChildForm(Form childForm)
-        {
-            if (_currentChildForm != null)
-            {
-                //open only form
-                _currentChildForm.Close();
-            }
 
-            _currentChildForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelLogIn.Controls.Add(childForm);
-            panelLogIn.Tag = childForm;//Associate the form to the panel
-            childForm.BringToFront();
-            childForm.Show();
-        }
         //============================================================//
         //============================================================//SIGN IN FORM
+        public void ShowMainForm(string username)
+        {
+            this.Visible = false;
+            MainForm mForm = new MainForm(username);
+            mForm.Show();
+        }
         private void labelForgotPass_DelegateClick()
         {
-            MessageBox.Show("Forgot Password");
-            OpenChildForm(new ForgotPassword());
+            addUserControl(forgotPassword);
         }
         private void labelCreateACC_DelegateClick()
         {
-            MessageBox.Show("CreateAccount");
-            OpenChildForm(new SignUp());
+            addUserControl(signUp);
         }
         //============================================================//
 
