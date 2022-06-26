@@ -32,10 +32,10 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.buttonMinimize = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelLogIn = new System.Windows.Forms.Panel();
-            this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             this.panelTitle.Controls.Add(this.buttonClose);
             this.panelTitle.Location = new System.Drawing.Point(0, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(400, 50);
+            this.panelTitle.Size = new System.Drawing.Size(400, 28);
             this.panelTitle.TabIndex = 9;
             // 
             // buttonMinimize
@@ -59,9 +59,9 @@
             this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinimize.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMinimize.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonMinimize.Location = new System.Drawing.Point(336, 11);
+            this.buttonMinimize.Location = new System.Drawing.Point(336, 4);
             this.buttonMinimize.Name = "buttonMinimize";
-            this.buttonMinimize.Size = new System.Drawing.Size(24, 24);
+            this.buttonMinimize.Size = new System.Drawing.Size(20, 20);
             this.buttonMinimize.TabIndex = 8;
             this.buttonMinimize.UseVisualStyleBackColor = true;
             this.buttonMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
@@ -75,12 +75,25 @@
             this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClose.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonClose.Location = new System.Drawing.Point(366, 11);
+            this.buttonClose.Location = new System.Drawing.Point(366, 4);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(24, 24);
+            this.buttonClose.Size = new System.Drawing.Size(20, 20);
             this.buttonClose.TabIndex = 8;
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panelLogIn
+            // 
+            this.panelLogIn.Location = new System.Drawing.Point(0, 240);
+            this.panelLogIn.Name = "panelLogIn";
+            this.panelLogIn.Size = new System.Drawing.Size(400, 510);
+            this.panelLogIn.TabIndex = 10;
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 1D;
+            this.guna2DragControl1.TargetControl = this.panelTitle;
+            this.guna2DragControl1.UseTransparentDrag = true;
             // 
             // pictureBoxLogo
             // 
@@ -92,27 +105,10 @@
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
             // 
-            // panelLogIn
+            // guna2Elipse1
             // 
-            this.panelLogIn.Location = new System.Drawing.Point(0, 240);
-            this.panelLogIn.Name = "panelLogIn";
-            this.panelLogIn.Size = new System.Drawing.Size(400, 510);
-            this.panelLogIn.TabIndex = 10;
-            // 
-            // kryptonPalette1
-            // 
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Rounding = 20;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 1D;
-            this.guna2DragControl1.TargetControl = this.panelTitle;
-            this.guna2DragControl1.UseTransparentDrag = true;
+            this.guna2Elipse1.BorderRadius = 10;
+            this.guna2Elipse1.TargetControl = this;
             // 
             // LogIn
             // 
@@ -126,7 +122,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "LogIn";
-            this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -144,8 +139,8 @@
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
         private System.Windows.Forms.Panel panelLogIn;
-        private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
 
