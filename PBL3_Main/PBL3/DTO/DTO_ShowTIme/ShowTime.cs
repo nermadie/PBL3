@@ -15,9 +15,9 @@ namespace PBL3.DTO.DTO_ShowTime
         {
             TicketOrders = new HashSet<TicketOrder>();
         }
-        public string IdMovie { get; set; }
+        public int IdMovie { get; set; }
         [Key, Column(Order = 1)]
-        public string IdRoom { get; set; }
+        public int IdRoom { get; set; }
         [Key, Column(Order = 2)]
         public DateTime Time { get; set; }
         public string Seat { get; set; }

@@ -15,10 +15,11 @@ namespace PBL3.DTO.DTO_Order
     {
         [Key]
         [Required]
-        public string IdTicketOrder { get; set; }
-        public string IdOrder { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdTicketOrder { get; set; }
+        public int IdOrder { get; set; }
 
-        public string IdRoom { get; set; }
+        public int IdRoom { get; set; }
         public DateTime Time { get; set; }
         public string SeatPurchased { get; set; }
         //Navigation Properties

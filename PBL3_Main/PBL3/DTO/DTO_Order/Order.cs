@@ -18,8 +18,9 @@ namespace PBL3.DTO.DTO_Order
         }
         [Key]
         [Required]
-        public string IdOrder { get; set; }
-        public string IdCustomer { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdOrder { get; set; }
+        public int IdCustomer { get; set; }
         [Required]
         public DateTime TimeOrder { get; set; }
         public string Code { get; set; }
