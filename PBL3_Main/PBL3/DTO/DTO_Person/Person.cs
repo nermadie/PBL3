@@ -12,7 +12,8 @@ namespace PBL3.DTO.DTO_Person
     {
         [Key]
         [Required]
-        public string IdPerson { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdPerson { get; set; }
         [Required]
         public string NamePerson { get; set; }
         public string Phone { get; set; }

@@ -20,7 +20,7 @@ namespace PBL3.GUI.GUI_MainForm
         private Panel _leftBorderButton;
         private Form _currentChildForm;
         //Constructor
-        public MainForm()
+        public MainForm(string username)
         {
             InitializeComponent();
             _leftBorderButton = new Panel();

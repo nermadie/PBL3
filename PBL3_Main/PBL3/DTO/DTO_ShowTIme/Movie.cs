@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Security.RightsManagement;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +17,8 @@ namespace PBL3.DTO.DTO_ShowTime
         }
         [Key]
         [Required]
-        public string IdMovie { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int IdMovie { get; set; }
         public string NameMovie { get; set; }
         public string Director { get; set; }
         public TimeSpan Duration { get; set; }
