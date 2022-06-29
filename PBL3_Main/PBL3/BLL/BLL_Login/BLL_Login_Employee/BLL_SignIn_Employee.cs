@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PBL3.DAL;
+using PBL3.EntityFramework;
 using PBL3.DTO.DTO_Person;
 
 namespace PBL3.BLL.BLL_Login.BLL_Login_Employee

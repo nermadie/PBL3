@@ -90,7 +90,7 @@ namespace PBL3.GUI.GUI_Login.Login_Customer
         //=====//KEYDOWN
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            if (signIn.Visible == true)
+            if (currentUserControl == signIn)
             {
                 showChooseRole();
                 this.Dispose();
