@@ -18,6 +18,7 @@ namespace PBL3.DAL
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }
+        public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Order> Orders { get; set; }

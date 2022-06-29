@@ -33,7 +33,7 @@
             // 
             // guna2Button1
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderRadius = 5;
             this.guna2Button1.BorderThickness = 1;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -49,7 +49,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(71, 48);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "12:00 45K";
-            this.guna2Button1.BorderRadius = 5;
             // 
             // ButtonTimePrice
             // 

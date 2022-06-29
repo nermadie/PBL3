@@ -17,10 +17,8 @@ namespace PBL3.DTO.DTO_Order
             TicketOrders = new HashSet<TicketOrder>();
         }
         [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdOrder { get; set; }
-        public int IdCustomer { get; set; }
+        public string IdOrder { get; set; }
+        public string IdCustomer { get; set; }
         [Required]
         public DateTime TimeOrder { get; set; }
         public string Code { get; set; }
