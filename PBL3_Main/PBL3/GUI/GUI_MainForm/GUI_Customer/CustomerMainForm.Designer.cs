@@ -1,4 +1,6 @@
-﻿namespace PBL3.GUI.GUI_MainForm.GUI_Customer
+﻿using System.Windows.Forms;
+
+namespace PBL3.GUI.GUI_MainForm.GUI_Customer
 {
     partial class CustomerMainForm
     {
@@ -16,6 +18,7 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+                Application.Exit();
             }
             base.Dispose(disposing);
         }
