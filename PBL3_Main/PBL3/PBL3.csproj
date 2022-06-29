@@ -85,7 +85,7 @@
     <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignIn_Customer.cs" />
     <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignUp_Customer.cs" />
     <Compile Include="BLL\BLL_Login\BLL_Login_Employee\BLL_SignIn_Employee.cs" />
-    <Compile Include="DAL\CreateDB.cs" />
+    <Compile Include="EntityFramework\CreateDB.cs" />
     <Compile Include="DTO\DTO_Order\Order.cs" />
     <Compile Include="DTO\DTO_Order\PopcornDrinkOrder.cs" />
     <Compile Include="DTO\DTO_Order\TicketOrder.cs" />
@@ -184,7 +184,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DAL\QLRapChieuPhim.cs" />
+    <Compile Include="EntityFramework\QLRapChieuPhim.cs" />
     <EmbeddedResource Include="GUI\GUI_Alert\Alert.resx">
       <DependentUpon>Alert.cs</DependentUpon>
     </EmbeddedResource>

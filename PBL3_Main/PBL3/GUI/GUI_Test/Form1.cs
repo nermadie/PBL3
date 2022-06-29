@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.DAL;
+using PBL3.EntityFramework;
 using PBL3.DTO.DTO_Person;
 using PBL3.GUI.GUI_Alert;
 using PBL3.GUI.GUI_MainForm;

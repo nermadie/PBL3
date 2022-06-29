@@ -4,13 +4,13 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PBL3.DAL;
+using PBL3.EntityFramework;
 using PBL3.DTO.DTO_Order;
 using PBL3.DTO.DTO_Person;
 using PBL3.DTO.DTO_PopcornDrink;
 using PBL3.DTO.DTO_ShowTime;
 
-namespace PBL3.DAL
+namespace PBL3.EntityFramework
 {
     public class CreateDB : DropCreateDatabaseAlways<QLRapChieuPhim>
     {
