@@ -41,11 +41,11 @@
             // labelMessage
             // 
             this.labelMessage.AutoSize = true;
-            this.labelMessage.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMessage.Font = new System.Drawing.Font("Cerebri Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMessage.ForeColor = System.Drawing.Color.White;
             this.labelMessage.Location = new System.Drawing.Point(76, 15);
             this.labelMessage.Name = "labelMessage";
-            this.labelMessage.Size = new System.Drawing.Size(133, 25);
+            this.labelMessage.Size = new System.Drawing.Size(139, 24);
             this.labelMessage.TabIndex = 0;
             this.labelMessage.Text = "Message_Text";
             // 
@@ -56,11 +56,11 @@
             // labelDetail
             // 
             this.labelDetail.AutoSize = true;
-            this.labelDetail.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDetail.Font = new System.Drawing.Font("Cerebri Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDetail.ForeColor = System.Drawing.Color.White;
             this.labelDetail.Location = new System.Drawing.Point(89, 48);
             this.labelDetail.Name = "labelDetail";
-            this.labelDetail.Size = new System.Drawing.Size(91, 17);
+            this.labelDetail.Size = new System.Drawing.Size(99, 17);
             this.labelDetail.TabIndex = 0;
             this.labelDetail.Text = "Message_Text";
             // 
@@ -95,6 +95,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Alert";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Alert";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();

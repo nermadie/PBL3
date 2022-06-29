@@ -14,12 +14,10 @@ namespace PBL3.DTO.DTO_Order
     public class TicketOrder
     {
         [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdTicketOrder { get; set; }
-        public int IdOrder { get; set; }
+        public string IdTicketOrder { get; set; }
+        public string IdOrder { get; set; }
 
-        public int IdRoom { get; set; }
+        public string IdRoom { get; set; }
         public DateTime Time { get; set; }
         public string SeatPurchased { get; set; }
         //Navigation Properties

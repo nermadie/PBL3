@@ -16,9 +16,7 @@ namespace PBL3.DTO.DTO_ShowTime
             ShowTimes = new HashSet<ShowTime>();
         }
         [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdMovie { get; set; }
+        public string IdMovie { get; set; }
         public string NameMovie { get; set; }
         public string Director { get; set; }
         public TimeSpan Duration { get; set; }

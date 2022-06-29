@@ -11,9 +11,7 @@ namespace PBL3.DTO.DTO_PopcornDrink
     public class PopcornDrink
     {
         [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdPopcornDrink { get; set; }
+        public string IdPopcornDrink { get; set; }
         public string NamePopcornDrink { get; set; }
         public int PricePopcornDrink { get; set; }
     }

@@ -80,13 +80,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\BLL_Login\BLL_ForgotPassword.cs" />
-    <Compile Include="BLL\BLL_Login\BLL_SignIn.cs" />
-    <Compile Include="BLL\BLL_Login\BLL_SignUp.cs" />
+    <Compile Include="BLL\BLL_Login\BLL_Login_Admin\BLL_SignIn_Admin.cs" />
+    <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_ForgotPassword_Customer.cs" />
+    <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignIn_Customer.cs" />
+    <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignUp_Customer.cs" />
+    <Compile Include="BLL\BLL_Login\BLL_Login_Employee\BLL_SignIn_Employee.cs" />
     <Compile Include="DAL\CreateDB.cs" />
     <Compile Include="DTO\DTO_Order\Order.cs" />
     <Compile Include="DTO\DTO_Order\PopcornDrinkOrder.cs" />
     <Compile Include="DTO\DTO_Order\TicketOrder.cs" />
+    <Compile Include="DTO\DTO_Person\Admin.cs" />
     <Compile Include="DTO\DTO_Person\Customer.cs" />
     <Compile Include="DTO\DTO_Person\Employee.cs" />
     <Compile Include="DTO\DTO_Person\Person.cs" />
@@ -94,83 +97,72 @@
     <Compile Include="DTO\DTO_ShowTIme\Movie.cs" />
     <Compile Include="DTO\DTO_ShowTIme\Room.cs" />
     <Compile Include="DTO\DTO_ShowTIme\ShowTime.cs" />
+    <Compile Include="GUI\DelegateTemplate\DelegateTemplate.cs" />
     <Compile Include="GUI\GUI_Alert\Alert.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\GUI_Alert\Alert.Designer.cs">
       <DependentUpon>Alert.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_Login\LogIn.cs">
+    <Compile Include="GUI\GUI_ChooseRole\ChooseRole.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_Login\LogIn.Designer.cs">
-      <DependentUpon>LogIn.cs</DependentUpon>
+    <Compile Include="GUI\GUI_ChooseRole\ChooseRole.Designer.cs">
+      <DependentUpon>ChooseRole.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_Login\LogIn_ChildForm\ForgotPassword.cs">
+    <Compile Include="GUI\GUI_Login\Login_Admin\Login_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Admin\Login_Admin.Designer.cs">
+      <DependentUpon>Login_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_Customer.Designer.cs">
+      <DependentUpon>LogIn_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\ForgotPassword_Customer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_Login\LogIn_ChildForm\ForgotPassword.Designer.cs">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\ForgotPassword_Customer.Designer.cs">
+      <DependentUpon>ForgotPassword_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_Login\LogIn_ChildForm\SignIn.cs">
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignIn_Customer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_Login\LogIn_ChildForm\SignIn.Designer.cs">
-      <DependentUpon>SignIn.cs</DependentUpon>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignIn_Customer.Designer.cs">
+      <DependentUpon>SignIn_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_Login\LogIn_ChildForm\SignUp.cs">
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignUp_Customer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_Login\LogIn_ChildForm\SignUp.Designer.cs">
-      <DependentUpon>SignUp.cs</DependentUpon>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignUp_Customer.Designer.cs">
+      <DependentUpon>SignUp_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm.cs">
+    <Compile Include="GUI\GUI_Login\Login_Employee\Login_Employee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="GUI\GUI_Login\Login_Employee\Login_Employee.Designer.cs">
+      <DependentUpon>Login_Employee.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Customer.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Customer.Designer.cs">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Employee.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Employee.Designer.cs">
-      <DependentUpon>Employee.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.Designer.cs">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Movie.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmployeeMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Movie.Designer.cs">
-      <DependentUpon>Movie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\PopcornDrink.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\PopcornDrink.Designer.cs">
-      <DependentUpon>PopcornDrink.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Room.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Room.Designer.cs">
-      <DependentUpon>Room.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\ShowTime.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\ShowTime.Designer.cs">
-      <DependentUpon>ShowTime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Statistic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\MainForm_ChildForm\Statistic.Designer.cs">
-      <DependentUpon>Statistic.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmployeeMainForm.Designer.cs">
+      <DependentUpon>EmployeeMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_Test\Form1.cs">
       <SubType>Form</SubType>
@@ -196,26 +188,35 @@
     <EmbeddedResource Include="GUI\GUI_Alert\Alert.resx">
       <DependentUpon>Alert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_Login\LogIn.resx">
-      <DependentUpon>LogIn.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_ChooseRole\ChooseRole.resx">
+      <DependentUpon>ChooseRole.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_Login\LogIn_ChildForm\ForgotPassword.resx">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Admin\Login_Admin.resx">
+      <DependentUpon>Login_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_Login\LogIn_ChildForm\SignIn.resx">
-      <DependentUpon>SignIn.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_Customer.resx">
+      <DependentUpon>LogIn_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_Login\LogIn_ChildForm\SignUp.resx">
-      <DependentUpon>SignUp.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\ForgotPassword_Customer.resx">
+      <DependentUpon>ForgotPassword_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_MainForm\MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignIn_Customer.resx">
+      <DependentUpon>SignIn_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_MainForm\MainForm_ChildForm\Customer.resx">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignUp_Customer.resx">
+      <DependentUpon>SignUp_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Employee\Login_Employee.resx">
+      <DependentUpon>Login_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_Test\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_UserControl\ButtonTimePrice.resx">
+      <DependentUpon>ButtonTimePrice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_UserControl\ListItem.resx">
       <DependentUpon>ListItem.cs</DependentUpon>
@@ -253,6 +254,10 @@
     <Folder Include="BLL\BLL_MainForm\BLL_Room\" />
     <Folder Include="BLL\BLL_MainForm\BLL_ShowTime\" />
     <Folder Include="BLL\BLL_MainForm\BLL_Statistic\" />
+    <Folder Include="Image\Picture\PictureMovie\" />
+    <Folder Include="Image\Picture\PicturePerson\Admin\" />
+    <Folder Include="Image\Picture\PicturePerson\Customer\" />
+    <Folder Include="Image\Picture\PicturePopcornDrink\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
@@ -317,6 +322,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\Icon\Login_Icon\hello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\ceo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\Employee_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\left-arrow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

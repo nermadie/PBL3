@@ -11,9 +11,7 @@ namespace PBL3.DTO.DTO_Person
     public abstract class Person
     {
         [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdPerson { get; set; }
+        public string IdPerson { get; set; }
         [Required]
         public string NamePerson { get; set; }
         public string Phone { get; set; }

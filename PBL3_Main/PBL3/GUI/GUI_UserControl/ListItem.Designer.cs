@@ -80,8 +80,7 @@
             // 
             // guna2PictureBoxPoster
             // 
-            this.guna2PictureBoxPoster.AutoRoundedCorners = true;
-            this.guna2PictureBoxPoster.BorderRadius = 68;
+            this.guna2PictureBoxPoster.BorderRadius = 10;
             this.guna2PictureBoxPoster.ImageRotate = 0F;
             this.guna2PictureBoxPoster.Location = new System.Drawing.Point(28, 36);
             this.guna2PictureBoxPoster.Margin = new System.Windows.Forms.Padding(4);

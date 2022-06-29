@@ -15,9 +15,7 @@ namespace PBL3.DTO.DTO_ShowTime
             ShowTimes = new HashSet<ShowTime>();
         }
         [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdRoom { get; set; }
+        public string IdRoom { get; set; }
         public string NameRoom { get; set; }
         public int NumberSeats { get; set; }
         //Navigation Properties
