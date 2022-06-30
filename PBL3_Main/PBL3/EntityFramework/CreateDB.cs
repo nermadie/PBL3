@@ -59,27 +59,27 @@ namespace PBL3.EntityFramework
             });
             context.TicketOrders.AddRange(new[]
             {
-                new TicketOrder{IdTicketOrder = "ticketorder00000001", IdOrder = "order00000001", IdRoom = "room01",Time = new DateTime(2022, 5, 1, 15, 30, 0) ,SeatPurchased = "A1"},
-                new TicketOrder{IdTicketOrder = "ticketorder00000002", IdOrder = "order00000002", IdRoom = "room02",Time = new DateTime(2022, 5, 1, 15, 30, 0) ,SeatPurchased = "A1"},
-                new TicketOrder{IdTicketOrder = "ticketorder00000003", IdOrder = "order00000003", IdRoom = "room03",Time = new DateTime(2022, 5, 1, 15, 30, 0) ,SeatPurchased = "A1"},
-                new TicketOrder{IdTicketOrder = "ticketorder00000004", IdOrder = "order00000004", IdRoom = "room04",Time = new DateTime(2022, 5, 1, 15, 30, 0) ,SeatPurchased = "A1"},
-                new TicketOrder{IdTicketOrder = "ticketorder00000005", IdOrder = "order00000005", IdRoom = "room05",Time = new DateTime(2022, 5, 1, 15, 30, 0) ,SeatPurchased = "A1"},
+                new TicketOrder{IdTicketOrder = "ticketorder00000001", IdOrder = "order00000001", IdRoom = "room01",Time = new DateTime(2022,6,30),SeatPurchased = "A1"},
+                new TicketOrder{IdTicketOrder = "ticketorder00000002", IdOrder = "order00000002", IdRoom = "room02",Time = new DateTime(2022,6,30),SeatPurchased = "A1"},
+                new TicketOrder{IdTicketOrder = "ticketorder00000003", IdOrder = "order00000003", IdRoom = "room03",Time = new DateTime(2022,6,30),SeatPurchased = "A1"},
+                new TicketOrder{IdTicketOrder = "ticketorder00000004", IdOrder = "order00000004", IdRoom = "room04",Time = new DateTime(2022,6,30),SeatPurchased = "A1"},
+                new TicketOrder{IdTicketOrder = "ticketorder00000005", IdOrder = "order00000005", IdRoom = "room05",Time = new DateTime(2022,6,30),SeatPurchased = "A1"},
             });
             context.ShowTimes.AddRange(new[]
             {
-                new ShowTime{IdMovie = "movie000001", IdRoom = "room01", Seat = "1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022, 5, 1, 15, 30, 0), TicketPrice = 50000},
-                new ShowTime{IdMovie = "movie000002", IdRoom = "room02", Seat = "0110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022, 5, 1, 15, 30, 0), TicketPrice = 50000},
-                new ShowTime{IdMovie = "movie000003", IdRoom = "room03", Seat = "0001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022, 5, 1, 15, 30, 0), TicketPrice = 50000},
-                new ShowTime{IdMovie = "movie000004", IdRoom = "room04", Seat = "0000001111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022, 5, 1, 15, 30, 0), TicketPrice = 50000},
-                new ShowTime{IdMovie = "movie000005", IdRoom = "room05", Seat = "0000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022, 5, 1, 15, 30, 0), TicketPrice = 50000},
+                new ShowTime{IdMovie = "movie000001", IdRoom = "room01", Seat = "1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022,6,30), TicketPrice = 50000},
+                new ShowTime{IdMovie = "movie000002", IdRoom = "room02", Seat = "0110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022,6,30), TicketPrice = 50000},
+                new ShowTime{IdMovie = "movie000003", IdRoom = "room03", Seat = "0001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022,6,30), TicketPrice = 50000},
+                new ShowTime{IdMovie = "movie000004", IdRoom = "room04", Seat = "0000001111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022,6,30), TicketPrice = 50000},
+                new ShowTime{IdMovie = "movie000005", IdRoom = "room05", Seat = "0000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000", Time = new DateTime(2022,6,30), TicketPrice = 50000},
             });
             context.Movies.AddRange(new[]
             {
-                new Movie{IdMovie = "movie000001",NameMovie = "Sát Thủ Nhân Tạo 2: Mẫu Vật Còn Lại", Actor = "NVA1, NVA2, NVA3,...", Director = "NVD1", Description = "Noi dung phim 1", Category = "The loai 1, The loai 2", Duration = new TimeSpan(2, 30, 20), Rate = 5.0},
-                new Movie{IdMovie = "movie000002",NameMovie = "Em và Trịnh", Actor = "NVA1, NVA2, NVA4,...", Director = "NVD2", Description = "Noi dung phim 2", Category = "The loai 4, The loai 2", Duration = new TimeSpan(3, 30, 20), Rate = 5.0},
-                new Movie{IdMovie = "movie000003",NameMovie = "Điện Thoại Đen",Actor = "NVA1, NVA3, NVA5,...", Director = "NVD3", Description = "Noi dung phim 3", Category = "The loai 5", Duration = new TimeSpan(2, 10, 20), Rate = 5.0},
-                new Movie{IdMovie = "movie000004",NameMovie = "Ma Gương 3",Actor = "NVA1, NVA4, NVA9,...", Director = "NVD1", Description = "Noi dung phim 4", Category = "The loai 1, The loai 3", Duration = new TimeSpan(1, 30, 20), Rate = 5.0},
-                new Movie{IdMovie = "movie000005",NameMovie = "Người Môi Giới",Actor = "NVA3, NVA2, NVA10,...", Director = "NVD1", Description = "Noi dung phim 5", Category = "The loai 1, The loai 2", Duration = new TimeSpan(4, 30, 20), Rate = 5.0},
+                new Movie{IdMovie = "movie000001",NameMovie = "Sát Thủ Nhân Tạo 2: Mẫu Vật Còn Lại", Actor = "NVA1, NVA2, NVA3,...", Director = "NVD1", Description = "Noi dung phim 1", Category = "The loai 1, The loai 2", Duration = new TimeSpan(2, 30, 20), Rate = 5.0, ReleaseDate = DateTime.Now, LinkTrailer = ""},
+                new Movie{IdMovie = "movie000002",NameMovie = "Em và Trịnh", Actor = "NVA1, NVA2, NVA4,...", Director = "NVD2", Description = "Noi dung phim 2", Category = "The loai 4, The loai 2", Duration = new TimeSpan(3, 30, 20), Rate = 5.0, ReleaseDate = DateTime.Now, LinkTrailer = ""},
+                new Movie{IdMovie = "movie000003",NameMovie = "Điện Thoại Đen",Actor = "NVA1, NVA3, NVA5,...", Director = "NVD3", Description = "Noi dung phim 3", Category = "The loai 5", Duration = new TimeSpan(2, 10, 20), Rate = 5.0, ReleaseDate = DateTime.Now, LinkTrailer = ""},
+                new Movie{IdMovie = "movie000004",NameMovie = "Ma Gương 3",Actor = "NVA1, NVA4, NVA9,...", Director = "NVD1", Description = "Noi dung phim 4", Category = "The loai 1, The loai 3", Duration = new TimeSpan(1, 30, 20), Rate = 5.0, ReleaseDate = DateTime.Now, LinkTrailer = ""},
+                new Movie{IdMovie = "movie000005",NameMovie = "Người Môi Giới",Actor = "NVA3, NVA2, NVA10,...", Director = "NVD1", Description = "Noi dung phim 5", Category = "The loai 1, The loai 2", Duration = new TimeSpan(4, 30, 20), Rate = 5.0, ReleaseDate = DateTime.Now, LinkTrailer = ""},
             });
             context.Rooms.AddRange(new[]
             {

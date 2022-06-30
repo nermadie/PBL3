@@ -30,22 +30,8 @@ namespace PBL3.GUI.GUI_Login.Login_Employee
             textBoxWarnPass.Visible = false;
         }
         //============================================================//SIGN IN FORM
-        private void initial_Textbox()
-        {
-            if (textBoxUser.Text == "")
-                textBoxUser.Text = "Username or email address";
-            if (textBoxPass.Text == "")
-            {
-                textBoxPass.Text = "Password";
-                iconButtonEye.IconChar = FontAwesome.Sharp.IconChar.Eye;
-                textBoxPass.PasswordChar = '\0';
-                checkIconEyeSlash = false;
-            }
-        }
         private void textBoxUser_Click(object sender, EventArgs e)
         {
-            initial_Textbox();
-            textBoxUser.Clear();
             if (textBoxWarnUser.Visible == true)
                 textBoxWarnUser.Visible = false;
             panelUser.BackColor = Color.FromArgb(254, 240, 162);
@@ -57,8 +43,6 @@ namespace PBL3.GUI.GUI_Login.Login_Employee
 
         private void textBoxPass_Click(object sender, EventArgs e)
         {
-            initial_Textbox();
-            textBoxPass.Clear();
             if (textBoxWarnPass.Visible == true)
                 textBoxWarnPass.Visible = false;
             if (!checkIconEyeSlash)
