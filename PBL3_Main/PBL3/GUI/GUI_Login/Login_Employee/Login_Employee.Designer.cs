@@ -38,18 +38,18 @@
             this.textBoxWarnPass = new System.Windows.Forms.TextBox();
             this.textBoxWarnUser = new System.Windows.Forms.TextBox();
             this.panelPass = new System.Windows.Forms.Panel();
-            this.textBoxPass = new System.Windows.Forms.TextBox();
-            this.textBoxUser = new System.Windows.Forms.TextBox();
             this.panelUser = new System.Windows.Forms.Panel();
             this.textBoxForgot = new System.Windows.Forms.TextBox();
             this.labelForgot = new System.Windows.Forms.Label();
             this.iconButtonEye = new FontAwesome.Sharp.IconButton();
             this.pictureBoxUser = new System.Windows.Forms.PictureBox();
             this.pictureBoxPass = new System.Windows.Forms.PictureBox();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.buttonMinimize = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.buttonBack = new System.Windows.Forms.Button();
+            this.textBoxPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPass)).BeginInit();
@@ -155,36 +155,6 @@
             this.panelPass.Size = new System.Drawing.Size(250, 1);
             this.panelPass.TabIndex = 30;
             // 
-            // textBoxPass
-            // 
-            this.textBoxPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPass.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPass.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxPass.HideSelection = false;
-            this.textBoxPass.Location = new System.Drawing.Point(108, 433);
-            this.textBoxPass.Name = "textBoxPass";
-            this.textBoxPass.Size = new System.Drawing.Size(182, 21);
-            this.textBoxPass.TabIndex = 29;
-            this.textBoxPass.TabStop = false;
-            this.textBoxPass.Text = "Password";
-            this.textBoxPass.Click += new System.EventHandler(this.textBoxPass_Click);
-            // 
-            // textBoxUser
-            // 
-            this.textBoxUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxUser.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxUser.HideSelection = false;
-            this.textBoxUser.Location = new System.Drawing.Point(108, 358);
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(200, 21);
-            this.textBoxUser.TabIndex = 26;
-            this.textBoxUser.TabStop = false;
-            this.textBoxUser.Text = "Username or email address";
-            this.textBoxUser.Click += new System.EventHandler(this.textBoxUser_Click);
-            // 
             // panelUser
             // 
             this.panelUser.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -259,6 +229,22 @@
             this.pictureBoxPass.TabIndex = 28;
             this.pictureBoxPass.TabStop = false;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.BackgroundImage = global::PBL3.Properties.Resources.left_arrow2;
+            this.buttonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBack.FlatAppearance.BorderSize = 0;
+            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBack.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBack.ForeColor = System.Drawing.SystemColors.Control;
+            this.buttonBack.Location = new System.Drawing.Point(13, 5);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(20, 20);
+            this.buttonBack.TabIndex = 40;
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // buttonMinimize
             // 
             this.buttonMinimize.BackgroundImage = global::PBL3.Properties.Resources.remove2;
@@ -301,21 +287,55 @@
             this.pictureBoxLogo.TabIndex = 0;
             this.pictureBoxLogo.TabStop = false;
             // 
-            // buttonBack
+            // textBoxPass
             // 
-            this.buttonBack.BackgroundImage = global::PBL3.Properties.Resources.left_arrow2;
-            this.buttonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBack.FlatAppearance.BorderSize = 0;
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.ForeColor = System.Drawing.SystemColors.Control;
-            this.buttonBack.Location = new System.Drawing.Point(13, 5);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(20, 20);
-            this.buttonBack.TabIndex = 40;
-            this.buttonBack.UseVisualStyleBackColor = true;
-            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            this.textBoxPass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxPass.BorderThickness = 0;
+            this.textBoxPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxPass.DefaultText = "";
+            this.textBoxPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxPass.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPass.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxPass.Location = new System.Drawing.Point(95, 431);
+            this.textBoxPass.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxPass.Name = "textBoxPass";
+            this.textBoxPass.PasswordChar = '\0';
+            this.textBoxPass.PlaceholderText = "Password";
+            this.textBoxPass.SelectedText = "";
+            this.textBoxPass.Size = new System.Drawing.Size(208, 26);
+            this.textBoxPass.TabIndex = 47;
+            this.textBoxPass.Click += new System.EventHandler(this.textBoxPass_Click);
+            // 
+            // textBoxUser
+            // 
+            this.textBoxUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxUser.BorderThickness = 0;
+            this.textBoxUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxUser.DefaultText = "";
+            this.textBoxUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxUser.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUser.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxUser.Location = new System.Drawing.Point(95, 357);
+            this.textBoxUser.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxUser.Name = "textBoxUser";
+            this.textBoxUser.PasswordChar = '\0';
+            this.textBoxUser.PlaceholderText = "Username/Email address";
+            this.textBoxUser.SelectedText = "";
+            this.textBoxUser.Size = new System.Drawing.Size(208, 26);
+            this.textBoxUser.TabIndex = 48;
+            this.textBoxUser.Click += new System.EventHandler(this.textBoxUser_Click);
             // 
             // Login_Employee
             // 
@@ -323,17 +343,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(400, 750);
+            this.Controls.Add(this.iconButtonEye);
+            this.Controls.Add(this.textBoxPass);
+            this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.labelForgot);
             this.Controls.Add(this.buttonSignIn);
-            this.Controls.Add(this.iconButtonEye);
             this.Controls.Add(this.textBoxWarnPass);
             this.Controls.Add(this.textBoxWarnUser);
             this.Controls.Add(this.panelPass);
             this.Controls.Add(this.pictureBoxUser);
             this.Controls.Add(this.textBoxForgot);
-            this.Controls.Add(this.textBoxPass);
             this.Controls.Add(this.pictureBoxPass);
-            this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.panelUser);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelSignIn);
@@ -371,12 +391,12 @@
         private System.Windows.Forms.TextBox textBoxWarnUser;
         private System.Windows.Forms.Panel panelPass;
         private System.Windows.Forms.PictureBox pictureBoxUser;
-        private System.Windows.Forms.TextBox textBoxPass;
         private System.Windows.Forms.PictureBox pictureBoxPass;
-        private System.Windows.Forms.TextBox textBoxUser;
         private System.Windows.Forms.Panel panelUser;
         private System.Windows.Forms.TextBox textBoxForgot;
         private System.Windows.Forms.Label labelForgot;
         private System.Windows.Forms.Button buttonBack;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxPass;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxUser;
     }
 }

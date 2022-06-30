@@ -13,7 +13,7 @@ using PBL3.BLL.BLL_Login.BLL_Login_Admin;
 using PBL3.DTO.DTO_Person;
 using PBL3.GUI.GUI_Alert;
 using PBL3.GUI.DelegateTemplate;
-namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
+namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl
 {
     public partial class SignIn_Customer : UserControl
     {
@@ -29,22 +29,8 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
         }
 
         //============================================================//SIGN IN FORM
-        private void initial_Textbox()
-        {
-            if (textBoxUser.Text == "")
-                textBoxUser.Text = "Username or email address";
-            if (textBoxPass.Text == "")
-            {
-                textBoxPass.Text = "Password";
-                iconButtonEye.IconChar = FontAwesome.Sharp.IconChar.Eye;
-                textBoxPass.PasswordChar = '\0';
-                checkIconEyeSlash = false;
-            }
-        }
         private void textBoxUser_Click(object sender, EventArgs e)
         {
-            initial_Textbox();
-            textBoxUser.Clear();
             if (textBoxWarnUser.Visible == true)
                 textBoxWarnUser.Visible = false;
             panelUser.BackColor = Color.FromArgb(252, 187, 193);
@@ -56,8 +42,6 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
 
         private void textBoxPass_Click(object sender, EventArgs e)
         {
-            initial_Textbox();
-            textBoxPass.Clear();
             if (textBoxWarnPass.Visible == true)
                 textBoxWarnPass.Visible = false;
             if (!checkIconEyeSlash)

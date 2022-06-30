@@ -75,7 +75,7 @@
             // 
             // pictureBoxClose
             // 
-            this.pictureBoxClose.Image = global::PBL3.Properties.Resources.cancel;
+            this.pictureBoxClose.Image = global::PBL3.Properties.Resources.cancelAlert;
             this.pictureBoxClose.Location = new System.Drawing.Point(365, 31);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(24, 24);

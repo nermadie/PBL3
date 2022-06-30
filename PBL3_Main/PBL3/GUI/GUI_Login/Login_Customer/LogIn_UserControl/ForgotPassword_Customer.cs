@@ -11,7 +11,7 @@ using PBL3.BLL.BLL_Login.BLL_Login_Admin;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_Alert;
 
-namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
+namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl
 {
     public partial class ForgotPassword_Customer : UserControl
     {
@@ -24,7 +24,6 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
 
         private void textBoxUser_Click(object sender, EventArgs e)
         {
-            textBoxUser.Clear();
             if (textBoxWarnUser.Visible == true)
                 textBoxWarnUser.Visible = false;
             panelUser.BackColor = Color.FromArgb(252, 187, 193);

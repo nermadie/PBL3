@@ -12,7 +12,7 @@ using System.Windows.Input;
 using ComponentFactory.Krypton.Toolkit;
 using PBL3.DTO.DTO_Person;
 using PBL3.GUI.DelegateTemplate;
-using PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm;
+using PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl;
 using PBL3.GUI.GUI_MainForm;
 using PBL3.GUI.GUI_MainForm.GUI_Customer;
 using KeyEventArgs = System.Windows.Forms.KeyEventArgs;

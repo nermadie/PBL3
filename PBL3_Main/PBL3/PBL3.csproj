@@ -122,22 +122,22 @@
     <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_Customer.Designer.cs">
       <DependentUpon>LogIn_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\ForgotPassword_Customer.cs">
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\ForgotPassword_Customer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\ForgotPassword_Customer.Designer.cs">
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\ForgotPassword_Customer.Designer.cs">
       <DependentUpon>ForgotPassword_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignIn_Customer.cs">
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignIn_Customer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignIn_Customer.Designer.cs">
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignIn_Customer.Designer.cs">
       <DependentUpon>SignIn_Customer.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignUp_Customer.cs">
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignUp_Customer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignUp_Customer.Designer.cs">
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignUp_Customer.Designer.cs">
       <DependentUpon>SignUp_Customer.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_Login\Login_Employee\Login_Employee.cs">
@@ -151,6 +151,12 @@
     </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.Designer.cs">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.cs">
       <SubType>Form</SubType>
@@ -170,16 +176,16 @@
     <Compile Include="GUI\GUI_Test\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_UserControl\ButtonTimePrice.cs">
+    <Compile Include="GUI\GUI_AdditionalUserControl\ButtonTimePrice.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_UserControl\ButtonTimePrice.Designer.cs">
+    <Compile Include="GUI\GUI_AdditionalUserControl\ButtonTimePrice.Designer.cs">
       <DependentUpon>ButtonTimePrice.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_UserControl\ListItem.cs">
+    <Compile Include="GUI\GUI_AdditionalUserControl\ListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_UserControl\ListItem.Designer.cs">
+    <Compile Include="GUI\GUI_AdditionalUserControl\ListItem.Designer.cs">
       <DependentUpon>ListItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -197,13 +203,13 @@
     <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_Customer.resx">
       <DependentUpon>LogIn_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\ForgotPassword_Customer.resx">
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\ForgotPassword_Customer.resx">
       <DependentUpon>ForgotPassword_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignIn_Customer.resx">
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignIn_Customer.resx">
       <DependentUpon>SignIn_Customer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_ChildForm\SignUp_Customer.resx">
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignUp_Customer.resx">
       <DependentUpon>SignUp_Customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_Login\Login_Employee\Login_Employee.resx">
@@ -212,31 +218,34 @@
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.resx">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_Test\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_UserControl\ButtonTimePrice.resx">
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\ButtonTimePrice.resx">
       <DependentUpon>ButtonTimePrice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_UserControl\ListItem.resx">
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\ListItem.resx">
       <DependentUpon>ListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -258,7 +267,6 @@
     <Folder Include="Image\Picture\PicturePerson\Admin\" />
     <Folder Include="Image\Picture\PicturePerson\Customer\" />
     <Folder Include="Image\Picture\PicturePopcornDrink\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\Logo\Logo.png" />
@@ -367,6 +375,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\Icon\Login_Icon\Employee\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\search-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelAlert.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBL3.GUI.GUI_UserControl
+namespace PBL3.GUI.GUI_AdditionalUserControl
 {
     public partial class ListItem : UserControl
     {

@@ -1,4 +1,4 @@
-﻿namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
+﻿namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl
 {
     partial class SignUp_Customer
     {
@@ -32,26 +32,26 @@
             this.textBoxWarnPass = new System.Windows.Forms.TextBox();
             this.textBoxWarnUser = new System.Windows.Forms.TextBox();
             this.panelPass = new System.Windows.Forms.Panel();
-            this.textBoxPass = new System.Windows.Forms.TextBox();
-            this.textBoxUser = new System.Windows.Forms.TextBox();
             this.panelUser = new System.Windows.Forms.Panel();
             this.textBoxWarnConfirm = new System.Windows.Forms.TextBox();
             this.panelConfirm = new System.Windows.Forms.Panel();
-            this.textBoxConfirm = new System.Windows.Forms.TextBox();
             this.checkBoxAgree = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBoxName = new System.Windows.Forms.TextBox();
             this.panelName = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxWarnName = new System.Windows.Forms.TextBox();
+            this.buttonSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBoxName = new System.Windows.Forms.PictureBox();
             this.iconButtonEyeConfirm = new FontAwesome.Sharp.IconButton();
             this.pictureBoxConfirm = new System.Windows.Forms.PictureBox();
             this.iconButtonEyePass = new FontAwesome.Sharp.IconButton();
             this.pictureBoxUser = new System.Windows.Forms.PictureBox();
             this.pictureBoxPass = new System.Windows.Forms.PictureBox();
-            this.buttonSignUp = new Guna.UI2.WinForms.Guna2Button();
+            this.textBoxUser = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxConfirm = new Guna.UI2.WinForms.Guna2TextBox();
+            this.textBoxName = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxConfirm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
@@ -106,36 +106,6 @@
             this.panelPass.Size = new System.Drawing.Size(250, 1);
             this.panelPass.TabIndex = 29;
             // 
-            // textBoxPass
-            // 
-            this.textBoxPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxPass.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPass.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxPass.HideSelection = false;
-            this.textBoxPass.Location = new System.Drawing.Point(107, 154);
-            this.textBoxPass.Name = "textBoxPass";
-            this.textBoxPass.Size = new System.Drawing.Size(182, 21);
-            this.textBoxPass.TabIndex = 28;
-            this.textBoxPass.TabStop = false;
-            this.textBoxPass.Text = "Password";
-            this.textBoxPass.Click += new System.EventHandler(this.textBoxPass_Click);
-            // 
-            // textBoxUser
-            // 
-            this.textBoxUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxUser.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxUser.HideSelection = false;
-            this.textBoxUser.Location = new System.Drawing.Point(107, 84);
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(200, 21);
-            this.textBoxUser.TabIndex = 25;
-            this.textBoxUser.TabStop = false;
-            this.textBoxUser.Text = "Username or email address";
-            this.textBoxUser.Click += new System.EventHandler(this.textBoxUser_Click);
-            // 
             // panelUser
             // 
             this.panelUser.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -166,21 +136,6 @@
             this.panelConfirm.Name = "panelConfirm";
             this.panelConfirm.Size = new System.Drawing.Size(250, 1);
             this.panelConfirm.TabIndex = 35;
-            // 
-            // textBoxConfirm
-            // 
-            this.textBoxConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxConfirm.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxConfirm.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxConfirm.HideSelection = false;
-            this.textBoxConfirm.Location = new System.Drawing.Point(107, 224);
-            this.textBoxConfirm.Name = "textBoxConfirm";
-            this.textBoxConfirm.Size = new System.Drawing.Size(182, 21);
-            this.textBoxConfirm.TabIndex = 34;
-            this.textBoxConfirm.TabStop = false;
-            this.textBoxConfirm.Text = "Confirm Password";
-            this.textBoxConfirm.Click += new System.EventHandler(this.textBoxConfirm_Click);
             // 
             // checkBoxAgree
             // 
@@ -213,21 +168,6 @@
             this.textBox1.Size = new System.Drawing.Size(94, 20);
             this.textBox1.TabIndex = 34;
             this.textBox1.TabStop = false;
-            // 
-            // textBoxName
-            // 
-            this.textBoxName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxName.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxName.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxName.HideSelection = false;
-            this.textBoxName.Location = new System.Drawing.Point(107, 296);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(200, 21);
-            this.textBoxName.TabIndex = 41;
-            this.textBoxName.TabStop = false;
-            this.textBoxName.Text = "What should we call you?";
-            this.textBoxName.Click += new System.EventHandler(this.textBoxName_Click);
             // 
             // panelName
             // 
@@ -277,6 +217,25 @@
             this.textBoxWarnName.Size = new System.Drawing.Size(250, 35);
             this.textBoxWarnName.TabIndex = 36;
             this.textBoxWarnName.Text = "! Invalid Name";
+            // 
+            // buttonSignUp
+            // 
+            this.buttonSignUp.Animated = true;
+            this.buttonSignUp.BorderRadius = 5;
+            this.buttonSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(164)))), ((int)(((byte)(172)))));
+            this.buttonSignUp.Font = new System.Drawing.Font("Cerebri Sans Heavy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSignUp.ForeColor = System.Drawing.Color.Black;
+            this.buttonSignUp.Location = new System.Drawing.Point(95, 412);
+            this.buttonSignUp.Name = "buttonSignUp";
+            this.buttonSignUp.Size = new System.Drawing.Size(210, 35);
+            this.buttonSignUp.TabIndex = 45;
+            this.buttonSignUp.Text = "Sign Up";
+            this.buttonSignUp.Click += new System.EventHandler(this.buttonSignUp_Click);
+            this.buttonSignUp.MouseHover += new System.EventHandler(this.buttonSignUp_MouseHover);
             // 
             // pictureBoxName
             // 
@@ -351,51 +310,132 @@
             this.pictureBoxPass.TabIndex = 27;
             this.pictureBoxPass.TabStop = false;
             // 
-            // buttonSignUp
+            // textBoxUser
             // 
-            this.buttonSignUp.Animated = true;
-            this.buttonSignUp.BorderRadius = 5;
-            this.buttonSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(164)))), ((int)(((byte)(172)))));
-            this.buttonSignUp.Font = new System.Drawing.Font("Cerebri Sans Heavy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSignUp.ForeColor = System.Drawing.Color.Black;
-            this.buttonSignUp.Location = new System.Drawing.Point(95, 412);
-            this.buttonSignUp.Name = "buttonSignUp";
-            this.buttonSignUp.Size = new System.Drawing.Size(210, 35);
-            this.buttonSignUp.TabIndex = 45;
-            this.buttonSignUp.Text = "Sign Up";
-            this.buttonSignUp.Click += new System.EventHandler(this.buttonSignUp_Click);
-            this.buttonSignUp.MouseHover += new System.EventHandler(this.buttonSignUp_MouseHover);
+            this.textBoxUser.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxUser.BorderThickness = 0;
+            this.textBoxUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxUser.DefaultText = "";
+            this.textBoxUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxUser.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUser.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxUser.Location = new System.Drawing.Point(95, 80);
+            this.textBoxUser.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxUser.Name = "textBoxUser";
+            this.textBoxUser.PasswordChar = '\0';
+            this.textBoxUser.PlaceholderText = "Username/Email address";
+            this.textBoxUser.SelectedText = "";
+            this.textBoxUser.Size = new System.Drawing.Size(208, 26);
+            this.textBoxUser.TabIndex = 46;
+            this.textBoxUser.Click += new System.EventHandler(this.textBoxUser_Click);
+            // 
+            // textBoxPass
+            // 
+            this.textBoxPass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxPass.BorderThickness = 0;
+            this.textBoxPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxPass.DefaultText = "";
+            this.textBoxPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxPass.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPass.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxPass.Location = new System.Drawing.Point(95, 151);
+            this.textBoxPass.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxPass.Name = "textBoxPass";
+            this.textBoxPass.PasswordChar = '\0';
+            this.textBoxPass.PlaceholderText = "Password";
+            this.textBoxPass.SelectedText = "";
+            this.textBoxPass.Size = new System.Drawing.Size(208, 26);
+            this.textBoxPass.TabIndex = 46;
+            this.textBoxPass.Click += new System.EventHandler(this.textBoxPass_Click);
+            // 
+            // textBoxConfirm
+            // 
+            this.textBoxConfirm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxConfirm.BorderThickness = 0;
+            this.textBoxConfirm.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxConfirm.DefaultText = "";
+            this.textBoxConfirm.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxConfirm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxConfirm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxConfirm.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxConfirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxConfirm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxConfirm.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConfirm.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxConfirm.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxConfirm.Location = new System.Drawing.Point(95, 221);
+            this.textBoxConfirm.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxConfirm.Name = "textBoxConfirm";
+            this.textBoxConfirm.PasswordChar = '\0';
+            this.textBoxConfirm.PlaceholderText = "Confirm Password";
+            this.textBoxConfirm.SelectedText = "";
+            this.textBoxConfirm.Size = new System.Drawing.Size(208, 26);
+            this.textBoxConfirm.TabIndex = 46;
+            this.textBoxConfirm.Click += new System.EventHandler(this.textBoxConfirm_Click);
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxName.BorderThickness = 0;
+            this.textBoxName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxName.DefaultText = "";
+            this.textBoxName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.textBoxName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxName.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxName.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxName.Location = new System.Drawing.Point(95, 293);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.PasswordChar = '\0';
+            this.textBoxName.PlaceholderText = "What should we call you?";
+            this.textBoxName.SelectedText = "";
+            this.textBoxName.Size = new System.Drawing.Size(208, 26);
+            this.textBoxName.TabIndex = 46;
+            this.textBoxName.Click += new System.EventHandler(this.textBoxName_Click);
             // 
             // SignUp_Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Controls.Add(this.iconButtonEyeConfirm);
+            this.Controls.Add(this.iconButtonEyePass);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.textBoxConfirm);
+            this.Controls.Add(this.textBoxPass);
+            this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.buttonSignUp);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxName);
-            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.panelName);
             this.Controls.Add(this.checkBoxAgree);
-            this.Controls.Add(this.iconButtonEyeConfirm);
             this.Controls.Add(this.textBoxWarnName);
             this.Controls.Add(this.textBoxWarnConfirm);
             this.Controls.Add(this.panelConfirm);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBoxConfirm);
             this.Controls.Add(this.pictureBoxConfirm);
-            this.Controls.Add(this.iconButtonEyePass);
             this.Controls.Add(this.textBoxWarnPass);
             this.Controls.Add(this.textBoxWarnUser);
             this.Controls.Add(this.panelPass);
             this.Controls.Add(this.pictureBoxUser);
-            this.Controls.Add(this.textBoxPass);
             this.Controls.Add(this.pictureBoxPass);
-            this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.panelUser);
             this.Controls.Add(this.labelSignUp);
             this.Controls.Add(this.label2);
@@ -419,23 +459,23 @@
         private System.Windows.Forms.TextBox textBoxWarnUser;
         private System.Windows.Forms.Panel panelPass;
         private System.Windows.Forms.PictureBox pictureBoxUser;
-        private System.Windows.Forms.TextBox textBoxPass;
         private System.Windows.Forms.PictureBox pictureBoxPass;
-        private System.Windows.Forms.TextBox textBoxUser;
         private System.Windows.Forms.Panel panelUser;
         private FontAwesome.Sharp.IconButton iconButtonEyeConfirm;
         private System.Windows.Forms.TextBox textBoxWarnConfirm;
         private System.Windows.Forms.Panel panelConfirm;
-        private System.Windows.Forms.TextBox textBoxConfirm;
         private System.Windows.Forms.PictureBox pictureBoxConfirm;
         private Guna.UI2.WinForms.Guna2CustomCheckBox checkBoxAgree;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBoxName;
-        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Panel panelName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxWarnName;
         private Guna.UI2.WinForms.Guna2Button buttonSignUp;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxUser;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxPass;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxConfirm;
+        private Guna.UI2.WinForms.Guna2TextBox textBoxName;
     }
 }

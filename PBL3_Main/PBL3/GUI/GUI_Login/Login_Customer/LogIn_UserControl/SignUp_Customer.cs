@@ -13,7 +13,7 @@ using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_Alert;
 using PBL3.Properties;
 
-namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
+namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl
 {
     public partial class SignUp_Customer : UserControl
     {
@@ -28,26 +28,8 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
             textBoxWarnConfirm.Visible = false;
             textBoxWarnName.Visible = false;
         }
-        private void initial_TextBoxandColor()
+        private void initial_Color()
         {
-            if (textBoxUser.Text == "")
-                textBoxUser.Text = "Username or email address";
-            if (textBoxPass.Text == "")
-            {
-                textBoxPass.Text = "Password";
-                iconButtonEyePass.IconChar = FontAwesome.Sharp.IconChar.Eye;
-                textBoxPass.PasswordChar = '\0';
-                checkIconEyeSlashPass = false;
-            }
-            if (textBoxConfirm.Text == "")
-            {
-                textBoxConfirm.Text = "Confirm Password";
-                iconButtonEyeConfirm.IconChar = FontAwesome.Sharp.IconChar.Eye;
-                textBoxConfirm.PasswordChar = '\0';
-                checkIconEyeSlashConfirm = false;
-            }
-            if (textBoxName.Text == "")
-                textBoxName.Text = "What should we call you?";
             panelPass.BackColor = Color.WhiteSmoke;
             textBoxPass.ForeColor = Color.WhiteSmoke;
             panelUser.BackColor = Color.WhiteSmoke;
@@ -59,8 +41,7 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
         }
         private void textBoxUser_Click(object sender, EventArgs e)
         {
-            initial_TextBoxandColor();
-            textBoxUser.Clear();
+            initial_Color();
             if (textBoxWarnUser.Visible == true)
                 textBoxWarnUser.Visible = false;
             panelUser.BackColor = Color.FromArgb(252, 187, 193);
@@ -68,15 +49,15 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
         }
         private void textBoxName_Click(object sender, EventArgs e)
         {
-            initial_TextBoxandColor();
-            textBoxName.Clear();
+            initial_Color();
+            if (textBoxWarnName.Visible == true)
+                textBoxWarnName.Visible = false;
             panelName.BackColor = Color.FromArgb(252, 187, 193);
             textBoxName.ForeColor = Color.FromArgb(252, 187, 193);
         }
         private void textBoxPass_Click(object sender, EventArgs e)
         {
-            initial_TextBoxandColor();
-            textBoxPass.Clear();
+            initial_Color();
             if (textBoxWarnPass.Visible == true)
                 textBoxWarnPass.Visible = false;
             if (!checkIconEyeSlashPass)
@@ -89,8 +70,7 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_ChildForm
         }
         private void textBoxConfirm_Click(object sender, EventArgs e)
         {
-            initial_TextBoxandColor();
-            textBoxConfirm.Clear();
+            initial_Color();
             if (textBoxWarnConfirm.Visible == true)
                 textBoxWarnConfirm.Visible = false;
             if (!checkIconEyeSlashConfirm)
