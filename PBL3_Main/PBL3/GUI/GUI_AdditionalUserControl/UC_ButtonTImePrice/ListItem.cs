@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBL3.GUI.GUI_AdditionalUserControl
+namespace PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice
 {
     public partial class ListItem : UserControl
     {
@@ -46,16 +46,32 @@ namespace PBL3.GUI.GUI_AdditionalUserControl
                 textBoxDescription.Text = value;
             }
         }
-
-        public void ChangePoster(string path)
+        [
+            Category("Data"),
+            Description("Change Poster.")
+        ]
+        public Image PosterImage
         {
-            guna2PictureBoxPoster.Image = Image.FromFile(path);
-            this.guna2PictureBoxPoster.BorderRadius = 10;
+            get
+            {
+                return guna2PictureBoxPoster.Image;
+            }
+            set
+            {
+                guna2PictureBoxPoster.Image = value;
+            }
         }
 
-        public void ChangeRating(float rate)
+        public float Rating
         {
-            guna2RatingStar.Value = rate;
+            get
+            {
+                return guna2RatingStar.Value;
+            }
+            set
+            {
+                guna2RatingStar.Value = value;
+            }
         }
 
         public void ChangeTimeList(string[] time, int[] price)

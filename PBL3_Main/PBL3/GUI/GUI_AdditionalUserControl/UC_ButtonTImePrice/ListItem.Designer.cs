@@ -1,4 +1,4 @@
-﻿namespace PBL3.GUI.GUI_AdditionalUserControl
+﻿namespace PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice
 {
     partial class ListItem
     {

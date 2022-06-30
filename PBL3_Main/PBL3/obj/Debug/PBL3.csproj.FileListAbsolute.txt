@@ -32,5 +32,12 @@ C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.ForgotPassword_Customer.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.SignIn_Customer.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.SignUp_Customer.resources
-C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.ButtonTimePrice.resources
-C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.ListItem.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmployeeMainForm.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.Home.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.Movies.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.PopcornDrinks.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.Showtimes.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.Tickets.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice.ButtonTimePrice.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice.ListItem.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_MovieItem.MovieItem.resources

@@ -24,6 +24,10 @@ namespace PBL3.DTO.DTO_ShowTime
         public string Category { get; set; }
         public double Rate { get; set; }
         public string Description { get; set; }
+
+        public DateTime ReleaseDate { get; set; }
+        public string LinkTrailer { get; set; }
+
         //Navigation Properties
         public ICollection<ShowTime> ShowTimes { get; set; }
     }

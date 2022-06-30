@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBL3.GUI.GUI_AdditionalUserControl
+namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 {
-    public partial class ButtonTimePrice : UserControl
+    public partial class Showtimes : UserControl
     {
-        public ButtonTimePrice(string time, int price)
+        public Showtimes()
         {
             InitializeComponent();
-            this.guna2Button1.Text = time + " " + price + "K";
         }
     }
 }
