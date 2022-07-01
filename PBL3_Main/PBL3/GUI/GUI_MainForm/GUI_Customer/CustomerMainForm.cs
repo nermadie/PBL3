@@ -22,25 +22,26 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private CMF_PopcornDrinks popcornDrinks;
         private CMF_Tickets tickets;
         private CMF_MovieDetail movieDetail;
+        private CMF_Cart cart;
         public CustomerMainForm(Customer cus)
         {
             InitializeComponent();
             shadowPanelPopup.Visible = false;
-            ButtonTickets.Enabled = false;
+            buttonPayment.Visible = false;
             home = new CMF_Home();
             addUserControl(home);
         }
         //Add UserControl
         private void addUserControl(UserControl userControl)
         {
-            currentUserControl?.Dispose();
+            panelCenter.Controls.Clear();
+            UserControl prevUserControl = currentUserControl;
             textBoxSearch.Text = "";
             currentUserControl = userControl;
             userControl.Dock = DockStyle.Fill;
-            panelCenter.Controls.Clear();
             panelCenter.Controls.Add(userControl);
             userControl.BringToFront();
-            currentUserControl = userControl;
+            prevUserControl?.Dispose();
         }
         private void circlePictureBoxOpenPopup_Click(object sender, EventArgs e)
         {
@@ -59,7 +60,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         {
             buttonShowtimes.Checked = false;
             buttonMovies.Checked = false;
-            buttonPurchased.Checked = false;
+            buttonCart.Checked = false;
             buttonPopDrinks.Checked = false;
         }
         //SHOWTIMES
@@ -103,13 +104,13 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             addUserControl(movieDetail);
         }
 
-        private void buttonTickets_Click(object sender, EventArgs e)
-        {
-            uncheckAnotherButton();
-            buttonPurchased.Checked = true;
-            tickets = new CMF_Tickets();
-            addUserControl(tickets);
-        }
+        //private void buttonTickets_Click(object sender, EventArgs e)
+        //{
+        //    uncheckAnotherButton();
+        //    buttonCart.Checked = true;
+        //    tickets = new CMF_Tickets();
+        //    addUserControl(tickets);
+        //}
 
         private void buttonPopDrinks_Click(object sender, EventArgs e)
         {
@@ -117,6 +118,13 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             buttonPopDrinks.Checked = true;
             popcornDrinks = new CMF_PopcornDrinks();
             addUserControl(popcornDrinks);
+        }
+        private void buttonCart_Click(object sender, EventArgs e)
+        {
+            uncheckAnotherButton();
+            buttonCart.Checked = true;
+            cart = new CMF_Cart();
+            addUserControl(cart);
         }
 
         private void guna2CirclePictureBoxLogo_Click(object sender, EventArgs e)
@@ -137,5 +145,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
                 movies.searchMovies(textBoxSearch.Text);
             }
         }
+
     }
 }

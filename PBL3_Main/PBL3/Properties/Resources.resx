@@ -151,8 +151,8 @@
   <data name="profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Admin\profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="checklist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="record" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\record.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +169,11 @@
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\Login_Icon\Customer\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\tickets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checklist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movie_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +190,9 @@
   <data name="checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Alert_Icon\checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cashless-payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="left-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Customer\left-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,11 +202,20 @@
   <data name="Employee_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Employee\Employee_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shopping-cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\shopping-cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="popcorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="popcorn_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\popcorn_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shopping-cart_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\shopping-cart_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\PopcornDrink\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="awning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Background\awning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Customer\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,8 +235,14 @@
   <data name="hello" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Customer\hello.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\PopcornDrink\check.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cancel2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Admin\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\Login_Icon\Customer\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movie-ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie-ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +256,11 @@
   <data name="star1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\tickets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="popcorn_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\popcorn_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checklist_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movie-ticket_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie-ticket_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,7 +283,7 @@
   <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="checklist_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cashless-payment_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

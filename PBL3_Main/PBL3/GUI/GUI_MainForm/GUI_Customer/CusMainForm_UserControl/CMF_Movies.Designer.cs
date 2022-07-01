@@ -68,13 +68,13 @@
             this.guna2ComboBoxSortBy.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBoxSortBy.Font = new System.Drawing.Font("Cerebri Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ComboBoxSortBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBoxSortBy.ItemHeight = 30;
+            this.guna2ComboBoxSortBy.ItemHeight = 35;
             this.guna2ComboBoxSortBy.Items.AddRange(new object[] {
             "Latest",
             "Popular"});
             this.guna2ComboBoxSortBy.Location = new System.Drawing.Point(57, 119);
             this.guna2ComboBoxSortBy.Name = "guna2ComboBoxSortBy";
-            this.guna2ComboBoxSortBy.Size = new System.Drawing.Size(158, 36);
+            this.guna2ComboBoxSortBy.Size = new System.Drawing.Size(158, 41);
             this.guna2ComboBoxSortBy.TabIndex = 1;
             this.guna2ComboBoxSortBy.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBoxTime_SelectedIndexChanged);
             // 
@@ -88,10 +88,10 @@
             this.guna2ComboBoxCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBoxCategory.Font = new System.Drawing.Font("Cerebri Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ComboBoxCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBoxCategory.ItemHeight = 30;
+            this.guna2ComboBoxCategory.ItemHeight = 35;
             this.guna2ComboBoxCategory.Location = new System.Drawing.Point(57, 203);
             this.guna2ComboBoxCategory.Name = "guna2ComboBoxCategory";
-            this.guna2ComboBoxCategory.Size = new System.Drawing.Size(158, 36);
+            this.guna2ComboBoxCategory.Size = new System.Drawing.Size(158, 41);
             this.guna2ComboBoxCategory.TabIndex = 2;
             this.guna2ComboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBoxCategory_SelectedIndexChanged);
             // 
@@ -132,7 +132,7 @@
             this.guna2ElipsePanelSort.BorderRadius = 20;
             this.guna2ElipsePanelSort.TargetControl = this.guna2PanelSort;
             // 
-            // Movies
+            // CMF_Movies
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.textBox1);
@@ -142,7 +142,7 @@
             this.Controls.Add(this.guna2ComboBoxSortBy);
             this.Controls.Add(this.flowLayoutPanel);
             this.Controls.Add(this.guna2PanelSort);
-            this.Name = "Movies";
+            this.Name = "CMF_Movies";
             this.Size = new System.Drawing.Size(1260, 750);
             this.Load += new System.EventHandler(this.Movies_Load);
             this.ResumeLayout(false);

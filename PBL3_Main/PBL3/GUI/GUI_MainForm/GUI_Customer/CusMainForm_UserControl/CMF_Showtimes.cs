@@ -54,11 +54,10 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         private void loadDataintoFlowLayoutPanel(DateTime time, string text = "", bool isSearching = false)
         {
             flowLayoutPanelListST.Controls.Clear();
-            ListItem[] listItems = BLL_Showtimes.Instance.getListItem(time, ImportDatatoPanelDetail, buyTicketbyShowTime_Tickets, text);
-            flowLayoutPanelListST.Controls.AddRange(listItems);
+            flowLayoutPanelListST.Controls.AddRange(BLL_Showtimes.Instance.getListItem(time, ImportDatatoPanelDetail, buyTicketbyShowTime_Tickets, text));
             guna2PanelDetail.Enabled = false;
             guna2PictureBoxPoster.Enabled = false;
-            if (listItems.Length == 0 && !isSearching)
+            if (flowLayoutPanelListST.Controls.Count == 0 && !isSearching)
             {
                 Alert alert = new Alert();
                 alert.showAlert("There is no showtime today", "Please be back later. Thank you.", Alert.enumType.Info);

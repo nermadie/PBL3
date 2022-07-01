@@ -117,7 +117,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
                 res += "" + (seatNum % 10);
                 bookingSeats.Remove(res);
             }
-            textBoxSeats.Text = String.Join(" ,", bookingSeats);
+            textBoxSeats.Text = String.Join(", ", bookingSeats);
             textBoxTotal.Text = (showtime.TicketPrice * bookingSeats.Count).ToString();
         }
     }

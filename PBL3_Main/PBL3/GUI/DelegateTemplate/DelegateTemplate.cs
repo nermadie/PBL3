@@ -10,6 +10,7 @@ namespace PBL3.GUI.DelegateTemplate
 {
     public delegate void Del_void();
     public delegate void Del_string(string str);
+    public delegate void Del_stringbool(string str, bool b);
 
     public delegate void Del_Customer(Customer cus);
     public delegate void Del_Event(object sender, EventArgs e);

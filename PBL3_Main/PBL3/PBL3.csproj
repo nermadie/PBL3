@@ -87,12 +87,14 @@
     <Compile Include="BLL\BLL_Login\BLL_Login_Employee\BLL_SignIn_Employee.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Admin\BLL_Admin.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_MovieDetail.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_PopcornDrink\BLL_PopcornDrink.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Tickets.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_Movies.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Showtimes\BLL_Showtimes.cs" />
     <Compile Include="DTO\DTO_View\CBBItem.cs" />
     <Compile Include="DTO\DTO_View\CBBItem2.cs" />
     <Compile Include="DTO\DTO_View\DTO_Format.cs" />
+    <Compile Include="DTO\DTO_View\Order_Buffer.cs" />
     <Compile Include="EntityFramework\CreateDB.cs" />
     <Compile Include="DTO\DTO_Order\Order.cs" />
     <Compile Include="DTO\DTO_Order\PopcornDrinkOrder.cs" />
@@ -106,11 +108,23 @@
     <Compile Include="DTO\DTO_ShowTIme\Room.cs" />
     <Compile Include="DTO\DTO_ShowTIme\ShowTime.cs" />
     <Compile Include="GUI\DelegateTemplate\DelegateTemplate.cs" />
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_CartPopcornDrink\CartPopcornDrink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_CartPopcornDrink\CartPopcornDrink.Designer.cs">
+      <DependentUpon>CartPopcornDrink.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUI_AdditionalUserControl\UC_MovieItem\MovieItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\GUI_AdditionalUserControl\UC_MovieItem\MovieItem.Designer.cs">
       <DependentUpon>MovieItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_PopcornDrinkItem\PopcornDrinkItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_PopcornDrinkItem\PopcornDrinkItem.Designer.cs">
+      <DependentUpon>PopcornDrinkItem.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_Alert\Alert.cs">
       <SubType>Form</SubType>
@@ -226,11 +240,23 @@
     <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.Designer.cs">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Cart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Cart.Designer.cs">
+      <DependentUpon>CMF_Cart.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.Designer.cs">
       <DependentUpon>CMF_MovieDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Payment.Designer.cs">
+      <DependentUpon>CMF_Payment.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.cs">
       <SubType>UserControl</SubType>
@@ -301,8 +327,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EntityFramework\QLRapChieuPhim.cs" />
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_CartPopcornDrink\CartPopcornDrink.resx">
+      <DependentUpon>CartPopcornDrink.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_MovieItem\MovieItem.resx">
       <DependentUpon>MovieItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_PopcornDrinkItem\PopcornDrinkItem.resx">
+      <DependentUpon>PopcornDrinkItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_Alert\Alert.resx">
       <DependentUpon>Alert.cs</DependentUpon>
@@ -358,8 +390,14 @@
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Cart.resx">
+      <DependentUpon>CMF_Cart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.resx">
       <DependentUpon>CMF_MovieDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Payment.resx">
+      <DependentUpon>CMF_Payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.resx">
       <DependentUpon>CMF_Tickets.cs</DependentUpon>
@@ -605,6 +643,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Background\awning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\PopcornDrink\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\PopcornDrink\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\shopping-cart_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment_color.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

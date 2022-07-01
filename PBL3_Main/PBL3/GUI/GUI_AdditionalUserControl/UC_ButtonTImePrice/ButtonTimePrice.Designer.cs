@@ -35,10 +35,10 @@
             // 
             this.guna2ButtonTimePrice.BorderRadius = 5;
             this.guna2ButtonTimePrice.BorderThickness = 1;
-            this.guna2ButtonTimePrice.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonTimePrice.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonTimePrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonTimePrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonTimePrice.DisabledState.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ButtonTimePrice.DisabledState.CustomBorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ButtonTimePrice.DisabledState.FillColor = System.Drawing.Color.Gainsboro;
+            this.guna2ButtonTimePrice.DisabledState.ForeColor = System.Drawing.Color.Gray;
             this.guna2ButtonTimePrice.FillColor = System.Drawing.Color.Transparent;
             this.guna2ButtonTimePrice.Font = new System.Drawing.Font("Cerebri Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonTimePrice.ForeColor = System.Drawing.Color.Black;
