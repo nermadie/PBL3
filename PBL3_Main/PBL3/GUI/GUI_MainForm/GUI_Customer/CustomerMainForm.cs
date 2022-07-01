@@ -16,21 +16,25 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
     public partial class CustomerMainForm : Form
     {
         private UserControl currentUserControl;
-        private Home home;
-        private Movies movies;
-        private Showtimes showtimes;
-        private PopcornDrinks popcornDrinks;
-        private Tickets tickets;
+        private CMF_Home home;
+        private CMF_Movies movies;
+        private CMF_Showtimes showtimes;
+        private CMF_PopcornDrinks popcornDrinks;
+        private CMF_Tickets tickets;
+        private CMF_MovieDetail movieDetail;
         public CustomerMainForm(Customer cus)
         {
             InitializeComponent();
             shadowPanelPopup.Visible = false;
-            home = new Home();
+            ButtonTickets.Enabled = false;
+            home = new CMF_Home();
             addUserControl(home);
         }
         //Add UserControl
         private void addUserControl(UserControl userControl)
         {
+            currentUserControl?.Dispose();
+            textBoxSearch.Text = "";
             currentUserControl = userControl;
             userControl.Dock = DockStyle.Fill;
             panelCenter.Controls.Clear();
@@ -55,21 +59,29 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         {
             buttonShowtimes.Checked = false;
             buttonMovies.Checked = false;
-            buttonTickets.Checked = false;
+            buttonPurchased.Checked = false;
             buttonPopDrinks.Checked = false;
         }
-        //TICKETS
+        //SHOWTIMES
         private void buttonShowtimes_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
             buttonShowtimes.Checked = true;
-            showtimes = new Showtimes(openBuyTicket);
+            showtimes = new CMF_Showtimes();
+            showtimes.openMovieDetail = openMovieDetail;
+            showtimes.buyTicketbyShowTime_Tickets = openBuyTicket;
             addUserControl(showtimes);
         }
 
+        private void openShowtimeswithSearch(string text)
+        {
+            buttonShowtimes_Click(new object(), EventArgs.Empty);
+            textBoxSearch.Text = text;
+        }
+        //TICKETS
         private void openBuyTicket(string idRoom, DateTime time)
         {
-            tickets = new Tickets(idRoom, time);
+            tickets = new CMF_Tickets(idRoom, time);
             addUserControl(tickets);
         }
         //MOVIES
@@ -77,15 +89,25 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         {
             uncheckAnotherButton();
             buttonMovies.Checked = true;
-            movies = new Movies();
+            movies = new CMF_Movies();
+            movies.openMovieDetail = openMovieDetail;
             addUserControl(movies);
+        }
+        //-->MovieDetail
+        private void openMovieDetail(string idMovie)
+        {
+            uncheckAnotherButton();
+            buttonMovies.Checked = true;
+            movieDetail = new CMF_MovieDetail(idMovie);
+            movieDetail.openShowtimes = openShowtimeswithSearch;
+            addUserControl(movieDetail);
         }
 
         private void buttonTickets_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
-            buttonTickets.Checked = true;
-            tickets = new Tickets();
+            buttonPurchased.Checked = true;
+            tickets = new CMF_Tickets();
             addUserControl(tickets);
         }
 
@@ -93,14 +115,14 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         {
             uncheckAnotherButton();
             buttonPopDrinks.Checked = true;
-            popcornDrinks = new PopcornDrinks();
+            popcornDrinks = new CMF_PopcornDrinks();
             addUserControl(popcornDrinks);
         }
 
         private void guna2CirclePictureBoxLogo_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
-            home = new Home();
+            home = new CMF_Home();
             addUserControl(home);
         }
 
@@ -109,6 +131,10 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             if (currentUserControl == showtimes)
             {
                 showtimes.searchinListST(textBoxSearch.Text);
+            }
+            else if (currentUserControl == movies)
+            {
+                movies.searchMovies(textBoxSearch.Text);
             }
         }
     }

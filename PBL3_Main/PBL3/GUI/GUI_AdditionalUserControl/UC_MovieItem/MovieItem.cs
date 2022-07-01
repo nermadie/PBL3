@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.GUI.DelegateTemplate;
 
 namespace PBL3.GUI.GUI_AdditionalUserControl.UC_MovieItem
 {
     public partial class MovieItem : UserControl
     {
-        public MovieItem()
+        public Del_string callToOpenMovieDetail { get; set; }
+        private string currentIdMovie { get; set; }
+
+        public MovieItem(string idMovie)
         {
             InitializeComponent();
+            currentIdMovie = idMovie;
         }
         [
             Category("Data"),
@@ -48,18 +53,43 @@ namespace PBL3.GUI.GUI_AdditionalUserControl.UC_MovieItem
         }
         [
             Category("Data"),
-            Description("Change Poster.")
+            Description("Change Duration.")
         ]
-        public string PosterImage
+        public string DurationText
         {
             get
             {
-                return pictureBoxPoster.Image.ToString();
+                return labelDuration.Text;
             }
             set
             {
-                pictureBoxPoster.Image = Image.FromFile(value);
+                labelDuration.Text = value;
             }
+        }
+        [
+            Category("Data"),
+            Description("Change Poster.")
+        ]
+        public Image PosterImage
+        {
+            get
+            {
+                return pictureBoxPoster.Image;
+            }
+            set
+            {
+                pictureBoxPoster.Image = value;
+            }
+        }
+
+        private void pictureBoxPoster_Click(object sender, EventArgs e)
+        {
+            callToOpenMovieDetail(currentIdMovie);
+        }
+
+        private void textBoxTitle_Click(object sender, EventArgs e)
+        {
+            pictureBoxPoster_Click(sender, e);
         }
     }
 }

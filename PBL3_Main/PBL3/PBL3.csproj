@@ -85,9 +85,14 @@
     <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignIn_Customer.cs" />
     <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignUp_Customer.cs" />
     <Compile Include="BLL\BLL_Login\BLL_Login_Employee\BLL_SignIn_Employee.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_BuyTicket\BLL_Tickets.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Admin\BLL_Admin.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_MovieDetail.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Tickets.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_Movies.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Showtimes.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Showtimes\BLL_Showtimes.cs" />
+    <Compile Include="DTO\DTO_View\CBBItem.cs" />
+    <Compile Include="DTO\DTO_View\CBBItem2.cs" />
+    <Compile Include="DTO\DTO_View\DTO_Format.cs" />
     <Compile Include="EntityFramework\CreateDB.cs" />
     <Compile Include="DTO\DTO_Order\Order.cs" />
     <Compile Include="DTO\DTO_Order\PopcornDrinkOrder.cs" />
@@ -155,53 +160,113 @@
     <Compile Include="GUI\GUI_Login\Login_Employee\Login_Employee.Designer.cs">
       <DependentUpon>Login_Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Customer.Designer.cs">
+      <DependentUpon>AMF_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Employee.Designer.cs">
+      <DependentUpon>AMF_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Movie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Movie.Designer.cs">
+      <DependentUpon>AMF_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Order.Designer.cs">
+      <DependentUpon>AMF_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrink.Designer.cs">
+      <DependentUpon>AMF_PopcornDrink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrinkOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrinkOrder.Designer.cs">
+      <DependentUpon>AMF_PopcornDrinkOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Room.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Room.Designer.cs">
+      <DependentUpon>AMF_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_ShowTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_ShowTime.Designer.cs">
+      <DependentUpon>AMF_ShowTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_TicketOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_TicketOrder.Designer.cs">
+      <DependentUpon>AMF_TicketOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\DetailForm_PopcornDrink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\DetailForm_PopcornDrink.Designer.cs">
+      <DependentUpon>DetailForm_PopcornDrink.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.Designer.cs">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\MovieDetail.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\MovieDetail.Designer.cs">
-      <DependentUpon>MovieDetail.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.Designer.cs">
+      <DependentUpon>CMF_MovieDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.Designer.cs">
-      <DependentUpon>Tickets.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.Designer.cs">
+      <DependentUpon>CMF_Tickets.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Home.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Home.Designer.cs">
+      <DependentUpon>CMF_Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Movies.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Movies.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Movies.Designer.cs">
-      <DependentUpon>Movies.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Movies.Designer.cs">
+      <DependentUpon>CMF_Movies.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\PopcornDrinks.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_PopcornDrinks.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\PopcornDrinks.Designer.cs">
-      <DependentUpon>PopcornDrinks.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_PopcornDrinks.Designer.cs">
+      <DependentUpon>CMF_PopcornDrinks.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Profile.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Profile.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Profile.Designer.cs">
-      <DependentUpon>Profile.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Profile.Designer.cs">
+      <DependentUpon>CMF_Profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Showtimes.cs">
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Showtimes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Showtimes.Designer.cs">
-      <DependentUpon>Showtimes.cs</DependentUpon>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Showtimes.Designer.cs">
+      <DependentUpon>CMF_Showtimes.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.cs">
       <SubType>Form</SubType>
@@ -263,23 +328,53 @@
     <EmbeddedResource Include="GUI\GUI_Login\Login_Employee\Login_Employee.resx">
       <DependentUpon>Login_Employee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Customer.resx">
+      <DependentUpon>AMF_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Employee.resx">
+      <DependentUpon>AMF_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Movie.resx">
+      <DependentUpon>AMF_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Order.resx">
+      <DependentUpon>AMF_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrink.resx">
+      <DependentUpon>AMF_PopcornDrink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrinkOrder.resx">
+      <DependentUpon>AMF_PopcornDrinkOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Room.resx">
+      <DependentUpon>AMF_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_ShowTime.resx">
+      <DependentUpon>AMF_ShowTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_TicketOrder.resx">
+      <DependentUpon>AMF_TicketOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.resx">
-      <DependentUpon>Tickets.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.resx">
+      <DependentUpon>CMF_MovieDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.resx">
+      <DependentUpon>CMF_Tickets.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Movies.resx">
-      <DependentUpon>Movies.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Home.resx">
+      <DependentUpon>CMF_Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\PopcornDrinks.resx">
-      <DependentUpon>PopcornDrinks.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Movies.resx">
+      <DependentUpon>CMF_Movies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Showtimes.resx">
-      <DependentUpon>Showtimes.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_PopcornDrinks.resx">
+      <DependentUpon>CMF_PopcornDrinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Showtimes.resx">
+      <DependentUpon>CMF_Showtimes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.resx">
       <DependentUpon>CustomerMainForm.cs</DependentUpon>
@@ -322,7 +417,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\BLL_MainForm\BLL_Admin\" />
     <Folder Include="BLL\BLL_MainForm\BLL_Employee\" />
     <Folder Include="Image\Picture\PictureMovie\" />
     <Folder Include="Image\Picture\PicturePerson\Admin\" />
@@ -493,6 +587,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\Tickets_UserControl\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Picture\PictureHome\MainPic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist_color.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

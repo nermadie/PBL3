@@ -26,8 +26,9 @@ namespace PBL3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerMainForm(new Customer()));
+            //Application.Run(new CustomerMainForm(new Customer()));
             //Application.Run(new ChooseRole());
+            Application.Run(new AdminMainForm(new Admin()));
         }
     }
 }
