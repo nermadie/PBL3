@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.TextFormatting;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_BuyTicket;
+using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Showtimes;
 using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.GUI_Alert;

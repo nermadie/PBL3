@@ -85,9 +85,11 @@
     <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignIn_Customer.cs" />
     <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignUp_Customer.cs" />
     <Compile Include="BLL\BLL_Login\BLL_Login_Employee\BLL_SignIn_Employee.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_BuyTicket\BLL_Tickets.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_MovieDetail.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Tickets.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_Movies.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Showtimes.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Showtimes\BLL_Showtimes.cs" />
+    <Compile Include="DTO\CBBItem\CBBItem.cs" />
     <Compile Include="EntityFramework\CreateDB.cs" />
     <Compile Include="DTO\DTO_Order\Order.cs" />
     <Compile Include="DTO\DTO_Order\PopcornDrinkOrder.cs" />
@@ -265,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\MovieDetail.resx">
+      <DependentUpon>MovieDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.resx">
       <DependentUpon>Tickets.cs</DependentUpon>
@@ -493,6 +498,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\Tickets_UserControl\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Picture\PictureHome\MainPic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\tickets.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Showtimes;
 using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.DelegateTemplate;
@@ -17,12 +18,13 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 {
     public partial class Showtimes : UserControl
     {
+        public Del_string openMovieDetail { get; set; }
         public Del_ShowTime buyTicketbyShowTime_Tickets { get; set; }
         private string currentIdMovie;
-        public Showtimes(Del_ShowTime openBuyTicket)
+        private string currentText = "";
+        public Showtimes()
         {
             InitializeComponent();
-            buyTicketbyShowTime_Tickets = openBuyTicket;
         }
 
         private void Tickets_Load(object sender, EventArgs e)
@@ -34,6 +36,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 
         private void ImportDatatoPanelDetail(string idMovie)
         {
+            currentIdMovie = idMovie;
             Movie temp = BLL_Showtimes.Instance.getMoviebyIdMovie(idMovie);
             guna2PanelDetail.Enabled = true;
             guna2PictureBoxPoster.Enabled = true;
@@ -51,11 +54,11 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         private void loadDataintoFlowLayoutPanel(DateTime time, string text = "", bool isSearching = false)
         {
             flowLayoutPanelListST.Controls.Clear();
-            Control[] controls = BLL_Showtimes.Instance.getListItem(time, ImportDatatoPanelDetail, buyTicketbyShowTime_Tickets, text);
-            flowLayoutPanelListST.Controls.AddRange(controls);
+            ListItem[] listItems = BLL_Showtimes.Instance.getListItem(time, ImportDatatoPanelDetail, buyTicketbyShowTime_Tickets, text);
+            flowLayoutPanelListST.Controls.AddRange(listItems);
             guna2PanelDetail.Enabled = false;
             guna2PictureBoxPoster.Enabled = false;
-            if (controls.Length == 0 && !isSearching)
+            if (listItems.Length == 0 && !isSearching)
             {
                 Alert alert = new Alert();
                 alert.showAlert("There is no showtime today", "Please be back later. Thank you.", Alert.enumType.Info);
@@ -63,16 +66,17 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         }
         private void guna2ButtonMoreDetail_Click(object sender, EventArgs e)
         {
-
+            openMovieDetail(currentIdMovie);
         }
 
         private void dateTimePicker_ValueChanged(object sender, EventArgs e)
         {
-            loadDataintoFlowLayoutPanel(dateTimePicker.Value);
+            loadDataintoFlowLayoutPanel(dateTimePicker.Value, currentText);
         }
 
         public void searchinListST(string text)
         {
+            currentText = text;
             loadDataintoFlowLayoutPanel(dateTimePicker.Value, text, true);
         }
     }

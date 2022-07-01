@@ -58,6 +58,7 @@
             this.Controls.Add(this.guna2ButtonTimePrice);
             this.Name = "ButtonTimePrice";
             this.Size = new System.Drawing.Size(71, 48);
+            this.Load += new System.EventHandler(this.ButtonTimePrice_Load);
             this.ResumeLayout(false);
 
         }

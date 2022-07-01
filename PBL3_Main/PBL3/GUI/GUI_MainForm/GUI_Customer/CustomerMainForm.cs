@@ -21,16 +21,20 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private Showtimes showtimes;
         private PopcornDrinks popcornDrinks;
         private Tickets tickets;
+        private MovieDetail movieDetail;
         public CustomerMainForm(Customer cus)
         {
             InitializeComponent();
             shadowPanelPopup.Visible = false;
+            ButtonTickets.Enabled = false;
             home = new Home();
             addUserControl(home);
         }
         //Add UserControl
         private void addUserControl(UserControl userControl)
         {
+            currentUserControl?.Dispose();
+            textBoxSearch.Text = "";
             currentUserControl = userControl;
             userControl.Dock = DockStyle.Fill;
             panelCenter.Controls.Clear();
@@ -55,18 +59,25 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         {
             buttonShowtimes.Checked = false;
             buttonMovies.Checked = false;
-            buttonTickets.Checked = false;
+            buttonMyCart.Checked = false;
             buttonPopDrinks.Checked = false;
         }
-        //TICKETS
+        //SHOWTIMES
         private void buttonShowtimes_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
             buttonShowtimes.Checked = true;
-            showtimes = new Showtimes(openBuyTicket);
+            showtimes = new Showtimes();
+            showtimes.openMovieDetail = openMovieDetail;
+            showtimes.buyTicketbyShowTime_Tickets = openBuyTicket;
             addUserControl(showtimes);
         }
 
+        private void openShowtimeswithSearch(string text)
+        {
+            buttonShowtimes_Click(new object(), EventArgs.Empty);
+            textBoxSearch.Text = text;
+        }
         private void openBuyTicket(string idRoom, DateTime time)
         {
             tickets = new Tickets(idRoom, time);
@@ -78,13 +89,23 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             uncheckAnotherButton();
             buttonMovies.Checked = true;
             movies = new Movies();
+            movies.openMovieDetail = openMovieDetail;
             addUserControl(movies);
+        }
+        //-->MovieDetail
+        private void openMovieDetail(string idMovie)
+        {
+            uncheckAnotherButton();
+            buttonMovies.Checked = true;
+            movieDetail = new MovieDetail(idMovie);
+            movieDetail.openShowtimes = openShowtimeswithSearch;
+            addUserControl(movieDetail);
         }
 
         private void buttonTickets_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
-            buttonTickets.Checked = true;
+            buttonMyCart.Checked = true;
             tickets = new Tickets();
             addUserControl(tickets);
         }
@@ -109,6 +130,10 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             if (currentUserControl == showtimes)
             {
                 showtimes.searchinListST(textBoxSearch.Text);
+            }
+            else if (currentUserControl == movies)
+            {
+                movies.searchMovies(textBoxSearch.Text);
             }
         }
     }

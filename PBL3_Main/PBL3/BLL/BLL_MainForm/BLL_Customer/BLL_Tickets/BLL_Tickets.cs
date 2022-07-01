@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.EntityFramework;
 
-namespace PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_BuyTicket
+namespace PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets
 {
     public class BLL_Tickets
     {

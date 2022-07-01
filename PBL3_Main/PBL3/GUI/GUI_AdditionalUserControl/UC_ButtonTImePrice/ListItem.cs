@@ -17,11 +17,10 @@ namespace PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice
         public Del_ShowTime buyTicketbyShowTime_ListItem { get; set; }
         public Del_Movie importDatatoPanelDetail { get; set; }
         private string idMovie;
-        public ListItem(string idMovie, Del_ShowTime openBuyTicket)
+        public ListItem(string idMovie)
         {
             InitializeComponent();
             this.idMovie = idMovie;
-            this.buyTicketbyShowTime_ListItem = openBuyTicket;
         }
         [
             Category("Data"),

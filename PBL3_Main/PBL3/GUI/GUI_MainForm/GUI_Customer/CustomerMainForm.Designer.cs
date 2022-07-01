@@ -44,7 +44,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.buttonShowtimes = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.buttonMovies = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.buttonPopDrinks = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.buttonTickets = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.buttonMyCart = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.textBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBoxMin = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBoxMax = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -59,6 +59,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.guna2CirclePictureBoxLogo = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panelCenter = new System.Windows.Forms.Panel();
             this.guna2TransitionClosePopup = new Guna.UI2.WinForms.Guna2Transition();
+            this.ButtonTickets = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.shadowPanelPopup.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelNav.SuspendLayout();
@@ -172,7 +173,8 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.panelTitle.Controls.Add(this.buttonShowtimes);
             this.panelTitle.Controls.Add(this.buttonMovies);
             this.panelTitle.Controls.Add(this.buttonPopDrinks);
-            this.panelTitle.Controls.Add(this.buttonTickets);
+            this.panelTitle.Controls.Add(this.ButtonTickets);
+            this.panelTitle.Controls.Add(this.buttonMyCart);
             this.panelTitle.Controls.Add(this.textBoxSearch);
             this.panelTitle.Controls.Add(this.guna2ControlBoxMin);
             this.panelTitle.Controls.Add(this.guna2ControlBoxMax);
@@ -277,34 +279,34 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.buttonPopDrinks.Text = "Popcorn/Drinks";
             this.buttonPopDrinks.Click += new System.EventHandler(this.buttonPopDrinks_Click);
             // 
-            // buttonTickets
+            // buttonMyCart
             // 
-            this.buttonTickets.Animated = true;
-            this.buttonTickets.BorderRadius = 10;
-            this.buttonTickets.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TransitionClosePopup.SetDecoration(this.buttonTickets, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.buttonTickets, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonTickets.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonTickets.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonTickets.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonTickets.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonTickets.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonTickets.FillColor = System.Drawing.Color.Empty;
-            this.buttonTickets.FillColor2 = System.Drawing.Color.Empty;
-            this.buttonTickets.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTickets.ForeColor = System.Drawing.Color.Black;
-            this.buttonTickets.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.buttonTickets.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.buttonTickets.HoverState.ForeColor = System.Drawing.Color.White;
-            this.buttonTickets.HoverState.Image = global::PBL3.Properties.Resources.movie_ticket_color;
-            this.buttonTickets.Image = global::PBL3.Properties.Resources.movie_ticket;
-            this.buttonTickets.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonTickets.Location = new System.Drawing.Point(489, 0);
-            this.buttonTickets.Name = "buttonTickets";
-            this.buttonTickets.Size = new System.Drawing.Size(140, 75);
-            this.buttonTickets.TabIndex = 1;
-            this.buttonTickets.Text = "Tickets";
-            this.buttonTickets.Click += new System.EventHandler(this.buttonTickets_Click);
+            this.buttonMyCart.Animated = true;
+            this.buttonMyCart.BorderRadius = 10;
+            this.buttonMyCart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.buttonMyCart, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.buttonMyCart, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMyCart.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMyCart.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMyCart.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMyCart.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMyCart.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMyCart.FillColor = System.Drawing.Color.Empty;
+            this.buttonMyCart.FillColor2 = System.Drawing.Color.Empty;
+            this.buttonMyCart.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMyCart.ForeColor = System.Drawing.Color.Black;
+            this.buttonMyCart.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.buttonMyCart.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.buttonMyCart.HoverState.ForeColor = System.Drawing.Color.White;
+            this.buttonMyCart.HoverState.Image = global::PBL3.Properties.Resources.movie_ticket_color;
+            this.buttonMyCart.Image = global::PBL3.Properties.Resources.movie_ticket;
+            this.buttonMyCart.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonMyCart.Location = new System.Drawing.Point(489, 0);
+            this.buttonMyCart.Name = "buttonMyCart";
+            this.buttonMyCart.Size = new System.Drawing.Size(140, 75);
+            this.buttonMyCart.TabIndex = 1;
+            this.buttonMyCart.Text = "My Cart";
+            this.buttonMyCart.Click += new System.EventHandler(this.buttonTickets_Click);
             // 
             // textBoxSearch
             // 
@@ -321,7 +323,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.textBoxSearch.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxSearch.IconLeft = global::PBL3.Properties.Resources.search_symbol;
-            this.textBoxSearch.Location = new System.Drawing.Point(712, 18);
+            this.textBoxSearch.Location = new System.Drawing.Point(782, 18);
             this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.PasswordChar = '\0';
@@ -506,6 +508,35 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.guna2TransitionClosePopup.DefaultAnimation = animation1;
             this.guna2TransitionClosePopup.TimeStep = 0.05F;
             // 
+            // ButtonTickets
+            // 
+            this.ButtonTickets.Animated = true;
+            this.ButtonTickets.BorderRadius = 10;
+            this.ButtonTickets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.ButtonTickets, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.ButtonTickets, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.ButtonTickets.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonTickets.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonTickets.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonTickets.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonTickets.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ButtonTickets.FillColor = System.Drawing.Color.Empty;
+            this.ButtonTickets.FillColor2 = System.Drawing.Color.Empty;
+            this.ButtonTickets.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonTickets.ForeColor = System.Drawing.Color.Black;
+            this.ButtonTickets.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ButtonTickets.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.ButtonTickets.HoverState.ForeColor = System.Drawing.Color.White;
+            this.ButtonTickets.HoverState.Image = global::PBL3.Properties.Resources.movie_ticket_color;
+            this.ButtonTickets.Image = global::PBL3.Properties.Resources.movie_ticket;
+            this.ButtonTickets.ImageSize = new System.Drawing.Size(40, 40);
+            this.ButtonTickets.Location = new System.Drawing.Point(635, 0);
+            this.ButtonTickets.Name = "ButtonTickets";
+            this.ButtonTickets.Size = new System.Drawing.Size(140, 75);
+            this.ButtonTickets.TabIndex = 1;
+            this.ButtonTickets.Text = "Tickets";
+            this.ButtonTickets.Click += new System.EventHandler(this.buttonTickets_Click);
+            // 
             // CustomerMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -544,7 +575,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBoxLogo;
-        private Guna.UI2.WinForms.Guna2GradientTileButton buttonTickets;
+        private Guna.UI2.WinForms.Guna2GradientTileButton buttonMyCart;
         private Guna.UI2.WinForms.Guna2GradientTileButton buttonMovies;
         private Guna.UI2.WinForms.Guna2GradientTileButton buttonPopDrinks;
         private Guna.UI2.WinForms.Guna2CirclePictureBox circlePictureBoxUser;
@@ -559,5 +590,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private Guna.UI2.WinForms.Guna2Transition guna2TransitionClosePopup;
         private Guna.UI2.WinForms.Guna2Panel panelNav;
         private Panel panelCenter;
+        private Guna.UI2.WinForms.Guna2GradientTileButton ButtonTickets;
     }
 }

@@ -14,7 +14,7 @@ using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice;
 using PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl;
 
-namespace PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets
+namespace PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Showtimes
 {
     public class BLL_Showtimes
     {
@@ -64,7 +64,7 @@ namespace PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets
         //    return listItems;
         //}
 
-        public Control[] getListItem(DateTime dateTime, Del_Movie importData, Del_ShowTime openBuyTicket, string text)
+        public ListItem[] getListItem(DateTime dateTime, Del_Movie importData, Del_ShowTime buyTicketbyShowTime_Tickets, string text)
         {
             var showTimeinThisDay = db.ShowTimes.Include("Movie").Where(st => DbFunctions.TruncateTime(st.Time) == dateTime.Date).ToList();
             //var movieinThisDay = (from st in showTimeinThisDay group st by st.IdMovie into g select g).ToList();
@@ -75,7 +75,8 @@ namespace PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets
             {
                 string tempKey = movieinThisDay[i].Key;
                 Movie temp = db.Movies.FirstOrDefault(m => m.IdMovie == tempKey);
-                listItems[i] = new ListItem(temp.IdMovie, openBuyTicket);
+                listItems[i] = new ListItem(temp.IdMovie);
+                listItems[i].buyTicketbyShowTime_ListItem = buyTicketbyShowTime_Tickets;
                 listItems[i].TitleText = temp.NameMovie;
                 listItems[i].DescriptionText = temp.Description;
                 listItems[i].Rating = (float)temp.Rate;

@@ -35,21 +35,23 @@
             this.labelDurationValue = new System.Windows.Forms.Label();
             this.labelReleaseDateValue = new System.Windows.Forms.Label();
             this.guna2ButtonMoreDetail = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBoxStar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.textBoxCategory = new System.Windows.Forms.TextBox();
             this.textBoxActor = new System.Windows.Forms.TextBox();
-            this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.labelRateNum = new System.Windows.Forms.Label();
             this.labelDuration = new System.Windows.Forms.Label();
             this.labelCategory = new System.Windows.Forms.Label();
             this.labelReleaseDate = new System.Windows.Forms.Label();
             this.labelRateTitle = new System.Windows.Forms.Label();
             this.labelActor = new System.Windows.Forms.Label();
+            this.flowLayoutPanelDes = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBoxDescription = new System.Windows.Forms.RichTextBox();
             this.guna2PictureBoxPoster = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBoxStar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelDetail.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxStar)).BeginInit();
+            this.flowLayoutPanelDes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxPoster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxStar)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker
@@ -97,13 +99,13 @@
             this.guna2PanelDetail.Controls.Add(this.textBoxTitle);
             this.guna2PanelDetail.Controls.Add(this.textBoxCategory);
             this.guna2PanelDetail.Controls.Add(this.textBoxActor);
-            this.guna2PanelDetail.Controls.Add(this.textBoxDescription);
             this.guna2PanelDetail.Controls.Add(this.labelRateNum);
             this.guna2PanelDetail.Controls.Add(this.labelDuration);
             this.guna2PanelDetail.Controls.Add(this.labelCategory);
             this.guna2PanelDetail.Controls.Add(this.labelReleaseDate);
             this.guna2PanelDetail.Controls.Add(this.labelRateTitle);
             this.guna2PanelDetail.Controls.Add(this.labelActor);
+            this.guna2PanelDetail.Controls.Add(this.flowLayoutPanelDes);
             this.guna2PanelDetail.Location = new System.Drawing.Point(65, 147);
             this.guna2PanelDetail.Name = "guna2PanelDetail";
             this.guna2PanelDetail.Size = new System.Drawing.Size(346, 568);
@@ -146,17 +148,6 @@
             this.guna2ButtonMoreDetail.Text = "More Detail";
             this.guna2ButtonMoreDetail.Click += new System.EventHandler(this.guna2ButtonMoreDetail_Click);
             // 
-            // guna2PictureBoxStar
-            // 
-            this.guna2PictureBoxStar.Image = global::PBL3.Properties.Resources.star;
-            this.guna2PictureBoxStar.ImageRotate = 0F;
-            this.guna2PictureBoxStar.Location = new System.Drawing.Point(297, 52);
-            this.guna2PictureBoxStar.Name = "guna2PictureBoxStar";
-            this.guna2PictureBoxStar.Size = new System.Drawing.Size(24, 24);
-            this.guna2PictureBoxStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBoxStar.TabIndex = 4;
-            this.guna2PictureBoxStar.TabStop = false;
-            // 
             // textBoxTitle
             // 
             this.textBoxTitle.BackColor = System.Drawing.Color.White;
@@ -196,19 +187,6 @@
             this.textBoxActor.TabIndex = 2;
             this.textBoxActor.Text = "[Actor]";
             // 
-            // textBoxDescription
-            // 
-            this.textBoxDescription.BackColor = System.Drawing.Color.MistyRose;
-            this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxDescription.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDescription.Location = new System.Drawing.Point(31, 263);
-            this.textBoxDescription.Multiline = true;
-            this.textBoxDescription.Name = "textBoxDescription";
-            this.textBoxDescription.ReadOnly = true;
-            this.textBoxDescription.Size = new System.Drawing.Size(285, 96);
-            this.textBoxDescription.TabIndex = 2;
-            this.textBoxDescription.Text = "[Description]";
-            // 
             // labelRateNum
             // 
             this.labelRateNum.AutoSize = true;
@@ -238,9 +216,9 @@
             this.labelCategory.Location = new System.Drawing.Point(27, 437);
             this.labelCategory.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelCategory.Name = "labelCategory";
-            this.labelCategory.Size = new System.Drawing.Size(81, 21);
+            this.labelCategory.Size = new System.Drawing.Size(94, 21);
             this.labelCategory.TabIndex = 1;
-            this.labelCategory.Text = "Category";
+            this.labelCategory.Text = "Categories";
             // 
             // labelReleaseDate
             // 
@@ -271,9 +249,29 @@
             this.labelActor.Location = new System.Drawing.Point(27, 362);
             this.labelActor.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelActor.Name = "labelActor";
-            this.labelActor.Size = new System.Drawing.Size(53, 21);
+            this.labelActor.Size = new System.Drawing.Size(61, 21);
             this.labelActor.TabIndex = 1;
-            this.labelActor.Text = "Actor";
+            this.labelActor.Text = "Actors";
+            // 
+            // flowLayoutPanelDes
+            // 
+            this.flowLayoutPanelDes.AutoScroll = true;
+            this.flowLayoutPanelDes.Controls.Add(this.textBoxDescription);
+            this.flowLayoutPanelDes.Location = new System.Drawing.Point(31, 263);
+            this.flowLayoutPanelDes.Name = "flowLayoutPanelDes";
+            this.flowLayoutPanelDes.Size = new System.Drawing.Size(300, 100);
+            this.flowLayoutPanelDes.TabIndex = 7;
+            // 
+            // textBoxDescription
+            // 
+            this.textBoxDescription.BackColor = System.Drawing.Color.MistyRose;
+            this.textBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDescription.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDescription.Location = new System.Drawing.Point(3, 3);
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.Size = new System.Drawing.Size(287, 93);
+            this.textBoxDescription.TabIndex = 8;
+            this.textBoxDescription.Text = "";
             // 
             // guna2PictureBoxPoster
             // 
@@ -286,6 +284,17 @@
             this.guna2PictureBoxPoster.Size = new System.Drawing.Size(200, 300);
             this.guna2PictureBoxPoster.TabIndex = 4;
             this.guna2PictureBoxPoster.TabStop = false;
+            // 
+            // guna2PictureBoxStar
+            // 
+            this.guna2PictureBoxStar.Image = global::PBL3.Properties.Resources.star;
+            this.guna2PictureBoxStar.ImageRotate = 0F;
+            this.guna2PictureBoxStar.Location = new System.Drawing.Point(297, 52);
+            this.guna2PictureBoxStar.Name = "guna2PictureBoxStar";
+            this.guna2PictureBoxStar.Size = new System.Drawing.Size(24, 24);
+            this.guna2PictureBoxStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBoxStar.TabIndex = 4;
+            this.guna2PictureBoxStar.TabStop = false;
             // 
             // Showtimes
             // 
@@ -300,8 +309,9 @@
             this.Load += new System.EventHandler(this.Tickets_Load);
             this.guna2PanelDetail.ResumeLayout(false);
             this.guna2PanelDetail.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxStar)).EndInit();
+            this.flowLayoutPanelDes.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxPoster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxStar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,7 +323,6 @@
         private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar1;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelDetail;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxPoster;
-        private System.Windows.Forms.TextBox textBoxDescription;
         private System.Windows.Forms.TextBox textBoxTitle;
         private System.Windows.Forms.Label labelActor;
         private System.Windows.Forms.TextBox textBoxActor;
@@ -327,5 +336,7 @@
         private System.Windows.Forms.Label labelDurationValue;
         private System.Windows.Forms.Label labelReleaseDateValue;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonMoreDetail;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelDes;
+        private System.Windows.Forms.RichTextBox textBoxDescription;
     }
 }
