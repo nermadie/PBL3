@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 {
-    public partial class Movies : UserControl
+    public partial class MovieDetail : UserControl
     {
-        public Movies()
+        public MovieDetail()
         {
             InitializeComponent();
-        }
-
-        private void loadDataFilmintoFlowLayoutPanel()
-        {
-            //BLL
         }
     }
 }

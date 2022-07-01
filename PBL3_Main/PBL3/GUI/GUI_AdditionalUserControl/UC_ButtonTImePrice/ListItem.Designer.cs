@@ -32,10 +32,10 @@
             this.guna2PanelAll = new Guna.UI2.WinForms.Guna2Panel();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
             this.guna2RatingStar = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.guna2PictureBoxPoster = new Guna.UI2.WinForms.Guna2PictureBox();
             this.flowLayoutPanelListTime = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2HtmlLabelTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2PictureBoxPoster = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelAll.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxPoster)).BeginInit();
             this.SuspendLayout();
@@ -72,23 +72,11 @@
             // 
             this.guna2RatingStar.Enabled = false;
             this.guna2RatingStar.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RatingStar.Location = new System.Drawing.Point(553, 30);
+            this.guna2RatingStar.Location = new System.Drawing.Point(594, 8);
             this.guna2RatingStar.Name = "guna2RatingStar";
             this.guna2RatingStar.RatingColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2RatingStar.Size = new System.Drawing.Size(120, 28);
+            this.guna2RatingStar.Size = new System.Drawing.Size(96, 24);
             this.guna2RatingStar.TabIndex = 10;
-            // 
-            // guna2PictureBoxPoster
-            // 
-            this.guna2PictureBoxPoster.BorderRadius = 10;
-            this.guna2PictureBoxPoster.ImageRotate = 0F;
-            this.guna2PictureBoxPoster.Location = new System.Drawing.Point(28, 36);
-            this.guna2PictureBoxPoster.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBoxPoster.Name = "guna2PictureBoxPoster";
-            this.guna2PictureBoxPoster.Size = new System.Drawing.Size(139, 171);
-            this.guna2PictureBoxPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBoxPoster.TabIndex = 7;
-            this.guna2PictureBoxPoster.TabStop = false;
             // 
             // flowLayoutPanelListTime
             // 
@@ -108,11 +96,25 @@
             this.guna2HtmlLabelTitle.Size = new System.Drawing.Size(46, 28);
             this.guna2HtmlLabelTitle.TabIndex = 8;
             this.guna2HtmlLabelTitle.Text = "Title";
+            this.guna2HtmlLabelTitle.Click += new System.EventHandler(this.guna2HtmlLabelTitle_Click);
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this.guna2PanelAll;
+            // 
+            // guna2PictureBoxPoster
+            // 
+            this.guna2PictureBoxPoster.BorderRadius = 10;
+            this.guna2PictureBoxPoster.ImageRotate = 0F;
+            this.guna2PictureBoxPoster.Location = new System.Drawing.Point(27, 11);
+            this.guna2PictureBoxPoster.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBoxPoster.Name = "guna2PictureBoxPoster";
+            this.guna2PictureBoxPoster.Size = new System.Drawing.Size(140, 210);
+            this.guna2PictureBoxPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBoxPoster.TabIndex = 7;
+            this.guna2PictureBoxPoster.TabStop = false;
+            this.guna2PictureBoxPoster.Click += new System.EventHandler(this.guna2PictureBoxPoster_Click);
             // 
             // ListItem
             // 

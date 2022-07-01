@@ -85,7 +85,9 @@
     <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignIn_Customer.cs" />
     <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignUp_Customer.cs" />
     <Compile Include="BLL\BLL_Login\BLL_Login_Employee\BLL_SignIn_Employee.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Tickets.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_BuyTicket\BLL_Tickets.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_Movies.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Showtimes.cs" />
     <Compile Include="EntityFramework\CreateDB.cs" />
     <Compile Include="DTO\DTO_Order\Order.cs" />
     <Compile Include="DTO\DTO_Order\PopcornDrinkOrder.cs" />
@@ -159,6 +161,18 @@
     <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.Designer.cs">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\MovieDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\MovieDetail.Designer.cs">
+      <DependentUpon>MovieDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.Designer.cs">
+      <DependentUpon>Tickets.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,12 +202,6 @@
     </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Showtimes.Designer.cs">
       <DependentUpon>Showtimes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.Designer.cs">
-      <DependentUpon>Tickets.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.cs">
       <SubType>Form</SubType>
@@ -258,6 +266,9 @@
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.resx">
+      <DependentUpon>Tickets.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,9 +280,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Showtimes.resx">
       <DependentUpon>Showtimes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\Tickets.resx">
-      <DependentUpon>Tickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.resx">
       <DependentUpon>CustomerMainForm.cs</DependentUpon>

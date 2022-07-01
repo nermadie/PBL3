@@ -36,8 +36,16 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerMainForm));
             this.shadowPanelPopup = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.buttonClosePopup = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonHistory = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonHelp = new Guna.UI2.WinForms.Guna2Button();
             this.buttonEdit = new Guna.UI2.WinForms.Guna2Button();
             this.panelTitle = new Guna.UI2.WinForms.Guna2Panel();
+            this.buttonShowtimes = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.buttonMovies = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.buttonPopDrinks = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.buttonTickets = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.textBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ControlBoxMin = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBoxMax = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBoxClose = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -46,19 +54,11 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2TransitionOpenPopup = new Guna.UI2.WinForms.Guna2Transition();
             this.panelNav = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TransitionClosePopup = new Guna.UI2.WinForms.Guna2Transition();
-            this.buttonTickets = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.buttonMovies = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.buttonPopDrinks = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.buttonShowtimes = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.textBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.buttonClosePopup = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonHistory = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonHelp = new Guna.UI2.WinForms.Guna2Button();
             this.circlePictureBoxOpenPopup = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.circlePictureBoxUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBoxLogo = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panelCenter = new System.Windows.Forms.Panel();
+            this.guna2TransitionClosePopup = new Guna.UI2.WinForms.Guna2Transition();
             this.shadowPanelPopup.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelNav.SuspendLayout();
@@ -85,6 +85,67 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.shadowPanelPopup.Size = new System.Drawing.Size(292, 57);
             this.shadowPanelPopup.TabIndex = 0;
             // 
+            // buttonClosePopup
+            // 
+            this.buttonClosePopup.Animated = true;
+            this.buttonClosePopup.BackgroundImage = global::PBL3.Properties.Resources.record;
+            this.buttonClosePopup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonClosePopup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.buttonClosePopup, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.buttonClosePopup, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonClosePopup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonClosePopup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonClosePopup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonClosePopup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonClosePopup.FillColor = System.Drawing.Color.Transparent;
+            this.buttonClosePopup.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonClosePopup.ForeColor = System.Drawing.Color.White;
+            this.buttonClosePopup.Location = new System.Drawing.Point(264, 16);
+            this.buttonClosePopup.Name = "buttonClosePopup";
+            this.buttonClosePopup.Size = new System.Drawing.Size(15, 15);
+            this.buttonClosePopup.TabIndex = 4;
+            this.buttonClosePopup.Click += new System.EventHandler(this.buttonClosePopup_Click);
+            // 
+            // buttonHistory
+            // 
+            this.buttonHistory.Animated = true;
+            this.buttonHistory.BackgroundImage = global::PBL3.Properties.Resources.parchment;
+            this.buttonHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonHistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.buttonHistory, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.buttonHistory, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonHistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonHistory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonHistory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonHistory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonHistory.FillColor = System.Drawing.Color.Transparent;
+            this.buttonHistory.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonHistory.ForeColor = System.Drawing.Color.White;
+            this.buttonHistory.Location = new System.Drawing.Point(69, 7);
+            this.buttonHistory.Name = "buttonHistory";
+            this.buttonHistory.Size = new System.Drawing.Size(32, 32);
+            this.buttonHistory.TabIndex = 4;
+            // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Animated = true;
+            this.buttonHelp.BackgroundImage = global::PBL3.Properties.Resources.help_desk;
+            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.buttonHelp, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.buttonHelp, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonHelp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonHelp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonHelp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonHelp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonHelp.FillColor = System.Drawing.Color.Transparent;
+            this.buttonHelp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonHelp.ForeColor = System.Drawing.Color.White;
+            this.buttonHelp.Location = new System.Drawing.Point(23, 7);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(32, 32);
+            this.buttonHelp.TabIndex = 4;
+            // 
             // buttonEdit
             // 
             this.buttonEdit.Animated = true;
@@ -108,10 +169,10 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.White;
-            this.panelTitle.Controls.Add(this.buttonTickets);
+            this.panelTitle.Controls.Add(this.buttonShowtimes);
             this.panelTitle.Controls.Add(this.buttonMovies);
             this.panelTitle.Controls.Add(this.buttonPopDrinks);
-            this.panelTitle.Controls.Add(this.buttonShowtimes);
+            this.panelTitle.Controls.Add(this.buttonTickets);
             this.panelTitle.Controls.Add(this.textBoxSearch);
             this.panelTitle.Controls.Add(this.guna2ControlBoxMin);
             this.panelTitle.Controls.Add(this.guna2ControlBoxMax);
@@ -125,6 +186,150 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.panelTitle.ShadowDecoration.BorderRadius = 10;
             this.panelTitle.Size = new System.Drawing.Size(1260, 75);
             this.panelTitle.TabIndex = 1;
+            // 
+            // buttonShowtimes
+            // 
+            this.buttonShowtimes.Animated = true;
+            this.buttonShowtimes.BorderRadius = 10;
+            this.buttonShowtimes.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.buttonShowtimes.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.buttonShowtimes.CheckedState.Image = global::PBL3.Properties.Resources.movie_ticket_color;
+            this.buttonShowtimes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.buttonShowtimes, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.buttonShowtimes, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonShowtimes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonShowtimes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonShowtimes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonShowtimes.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonShowtimes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonShowtimes.FillColor = System.Drawing.Color.Empty;
+            this.buttonShowtimes.FillColor2 = System.Drawing.Color.Empty;
+            this.buttonShowtimes.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonShowtimes.ForeColor = System.Drawing.Color.Black;
+            this.buttonShowtimes.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.buttonShowtimes.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.buttonShowtimes.HoverState.ForeColor = System.Drawing.Color.White;
+            this.buttonShowtimes.HoverState.Image = global::PBL3.Properties.Resources.showtime_color;
+            this.buttonShowtimes.Image = global::PBL3.Properties.Resources.showtime;
+            this.buttonShowtimes.ImageSize = new System.Drawing.Size(35, 35);
+            this.buttonShowtimes.Location = new System.Drawing.Point(51, 0);
+            this.buttonShowtimes.Name = "buttonShowtimes";
+            this.buttonShowtimes.Size = new System.Drawing.Size(140, 75);
+            this.buttonShowtimes.TabIndex = 1;
+            this.buttonShowtimes.Text = "Showtimes";
+            this.buttonShowtimes.Click += new System.EventHandler(this.buttonShowtimes_Click);
+            // 
+            // buttonMovies
+            // 
+            this.buttonMovies.Animated = true;
+            this.buttonMovies.BorderRadius = 10;
+            this.buttonMovies.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.buttonMovies, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.buttonMovies, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMovies.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMovies.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMovies.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMovies.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMovies.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMovies.FillColor = System.Drawing.Color.Empty;
+            this.buttonMovies.FillColor2 = System.Drawing.Color.Empty;
+            this.buttonMovies.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMovies.ForeColor = System.Drawing.Color.Black;
+            this.buttonMovies.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.buttonMovies.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.buttonMovies.HoverState.ForeColor = System.Drawing.Color.White;
+            this.buttonMovies.HoverState.Image = global::PBL3.Properties.Resources.movie_color;
+            this.buttonMovies.Image = global::PBL3.Properties.Resources.movie;
+            this.buttonMovies.ImageSize = new System.Drawing.Size(35, 35);
+            this.buttonMovies.Location = new System.Drawing.Point(197, 0);
+            this.buttonMovies.Name = "buttonMovies";
+            this.buttonMovies.Size = new System.Drawing.Size(140, 75);
+            this.buttonMovies.TabIndex = 1;
+            this.buttonMovies.Text = "Movies";
+            this.buttonMovies.Click += new System.EventHandler(this.buttonMovies_Click);
+            // 
+            // buttonPopDrinks
+            // 
+            this.buttonPopDrinks.Animated = true;
+            this.buttonPopDrinks.BorderRadius = 10;
+            this.buttonPopDrinks.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.buttonPopDrinks, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.buttonPopDrinks, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonPopDrinks.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonPopDrinks.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonPopDrinks.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonPopDrinks.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonPopDrinks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonPopDrinks.FillColor = System.Drawing.Color.Empty;
+            this.buttonPopDrinks.FillColor2 = System.Drawing.Color.Empty;
+            this.buttonPopDrinks.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPopDrinks.ForeColor = System.Drawing.Color.Black;
+            this.buttonPopDrinks.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.buttonPopDrinks.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.buttonPopDrinks.HoverState.ForeColor = System.Drawing.Color.White;
+            this.buttonPopDrinks.HoverState.Image = global::PBL3.Properties.Resources.popcorn_color;
+            this.buttonPopDrinks.Image = global::PBL3.Properties.Resources.popcorn;
+            this.buttonPopDrinks.ImageSize = new System.Drawing.Size(35, 35);
+            this.buttonPopDrinks.Location = new System.Drawing.Point(343, 0);
+            this.buttonPopDrinks.Name = "buttonPopDrinks";
+            this.buttonPopDrinks.Size = new System.Drawing.Size(140, 75);
+            this.buttonPopDrinks.TabIndex = 1;
+            this.buttonPopDrinks.Text = "Popcorn/Drinks";
+            this.buttonPopDrinks.Click += new System.EventHandler(this.buttonPopDrinks_Click);
+            // 
+            // buttonTickets
+            // 
+            this.buttonTickets.Animated = true;
+            this.buttonTickets.BorderRadius = 10;
+            this.buttonTickets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TransitionClosePopup.SetDecoration(this.buttonTickets, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.buttonTickets, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonTickets.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonTickets.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonTickets.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonTickets.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonTickets.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonTickets.FillColor = System.Drawing.Color.Empty;
+            this.buttonTickets.FillColor2 = System.Drawing.Color.Empty;
+            this.buttonTickets.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTickets.ForeColor = System.Drawing.Color.Black;
+            this.buttonTickets.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.buttonTickets.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
+            this.buttonTickets.HoverState.ForeColor = System.Drawing.Color.White;
+            this.buttonTickets.HoverState.Image = global::PBL3.Properties.Resources.movie_ticket_color;
+            this.buttonTickets.Image = global::PBL3.Properties.Resources.movie_ticket;
+            this.buttonTickets.ImageSize = new System.Drawing.Size(40, 40);
+            this.buttonTickets.Location = new System.Drawing.Point(489, 0);
+            this.buttonTickets.Name = "buttonTickets";
+            this.buttonTickets.Size = new System.Drawing.Size(140, 75);
+            this.buttonTickets.TabIndex = 1;
+            this.buttonTickets.Text = "Tickets";
+            this.buttonTickets.Click += new System.EventHandler(this.buttonTickets_Click);
+            // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.BorderRadius = 18;
+            this.textBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TransitionClosePopup.SetDecoration(this.textBoxSearch, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2TransitionOpenPopup.SetDecoration(this.textBoxSearch, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.textBoxSearch.DefaultText = "";
+            this.textBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxSearch.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxSearch.IconLeft = global::PBL3.Properties.Resources.search_symbol;
+            this.textBoxSearch.Location = new System.Drawing.Point(712, 18);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.PasswordChar = '\0';
+            this.textBoxSearch.PlaceholderText = "Search";
+            this.textBoxSearch.SelectedText = "";
+            this.textBoxSearch.Size = new System.Drawing.Size(325, 37);
+            this.textBoxSearch.TabIndex = 5;
+            this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
             // guna2ControlBoxMin
             // 
@@ -224,232 +429,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.panelNav.Size = new System.Drawing.Size(90, 825);
             this.panelNav.TabIndex = 0;
             // 
-            // guna2TransitionClosePopup
-            // 
-            this.guna2TransitionClosePopup.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.guna2TransitionClosePopup.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2TransitionClosePopup.DefaultAnimation = animation1;
-            this.guna2TransitionClosePopup.TimeStep = 0.05F;
-            // 
-            // buttonTickets
-            // 
-            this.buttonTickets.Animated = true;
-            this.buttonTickets.BorderRadius = 10;
-            this.buttonTickets.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.buttonTickets.CheckedState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.buttonTickets.CheckedState.Image = global::PBL3.Properties.Resources.movie_ticket_color;
-            this.buttonTickets.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TransitionClosePopup.SetDecoration(this.buttonTickets, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.buttonTickets, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonTickets.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonTickets.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonTickets.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonTickets.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonTickets.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonTickets.FillColor = System.Drawing.Color.Empty;
-            this.buttonTickets.FillColor2 = System.Drawing.Color.Empty;
-            this.buttonTickets.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTickets.ForeColor = System.Drawing.Color.Black;
-            this.buttonTickets.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.buttonTickets.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.buttonTickets.HoverState.ForeColor = System.Drawing.Color.White;
-            this.buttonTickets.HoverState.Image = global::PBL3.Properties.Resources.movie_ticket_color;
-            this.buttonTickets.Image = global::PBL3.Properties.Resources.movie_ticket;
-            this.buttonTickets.ImageSize = new System.Drawing.Size(40, 40);
-            this.buttonTickets.Location = new System.Drawing.Point(51, 0);
-            this.buttonTickets.Name = "buttonTickets";
-            this.buttonTickets.Size = new System.Drawing.Size(140, 75);
-            this.buttonTickets.TabIndex = 1;
-            this.buttonTickets.Text = "Tickets";
-            this.buttonTickets.Click += new System.EventHandler(this.buttonTickets_Click);
-            // 
-            // buttonMovies
-            // 
-            this.buttonMovies.Animated = true;
-            this.buttonMovies.BorderRadius = 10;
-            this.buttonMovies.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TransitionClosePopup.SetDecoration(this.buttonMovies, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.buttonMovies, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonMovies.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonMovies.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonMovies.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonMovies.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonMovies.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonMovies.FillColor = System.Drawing.Color.Empty;
-            this.buttonMovies.FillColor2 = System.Drawing.Color.Empty;
-            this.buttonMovies.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMovies.ForeColor = System.Drawing.Color.Black;
-            this.buttonMovies.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.buttonMovies.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.buttonMovies.HoverState.ForeColor = System.Drawing.Color.White;
-            this.buttonMovies.HoverState.Image = global::PBL3.Properties.Resources.movie_color;
-            this.buttonMovies.Image = global::PBL3.Properties.Resources.movie;
-            this.buttonMovies.ImageSize = new System.Drawing.Size(35, 35);
-            this.buttonMovies.Location = new System.Drawing.Point(197, 0);
-            this.buttonMovies.Name = "buttonMovies";
-            this.buttonMovies.Size = new System.Drawing.Size(140, 75);
-            this.buttonMovies.TabIndex = 1;
-            this.buttonMovies.Text = "Movies";
-            this.buttonMovies.Click += new System.EventHandler(this.buttonMovies_Click);
-            // 
-            // buttonPopDrinks
-            // 
-            this.buttonPopDrinks.Animated = true;
-            this.buttonPopDrinks.BorderRadius = 10;
-            this.buttonPopDrinks.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TransitionClosePopup.SetDecoration(this.buttonPopDrinks, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.buttonPopDrinks, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonPopDrinks.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonPopDrinks.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonPopDrinks.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonPopDrinks.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonPopDrinks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonPopDrinks.FillColor = System.Drawing.Color.Empty;
-            this.buttonPopDrinks.FillColor2 = System.Drawing.Color.Empty;
-            this.buttonPopDrinks.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPopDrinks.ForeColor = System.Drawing.Color.Black;
-            this.buttonPopDrinks.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.buttonPopDrinks.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.buttonPopDrinks.HoverState.ForeColor = System.Drawing.Color.White;
-            this.buttonPopDrinks.HoverState.Image = global::PBL3.Properties.Resources.popcorn_color;
-            this.buttonPopDrinks.Image = global::PBL3.Properties.Resources.popcorn;
-            this.buttonPopDrinks.ImageSize = new System.Drawing.Size(35, 35);
-            this.buttonPopDrinks.Location = new System.Drawing.Point(489, 0);
-            this.buttonPopDrinks.Name = "buttonPopDrinks";
-            this.buttonPopDrinks.Size = new System.Drawing.Size(140, 75);
-            this.buttonPopDrinks.TabIndex = 1;
-            this.buttonPopDrinks.Text = "Popcorn/Drinks";
-            this.buttonPopDrinks.Click += new System.EventHandler(this.buttonPopDrinks_Click);
-            // 
-            // buttonShowtimes
-            // 
-            this.buttonShowtimes.Animated = true;
-            this.buttonShowtimes.BorderRadius = 10;
-            this.buttonShowtimes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TransitionClosePopup.SetDecoration(this.buttonShowtimes, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.buttonShowtimes, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonShowtimes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonShowtimes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonShowtimes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonShowtimes.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonShowtimes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonShowtimes.FillColor = System.Drawing.Color.Empty;
-            this.buttonShowtimes.FillColor2 = System.Drawing.Color.Empty;
-            this.buttonShowtimes.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonShowtimes.ForeColor = System.Drawing.Color.Black;
-            this.buttonShowtimes.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.buttonShowtimes.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(165)))));
-            this.buttonShowtimes.HoverState.ForeColor = System.Drawing.Color.White;
-            this.buttonShowtimes.HoverState.Image = global::PBL3.Properties.Resources.showtime_color;
-            this.buttonShowtimes.Image = global::PBL3.Properties.Resources.showtime;
-            this.buttonShowtimes.ImageSize = new System.Drawing.Size(35, 35);
-            this.buttonShowtimes.Location = new System.Drawing.Point(343, 0);
-            this.buttonShowtimes.Name = "buttonShowtimes";
-            this.buttonShowtimes.Size = new System.Drawing.Size(140, 75);
-            this.buttonShowtimes.TabIndex = 1;
-            this.buttonShowtimes.Text = "Showtimes";
-            this.buttonShowtimes.Click += new System.EventHandler(this.buttonShowtimes_Click);
-            // 
-            // textBoxSearch
-            // 
-            this.textBoxSearch.BorderRadius = 18;
-            this.textBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TransitionClosePopup.SetDecoration(this.textBoxSearch, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.textBoxSearch, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.textBoxSearch.DefaultText = "";
-            this.textBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxSearch.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxSearch.IconLeft = global::PBL3.Properties.Resources.search_symbol;
-            this.textBoxSearch.Location = new System.Drawing.Point(712, 18);
-            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.PasswordChar = '\0';
-            this.textBoxSearch.PlaceholderText = "Search";
-            this.textBoxSearch.SelectedText = "";
-            this.textBoxSearch.Size = new System.Drawing.Size(325, 37);
-            this.textBoxSearch.TabIndex = 5;
-            // 
-            // buttonClosePopup
-            // 
-            this.buttonClosePopup.Animated = true;
-            this.buttonClosePopup.BackgroundImage = global::PBL3.Properties.Resources.record;
-            this.buttonClosePopup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonClosePopup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TransitionClosePopup.SetDecoration(this.buttonClosePopup, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.buttonClosePopup, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonClosePopup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonClosePopup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonClosePopup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonClosePopup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonClosePopup.FillColor = System.Drawing.Color.Transparent;
-            this.buttonClosePopup.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonClosePopup.ForeColor = System.Drawing.Color.White;
-            this.buttonClosePopup.Location = new System.Drawing.Point(264, 16);
-            this.buttonClosePopup.Name = "buttonClosePopup";
-            this.buttonClosePopup.Size = new System.Drawing.Size(15, 15);
-            this.buttonClosePopup.TabIndex = 4;
-            this.buttonClosePopup.Click += new System.EventHandler(this.buttonClosePopup_Click);
-            // 
-            // buttonHistory
-            // 
-            this.buttonHistory.Animated = true;
-            this.buttonHistory.BackgroundImage = global::PBL3.Properties.Resources.parchment;
-            this.buttonHistory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TransitionClosePopup.SetDecoration(this.buttonHistory, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.buttonHistory, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonHistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonHistory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonHistory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonHistory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonHistory.FillColor = System.Drawing.Color.Transparent;
-            this.buttonHistory.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonHistory.ForeColor = System.Drawing.Color.White;
-            this.buttonHistory.Location = new System.Drawing.Point(69, 7);
-            this.buttonHistory.Name = "buttonHistory";
-            this.buttonHistory.Size = new System.Drawing.Size(32, 32);
-            this.buttonHistory.TabIndex = 4;
-            // 
-            // buttonHelp
-            // 
-            this.buttonHelp.Animated = true;
-            this.buttonHelp.BackgroundImage = global::PBL3.Properties.Resources.help_desk;
-            this.buttonHelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TransitionClosePopup.SetDecoration(this.buttonHelp, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2TransitionOpenPopup.SetDecoration(this.buttonHelp, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.buttonHelp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonHelp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonHelp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonHelp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonHelp.FillColor = System.Drawing.Color.Transparent;
-            this.buttonHelp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonHelp.ForeColor = System.Drawing.Color.White;
-            this.buttonHelp.Location = new System.Drawing.Point(23, 7);
-            this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(32, 32);
-            this.buttonHelp.TabIndex = 4;
-            // 
             // circlePictureBoxOpenPopup
             // 
             this.guna2TransitionClosePopup.SetDecoration(this.circlePictureBoxOpenPopup, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -505,6 +484,28 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.panelCenter.Size = new System.Drawing.Size(1260, 750);
             this.panelCenter.TabIndex = 2;
             // 
+            // guna2TransitionClosePopup
+            // 
+            this.guna2TransitionClosePopup.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2TransitionClosePopup.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2TransitionClosePopup.DefaultAnimation = animation1;
+            this.guna2TransitionClosePopup.TimeStep = 0.05F;
+            // 
             // CustomerMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -543,11 +544,11 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBoxLogo;
-        private Guna.UI2.WinForms.Guna2GradientTileButton buttonShowtimes;
+        private Guna.UI2.WinForms.Guna2GradientTileButton buttonTickets;
         private Guna.UI2.WinForms.Guna2GradientTileButton buttonMovies;
         private Guna.UI2.WinForms.Guna2GradientTileButton buttonPopDrinks;
         private Guna.UI2.WinForms.Guna2CirclePictureBox circlePictureBoxUser;
-        private Guna.UI2.WinForms.Guna2GradientTileButton buttonTickets;
+        private Guna.UI2.WinForms.Guna2GradientTileButton buttonShowtimes;
         private Guna.UI2.WinForms.Guna2CirclePictureBox circlePictureBoxOpenPopup;
         private Guna.UI2.WinForms.Guna2ShadowPanel shadowPanelPopup;
         private Guna.UI2.WinForms.Guna2Button buttonHistory;

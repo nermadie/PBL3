@@ -24,11 +24,11 @@ namespace PBL3.GUI.GUI_AdditionalUserControl.UC_MovieItem
         {
             get
             {
-                return labelTitle.Text;
+                return textBoxTitle.Text;
             }
             set
             {
-                labelTitle.Text = value;
+                textBoxTitle.Text = value;
             }
         }
         [
