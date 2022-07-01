@@ -151,6 +151,9 @@
   <data name="profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Admin\profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="checklist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="record" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\record.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -232,6 +235,9 @@
   <data name="star1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\tickets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="movie-ticket_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie-ticket_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -253,7 +259,7 @@
   <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\tickets.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="checklist_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

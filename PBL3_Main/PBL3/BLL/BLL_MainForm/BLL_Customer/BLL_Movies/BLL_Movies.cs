@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PBL3.DTO.CBBItem;
+using PBL3.DTO.DTO_View;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.EntityFramework;
 
