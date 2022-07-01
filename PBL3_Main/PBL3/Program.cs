@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL3.DTO.DTO_Person;
+using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.GUI_ChooseRole;
 using PBL3.GUI.GUI_Login.Login_Admin;
 using PBL3.GUI.GUI_Login.Login_Customer;
@@ -14,6 +15,7 @@ using PBL3.GUI.GUI_Test;
 using PBL3.GUI.GUI_MainForm;
 using PBL3.GUI.GUI_MainForm.GUI_Admin;
 using PBL3.GUI.GUI_MainForm.GUI_Customer;
+using PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl;
 
 namespace PBL3
 {

@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.DTO.DTO_ShowTime;
+using PBL3.GUI.DelegateTemplate;
 
 namespace PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice
 {
     public partial class ListItem : UserControl
     {
-        public ListItem()
+        public Del_ShowTime buyTicketbyShowTime_ListItem { get; set; }
+        public Del_Movie importDatatoPanelDetail { get; set; }
+        private string idMovie;
+        public ListItem(string idMovie, Del_ShowTime openBuyTicket)
         {
             InitializeComponent();
+            this.idMovie = idMovie;
+            this.buyTicketbyShowTime_ListItem = openBuyTicket;
         }
         [
             Category("Data"),
@@ -74,11 +81,14 @@ namespace PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice
             }
         }
 
-        public void ChangeTimeList(string[] time, int[] price)
+        public void ChangeTimeList(List<ShowTime> showtimes)
         {
-            var buttonTimePrice = new ButtonTimePrice[time.Length];
-            for (int i = 0; i < time.Length; i++)
-                buttonTimePrice[i] = new ButtonTimePrice(time[i], price[i]);
+            var buttonTimePrice = new ButtonTimePrice[showtimes.Count];
+            for (int i = 0; i < showtimes.Count; i++)
+            {
+                buttonTimePrice[i] = new ButtonTimePrice(showtimes[i]);
+                buttonTimePrice[i].buyTicketbyShowTime = buyTicketbyShowTime_ListItem;
+            }
             flowLayoutPanelListTime.Controls.Clear();
             flowLayoutPanelListTime.Controls.AddRange(buttonTimePrice);
             int heightFlowList = ((flowLayoutPanelListTime.Controls.Count - 1) / 6) + 1;
@@ -89,6 +99,16 @@ namespace PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice
         public void ChangeBackColor(Color color)
         {
             guna2PanelAll.BackColor = color;
+        }
+
+        private void guna2HtmlLabelTitle_Click(object sender, EventArgs e)
+        {
+            guna2PictureBoxPoster_Click(sender, e);
+        }
+
+        private void guna2PictureBoxPoster_Click(object sender, EventArgs e)
+        {
+            importDatatoPanelDetail(idMovie);
         }
     }
 }

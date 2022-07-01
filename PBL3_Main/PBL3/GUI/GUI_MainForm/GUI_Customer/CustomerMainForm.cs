@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL3.DTO.DTO_Person;
+using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl;
 
 namespace PBL3.GUI.GUI_MainForm.GUI_Customer
@@ -16,10 +17,10 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
     {
         private UserControl currentUserControl;
         private Home home;
-        private Tickets tickets;
         private Movies movies;
         private Showtimes showtimes;
         private PopcornDrinks popcornDrinks;
+        private Tickets tickets;
         public CustomerMainForm(Customer cus)
         {
             InitializeComponent();
@@ -35,6 +36,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             panelCenter.Controls.Clear();
             panelCenter.Controls.Add(userControl);
             userControl.BringToFront();
+            currentUserControl = userControl;
         }
         private void circlePictureBoxOpenPopup_Click(object sender, EventArgs e)
         {
@@ -51,19 +53,26 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
 
         private void uncheckAnotherButton()
         {
-            buttonTickets.Checked = false;
-            buttonMovies.Checked = false;
             buttonShowtimes.Checked = false;
+            buttonMovies.Checked = false;
+            buttonTickets.Checked = false;
             buttonPopDrinks.Checked = false;
         }
-        private void buttonTickets_Click(object sender, EventArgs e)
+        //TICKETS
+        private void buttonShowtimes_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
-            buttonTickets.Checked = true;
-            tickets = new Tickets();
-            addUserControl(tickets);
+            buttonShowtimes.Checked = true;
+            showtimes = new Showtimes(openBuyTicket);
+            addUserControl(showtimes);
         }
 
+        private void openBuyTicket(string idRoom, DateTime time)
+        {
+            tickets = new Tickets(idRoom, time);
+            addUserControl(tickets);
+        }
+        //MOVIES
         private void buttonMovies_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
@@ -72,12 +81,12 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             addUserControl(movies);
         }
 
-        private void buttonShowtimes_Click(object sender, EventArgs e)
+        private void buttonTickets_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
-            buttonShowtimes.Checked = true;
-            showtimes = new Showtimes();
-            addUserControl(showtimes);
+            buttonTickets.Checked = true;
+            tickets = new Tickets();
+            addUserControl(tickets);
         }
 
         private void buttonPopDrinks_Click(object sender, EventArgs e)
@@ -93,6 +102,14 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             uncheckAnotherButton();
             home = new Home();
             addUserControl(home);
+        }
+
+        private void textBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (currentUserControl == showtimes)
+            {
+                showtimes.searchinListST(textBoxSearch.Text);
+            }
         }
     }
 }
