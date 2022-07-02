@@ -148,14 +148,14 @@
             this.textBoxRoom = new System.Windows.Forms.TextBox();
             this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.guna2ElipseCount = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.buttonPayNow = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2PanelTotal = new Guna.UI2.WinForms.Guna2Panel();
             this.textBoxTotal = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.guna2ElipseTotal = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.buttonSave = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBoxPoster = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PanelRoom.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
@@ -2564,22 +2564,22 @@
             this.guna2ElipseCount.BorderRadius = 15;
             this.guna2ElipseCount.TargetControl = this.guna2PanelCount;
             // 
-            // guna2GradientButton1
+            // buttonPayNow
             // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BorderRadius = 10;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(989, 655);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(206, 45);
-            this.guna2GradientButton1.TabIndex = 2;
-            this.guna2GradientButton1.Text = "Pay Now";
+            this.buttonPayNow.Animated = true;
+            this.buttonPayNow.BorderRadius = 10;
+            this.buttonPayNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonPayNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonPayNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonPayNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonPayNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonPayNow.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPayNow.ForeColor = System.Drawing.Color.White;
+            this.buttonPayNow.Location = new System.Drawing.Point(989, 655);
+            this.buttonPayNow.Name = "buttonPayNow";
+            this.buttonPayNow.Size = new System.Drawing.Size(206, 45);
+            this.buttonPayNow.TabIndex = 2;
+            this.buttonPayNow.Text = "Pay Now";
             // 
             // label9
             // 
@@ -2629,6 +2629,26 @@
             this.guna2ElipseTotal.BorderRadius = 15;
             this.guna2ElipseTotal.TargetControl = this.guna2PanelTotal;
             // 
+            // buttonSave
+            // 
+            this.buttonSave.Animated = true;
+            this.buttonSave.BorderRadius = 10;
+            this.buttonSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(149)))));
+            this.buttonSave.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(182)))), ((int)(((byte)(150)))));
+            this.buttonSave.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.Location = new System.Drawing.Point(844, 655);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(129, 45);
+            this.buttonSave.TabIndex = 8;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
             // guna2PictureBoxPoster
             // 
             this.guna2PictureBoxPoster.BackColor = System.Drawing.Color.Transparent;
@@ -2641,32 +2661,13 @@
             this.guna2PictureBoxPoster.TabIndex = 5;
             this.guna2PictureBoxPoster.TabStop = false;
             // 
-            // guna2GradientButton2
-            // 
-            this.guna2GradientButton2.Animated = true;
-            this.guna2GradientButton2.BorderRadius = 10;
-            this.guna2GradientButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(149)))));
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(182)))), ((int)(((byte)(150)))));
-            this.guna2GradientButton2.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(844, 655);
-            this.guna2GradientButton2.Name = "guna2GradientButton2";
-            this.guna2GradientButton2.Size = new System.Drawing.Size(129, 45);
-            this.guna2GradientButton2.TabIndex = 8;
-            this.guna2GradientButton2.Text = "Save";
-            // 
             // CMF_Tickets
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.guna2GradientButton2);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.guna2PanelTotal);
             this.Controls.Add(this.guna2PictureBoxPoster);
-            this.Controls.Add(this.guna2GradientButton1);
+            this.Controls.Add(this.buttonPayNow);
             this.Controls.Add(this.guna2PanelCount);
             this.Controls.Add(this.guna2PanelScreen);
             this.Controls.Add(this.guna2PanelRoom);
@@ -2804,7 +2805,7 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2ElipsePanelRoom;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelCount;
         private Guna.UI2.WinForms.Guna2Elipse guna2ElipseCount;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonPayNow;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxPoster;
         private System.Windows.Forms.TextBox textBoxTitle;
         private System.Windows.Forms.TextBox textBoxTicketPrice;
@@ -2821,6 +2822,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.RichTextBox textBoxSeats;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonSave;
     }
 }

@@ -26,6 +26,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         public CustomerMainForm(Customer cus)
         {
             InitializeComponent();
+            cart = new CMF_Cart();
             shadowPanelPopup.Visible = false;
             buttonPayment.Visible = false;
             home = new CMF_Home();
@@ -83,6 +84,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private void openBuyTicket(string idRoom, DateTime time)
         {
             tickets = new CMF_Tickets(idRoom, time);
+            tickets.saveDataTicket = cart.saveDataTicket;
             addUserControl(tickets);
         }
         //MOVIES
@@ -117,14 +119,18 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             uncheckAnotherButton();
             buttonPopDrinks.Checked = true;
             popcornDrinks = new CMF_PopcornDrinks();
+            popcornDrinks.saveDataPD = cart.saveDataPD;
             addUserControl(popcornDrinks);
         }
         private void buttonCart_Click(object sender, EventArgs e)
         {
             uncheckAnotherButton();
             buttonCart.Checked = true;
-            cart = new CMF_Cart();
-            addUserControl(cart);
+            panelCenter.Controls.Clear();
+            textBoxSearch.Text = "";
+            panelCenter.Controls.Add(cart);
+            cart.BringToFront();
+            currentUserControl?.Dispose();
         }
 
         private void guna2CirclePictureBoxLogo_Click(object sender, EventArgs e)

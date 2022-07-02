@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_PopcornDrink;
 using PBL3.DTO.DTO_PopcornDrink;
+using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink;
 using PBL3.GUI.GUI_AdditionalUserControl.UC_PopcornDrinkItem;
+using PBL3.GUI.GUI_Alert;
 
 namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 {
@@ -18,6 +20,8 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
     {
         private List<CartPopcornDrink> listCartPopcornDrink;
         private List<PopcornDrinkItem> listPopcornDrinkItem;
+        public Del_ListCartPopcornDrinks saveDataPD { get; set; }
+
         public CMF_PopcornDrinks()
         {
             InitializeComponent();
@@ -77,6 +81,18 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
             }
 
             textBoxTotal.Text = Total.ToString();
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            saveDataPD(listCartPopcornDrink);
+            Alert alert = new Alert();
+            alert.showAlert("Successful", "PopcornDrinks have been saved to Cart!", Alert.enumType.Success);
+        }
+
+        private void buttonPayNow_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

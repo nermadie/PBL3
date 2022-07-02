@@ -11,12 +11,14 @@ using System.Windows.Media.TextFormatting;
 using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Showtimes;
 using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets;
 using PBL3.DTO.DTO_ShowTime;
+using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_Alert;
 
 namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 {
     public partial class CMF_Tickets : UserControl
     {
+        public Del_ShowTimeListSeat saveDataTicket { get; set; }
         private ShowTime showtime;
         private List<string> bookingSeats;
 
@@ -119,6 +121,13 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
             }
             textBoxSeats.Text = String.Join(", ", bookingSeats);
             textBoxTotal.Text = (showtime.TicketPrice * bookingSeats.Count).ToString();
+        }
+
+        private void buttonSave_Click(object sender, EventArgs e)
+        {
+            saveDataTicket(showtime.IdRoom, showtime.Time, bookingSeats);
+            Alert alert = new Alert();
+            alert.showAlert("Successful", "Tickets have been saved to cart!", Alert.enumType.Success);
         }
     }
 }

@@ -33,8 +33,8 @@
             this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.panelPrice = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.labelPrice = new System.Windows.Forms.Label();
-            this.pictureBoxRemove = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pictureBoxRemove = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
             this.panelPrice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRemove)).BeginInit();
@@ -92,6 +92,11 @@
             this.labelPrice.TabIndex = 1;
             this.labelPrice.Text = "Price";
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 10;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // pictureBoxRemove
             // 
             this.pictureBoxRemove.BackColor = System.Drawing.Color.Transparent;
@@ -102,11 +107,6 @@
             this.pictureBoxRemove.TabIndex = 7;
             this.pictureBoxRemove.TabStop = false;
             this.pictureBoxRemove.Click += new System.EventHandler(this.pictureBoxRemove_Click);
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 10;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // CartPopcornDrink
             // 
