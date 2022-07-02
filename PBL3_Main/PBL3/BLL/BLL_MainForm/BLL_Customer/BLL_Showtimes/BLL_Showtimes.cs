@@ -82,7 +82,7 @@ namespace PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Showtimes
                 listItems[i].Rating = (float)temp.Rate;
                 listItems[i].PosterImage = getImagebyIdMovie(temp.IdMovie);
                 var showTimeByMovieinThisDay =
-                    showTimeinThisDay.Where(st => st.IdMovie == temp.IdMovie).ToList();
+                    showTimeinThisDay.Where(st => st.IdMovie == temp.IdMovie).OrderBy(st => st.Time).ToList();
                 listItems[i].ChangeTimeList(showTimeByMovieinThisDay);
                 //set delegate
                 listItems[i].importDatatoPanelDetail = importData;

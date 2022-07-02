@@ -21,6 +21,12 @@ namespace PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink
             InitializeComponent();
             currentPopcornDrink = idPopcornDrink;
         }
+
+        public CartPopcornDrink()
+        {
+            InitializeComponent();
+        }
+
         [
             Category("Data"),
             Description("Change Title.")

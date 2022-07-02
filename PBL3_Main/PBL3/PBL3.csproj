@@ -87,6 +87,7 @@
     <Compile Include="BLL\BLL_Login\BLL_Login_Employee\BLL_SignIn_Employee.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Admin\BLL_Admin.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_MovieDetail.cs" />
+    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Payment\BLL_Payment.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_PopcornDrink\BLL_PopcornDrink.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Tickets.cs" />
     <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_Movies.cs" />
@@ -119,6 +120,12 @@
     </Compile>
     <Compile Include="GUI\GUI_AdditionalUserControl\UC_MovieItem\MovieItem.Designer.cs">
       <DependentUpon>MovieItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_PDPayment\PDPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_PDPayment\PDPayment.Designer.cs">
+      <DependentUpon>PDPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_AdditionalUserControl\UC_PopcornDrinkItem\PopcornDrinkItem.cs">
       <SubType>UserControl</SubType>
@@ -332,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_MovieItem\MovieItem.resx">
       <DependentUpon>MovieItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_PDPayment\PDPayment.resx">
+      <DependentUpon>PDPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_PopcornDrinkItem\PopcornDrinkItem.resx">
       <DependentUpon>PopcornDrinkItem.cs</DependentUpon>
@@ -667,6 +677,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Background\Credit-Card-PNG-Pic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

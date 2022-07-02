@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             this.flowLayoutPanelItem = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanelChose = new System.Windows.Forms.FlowLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxTotal = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
             this.guna2VScrollBar2 = new Guna.UI2.WinForms.Guna2VScrollBar();
-            this.buttonPayNow = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.buttonBuyNow = new Guna.UI2.WinForms.Guna2GradientButton();
             this.buttonSave = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientPanelPrice = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanelPrice.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,18 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(400, 89);
             this.guna2GradientPanel1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Cerebri Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(25, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "New Order";
             // 
             // flowLayoutPanelChose
             // 
@@ -130,25 +142,25 @@
             this.guna2VScrollBar2.Size = new System.Drawing.Size(18, 351);
             this.guna2VScrollBar2.TabIndex = 6;
             // 
-            // buttonPayNow
+            // buttonBuyNow
             // 
-            this.buttonPayNow.Animated = true;
-            this.buttonPayNow.BorderRadius = 10;
-            this.buttonPayNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonPayNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonPayNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonPayNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonPayNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonPayNow.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(230)))), ((int)(((byte)(207)))));
-            this.buttonPayNow.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.buttonPayNow.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPayNow.ForeColor = System.Drawing.Color.White;
-            this.buttonPayNow.Location = new System.Drawing.Point(187, 97);
-            this.buttonPayNow.Name = "buttonPayNow";
-            this.buttonPayNow.Size = new System.Drawing.Size(181, 45);
-            this.buttonPayNow.TabIndex = 7;
-            this.buttonPayNow.Text = "Pay Now";
-            this.buttonPayNow.Click += new System.EventHandler(this.buttonPayNow_Click);
+            this.buttonBuyNow.Animated = true;
+            this.buttonBuyNow.BorderRadius = 10;
+            this.buttonBuyNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonBuyNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonBuyNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonBuyNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonBuyNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonBuyNow.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(230)))), ((int)(((byte)(207)))));
+            this.buttonBuyNow.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.buttonBuyNow.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuyNow.ForeColor = System.Drawing.Color.White;
+            this.buttonBuyNow.Location = new System.Drawing.Point(187, 97);
+            this.buttonBuyNow.Name = "buttonBuyNow";
+            this.buttonBuyNow.Size = new System.Drawing.Size(181, 45);
+            this.buttonBuyNow.TabIndex = 7;
+            this.buttonBuyNow.Text = "Buy Now";
+            this.buttonBuyNow.Click += new System.EventHandler(this.buttonPayNow_Click);
             // 
             // buttonSave
             // 
@@ -181,24 +193,12 @@
             this.guna2GradientPanelPrice.Controls.Add(this.buttonSave);
             this.guna2GradientPanelPrice.Controls.Add(this.label9);
             this.guna2GradientPanelPrice.Controls.Add(this.textBox2);
-            this.guna2GradientPanelPrice.Controls.Add(this.buttonPayNow);
+            this.guna2GradientPanelPrice.Controls.Add(this.buttonBuyNow);
             this.guna2GradientPanelPrice.Controls.Add(this.textBoxTotal);
             this.guna2GradientPanelPrice.Location = new System.Drawing.Point(803, 523);
             this.guna2GradientPanelPrice.Name = "guna2GradientPanelPrice";
             this.guna2GradientPanelPrice.Size = new System.Drawing.Size(400, 164);
             this.guna2GradientPanelPrice.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cerebri Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "New Order";
             // 
             // CMF_PopcornDrinks
             // 
@@ -231,7 +231,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar1;
         private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar2;
-        private Guna.UI2.WinForms.Guna2GradientButton buttonPayNow;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonBuyNow;
         private Guna.UI2.WinForms.Guna2GradientButton buttonSave;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanelPrice;

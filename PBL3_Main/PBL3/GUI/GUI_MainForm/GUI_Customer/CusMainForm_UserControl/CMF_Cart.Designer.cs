@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -50,29 +50,29 @@
             this.buttonResetPD = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.buttonPayNow = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.buttonCheckout = new Guna.UI2.WinForms.Guna2GradientButton();
             this.textBoxTotal = new System.Windows.Forms.TextBox();
             this.buttonResetAll = new Guna.UI2.WinForms.Guna2GradientButton();
             this.buttonResetTicket = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dataGridViewTicket = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.panelTicket = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridViewPD = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NamePopcornDrink = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PopcornDrinkPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.No = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameMovie = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SeatPurchased = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TicketPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panelTicket = new System.Windows.Forms.Panel();
+            this.panelPD = new System.Windows.Forms.Panel();
+            this.dataGridViewPD = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamePopcornDrink = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PopcornDrinkPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTicket)).BeginInit();
             this.panelTicket.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelPD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,10 +153,12 @@
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 10;
+            this.guna2Elipse1.TargetControl = this.panelPD;
             // 
             // guna2Elipse2
             // 
             this.guna2Elipse2.BorderRadius = 10;
+            this.guna2Elipse2.TargetControl = this.panelTicket;
             // 
             // buttonResetPD
             // 
@@ -201,25 +203,25 @@
             this.textBox2.TabIndex = 7;
             this.textBox2.Text = "đ";
             // 
-            // buttonPayNow
+            // buttonCheckout
             // 
-            this.buttonPayNow.Animated = true;
-            this.buttonPayNow.BorderRadius = 10;
-            this.buttonPayNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonPayNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonPayNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonPayNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonPayNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonPayNow.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(230)))), ((int)(((byte)(207)))));
-            this.buttonPayNow.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
-            this.buttonPayNow.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPayNow.ForeColor = System.Drawing.Color.White;
-            this.buttonPayNow.Location = new System.Drawing.Point(1043, 675);
-            this.buttonPayNow.Name = "buttonPayNow";
-            this.buttonPayNow.Size = new System.Drawing.Size(181, 45);
-            this.buttonPayNow.TabIndex = 7;
-            this.buttonPayNow.Text = "Pay Now";
-            this.buttonPayNow.Click += new System.EventHandler(this.buttonPayNow_Click);
+            this.buttonCheckout.Animated = true;
+            this.buttonCheckout.BorderRadius = 10;
+            this.buttonCheckout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonCheckout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonCheckout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonCheckout.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonCheckout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonCheckout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(230)))), ((int)(((byte)(207)))));
+            this.buttonCheckout.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(248)))), ((int)(((byte)(174)))));
+            this.buttonCheckout.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCheckout.ForeColor = System.Drawing.Color.White;
+            this.buttonCheckout.Location = new System.Drawing.Point(1043, 675);
+            this.buttonCheckout.Name = "buttonCheckout";
+            this.buttonCheckout.Size = new System.Drawing.Size(181, 45);
+            this.buttonCheckout.TabIndex = 7;
+            this.buttonCheckout.Text = "Checkout";
+            this.buttonCheckout.Click += new System.EventHandler(this.buttonPayNow_Click);
             // 
             // textBoxTotal
             // 
@@ -277,21 +279,21 @@
             // 
             this.dataGridViewTicket.AllowUserToAddRows = false;
             this.dataGridViewTicket.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridViewTicket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            this.dataGridViewTicket.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewTicket.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewTicket.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewTicket.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewTicket.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewTicket.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(149)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTicket.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(149)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTicket.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewTicket.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.No,
             this.NameMovie,
@@ -299,14 +301,14 @@
             this.Time,
             this.SeatPurchased,
             this.TicketPrice});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewTicket.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTicket.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewTicket.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewTicket.EnableHeadersVisualStyles = false;
             this.dataGridViewTicket.Location = new System.Drawing.Point(0, 0);
@@ -342,6 +344,55 @@
             this.dataGridViewTicket.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.guna2DataGridViewTicket_RowPostPaint);
             this.dataGridViewTicket.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dataGridViewTicket_RowsRemoved);
             // 
+            // No
+            // 
+            this.No.FillWeight = 30F;
+            this.No.HeaderText = "No.";
+            this.No.Name = "No";
+            this.No.ReadOnly = true;
+            // 
+            // NameMovie
+            // 
+            this.NameMovie.FillWeight = 200F;
+            this.NameMovie.HeaderText = "NameMovie";
+            this.NameMovie.Name = "NameMovie";
+            this.NameMovie.ReadOnly = true;
+            // 
+            // NameRoom
+            // 
+            this.NameRoom.FillWeight = 50F;
+            this.NameRoom.HeaderText = "Room";
+            this.NameRoom.Name = "NameRoom";
+            this.NameRoom.ReadOnly = true;
+            // 
+            // Time
+            // 
+            dataGridViewCellStyle8.Format = "g";
+            dataGridViewCellStyle8.NullValue = null;
+            this.Time.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Time.FillWeight = 120F;
+            this.Time.HeaderText = "Time";
+            this.Time.Name = "Time";
+            this.Time.ReadOnly = true;
+            // 
+            // SeatPurchased
+            // 
+            this.SeatPurchased.FillWeight = 93.27411F;
+            this.SeatPurchased.HeaderText = "SeatPurchased";
+            this.SeatPurchased.Name = "SeatPurchased";
+            this.SeatPurchased.ReadOnly = true;
+            // 
+            // TicketPrice
+            // 
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle9.Format = "N0";
+            dataGridViewCellStyle9.NullValue = "0";
+            this.TicketPrice.DefaultCellStyle = dataGridViewCellStyle9;
+            this.TicketPrice.FillWeight = 70F;
+            this.TicketPrice.HeaderText = "Price";
+            this.TicketPrice.Name = "TicketPrice";
+            this.TicketPrice.ReadOnly = true;
+            // 
             // panelTicket
             // 
             this.panelTicket.BackColor = System.Drawing.Color.White;
@@ -352,48 +403,48 @@
             this.panelTicket.Size = new System.Drawing.Size(1044, 240);
             this.panelTicket.TabIndex = 1;
             // 
-            // panel1
+            // panelPD
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.dataGridViewPD);
-            this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(126, 367);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(720, 240);
-            this.panel1.TabIndex = 1;
+            this.panelPD.BackColor = System.Drawing.Color.White;
+            this.panelPD.Controls.Add(this.dataGridViewPD);
+            this.panelPD.ForeColor = System.Drawing.Color.Transparent;
+            this.panelPD.Location = new System.Drawing.Point(126, 367);
+            this.panelPD.Name = "panelPD";
+            this.panelPD.Size = new System.Drawing.Size(720, 240);
+            this.panelPD.TabIndex = 1;
             // 
             // dataGridViewPD
             // 
             this.dataGridViewPD.AllowUserToAddRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            this.dataGridViewPD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridViewPD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewPD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewPD.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewPD.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewPD.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridViewPD.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Tomato;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewPD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Tomato;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(72)))), ((int)(((byte)(115)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewPD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewPD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewPD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.NamePopcornDrink,
             this.PopcornDrinkPrice,
             this.Quantity});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewPD.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewPD.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewPD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewPD.EnableHeadersVisualStyles = false;
             this.dataGridViewPD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -446,10 +497,10 @@
             // 
             // PopcornDrinkPrice
             // 
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle8.Format = "N0";
-            dataGridViewCellStyle8.NullValue = "0";
-            this.PopcornDrinkPrice.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle3.Format = "N0";
+            dataGridViewCellStyle3.NullValue = "0";
+            this.PopcornDrinkPrice.DefaultCellStyle = dataGridViewCellStyle3;
             this.PopcornDrinkPrice.FillWeight = 50F;
             this.PopcornDrinkPrice.HeaderText = "Price";
             this.PopcornDrinkPrice.Name = "PopcornDrinkPrice";
@@ -457,74 +508,25 @@
             // 
             // Quantity
             // 
-            dataGridViewCellStyle9.Format = "N0";
-            dataGridViewCellStyle9.NullValue = "0";
-            this.Quantity.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Format = "N0";
+            dataGridViewCellStyle4.NullValue = "0";
+            this.Quantity.DefaultCellStyle = dataGridViewCellStyle4;
             this.Quantity.FillWeight = 50F;
             this.Quantity.HeaderText = "Quantity";
             this.Quantity.Name = "Quantity";
             this.Quantity.ReadOnly = true;
             // 
-            // No
-            // 
-            this.No.FillWeight = 30F;
-            this.No.HeaderText = "No.";
-            this.No.Name = "No";
-            this.No.ReadOnly = true;
-            // 
-            // NameMovie
-            // 
-            this.NameMovie.FillWeight = 200F;
-            this.NameMovie.HeaderText = "NameMovie";
-            this.NameMovie.Name = "NameMovie";
-            this.NameMovie.ReadOnly = true;
-            // 
-            // NameRoom
-            // 
-            this.NameRoom.FillWeight = 50F;
-            this.NameRoom.HeaderText = "Room";
-            this.NameRoom.Name = "NameRoom";
-            this.NameRoom.ReadOnly = true;
-            // 
-            // Time
-            // 
-            dataGridViewCellStyle3.Format = "g";
-            dataGridViewCellStyle3.NullValue = null;
-            this.Time.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Time.FillWeight = 120F;
-            this.Time.HeaderText = "Time";
-            this.Time.Name = "Time";
-            this.Time.ReadOnly = true;
-            // 
-            // SeatPurchased
-            // 
-            this.SeatPurchased.FillWeight = 93.27411F;
-            this.SeatPurchased.HeaderText = "SeatPurchased";
-            this.SeatPurchased.Name = "SeatPurchased";
-            this.SeatPurchased.ReadOnly = true;
-            // 
-            // TicketPrice
-            // 
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle4.Format = "N0";
-            dataGridViewCellStyle4.NullValue = "0";
-            this.TicketPrice.DefaultCellStyle = dataGridViewCellStyle4;
-            this.TicketPrice.FillWeight = 70F;
-            this.TicketPrice.HeaderText = "Price";
-            this.TicketPrice.Name = "TicketPrice";
-            this.TicketPrice.ReadOnly = true;
-            // 
             // CMF_Cart
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelPD);
             this.Controls.Add(this.panelTicket);
             this.Controls.Add(this.buttonResetAll);
             this.Controls.Add(this.buttonResetTicket);
             this.Controls.Add(this.buttonResetPD);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.buttonPayNow);
+            this.Controls.Add(this.buttonCheckout);
             this.Controls.Add(this.textBoxTotal);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -538,7 +540,7 @@
             this.guna2GradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTicket)).EndInit();
             this.panelTicket.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.panelPD.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -555,13 +557,13 @@
         private Guna.UI2.WinForms.Guna2GradientButton buttonResetPD;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox2;
-        private Guna.UI2.WinForms.Guna2GradientButton buttonPayNow;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonCheckout;
         private System.Windows.Forms.TextBox textBoxTotal;
         private Guna.UI2.WinForms.Guna2GradientButton buttonResetAll;
         private Guna.UI2.WinForms.Guna2GradientButton buttonResetTicket;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridViewTicket;
         private System.Windows.Forms.Panel panelTicket;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelPD;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridViewPD;
         private System.Windows.Forms.Label labelPDPrice;
         private System.Windows.Forms.Label labelTicketPrice;

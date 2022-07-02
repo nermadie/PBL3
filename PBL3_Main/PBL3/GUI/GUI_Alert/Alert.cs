@@ -103,18 +103,29 @@ namespace PBL3.GUI.GUI_Alert
                 case enumType.Success:
                     this.pictureBox1.Image = Resources._checked;
                     this.BackColor = Color.SeaGreen;
+                    labelDetail.BackColor = Color.SeaGreen;
+                    labelDetail.DisabledState.FillColor = Color.SeaGreen;
+                    labelDetail.DisabledState.ForeColor = Color.White;
                     break;
                 case enumType.Error:
                     this.pictureBox1.Image = Resources.error;
                     this.BackColor = Color.DarkRed;
+                    labelDetail.BackColor = Color.DarkRed;
+                    labelDetail.DisabledState.FillColor = Color.DarkRed;
+                    labelDetail.DisabledState.ForeColor = Color.White;
                     break;
                 case enumType.Info:
                     this.pictureBox1.Image = Resources.info;
                     this.BackColor = Color.RoyalBlue;
+                    labelDetail.BackColor = Color.RoyalBlue;
+                    labelDetail.DisabledState.FillColor = Color.RoyalBlue;
+                    labelDetail.DisabledState.ForeColor = Color.White;
                     break;
                 case enumType.Warning:
                     this.pictureBox1.Image = Resources.warning;
                     this.BackColor = Color.DarkOrange;
+                    labelDetail.DisabledState.FillColor = Color.DarkOrange;
+                    labelDetail.DisabledState.ForeColor = Color.White;
                     break;
             }
             this.labelMessage.Text = message;
