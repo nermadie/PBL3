@@ -17,5 +17,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Employee
         {
             InitializeComponent();
         }
+
     }
 }

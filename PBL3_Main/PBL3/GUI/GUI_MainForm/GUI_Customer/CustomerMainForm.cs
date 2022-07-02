@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL3.BLL;
 using PBL3.DTO.DTO_Person;
 using PBL3.DTO.DTO_ShowTime;
+using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink;
 using PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl;
 
@@ -16,6 +18,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
 {
     public partial class CustomerMainForm : Form
     {
+        public Del_void openLogin { get; set; }
         private UserControl currentUserControl;
         private CMF_Home home;
         private CMF_Movies movies;
@@ -30,6 +33,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         public CustomerMainForm(string idCustomer)
         {
             InitializeComponent();
+            reloadImageUser(idCustomer);
             cart = new CMF_Cart();
             cart.openPayment = openPayment;
             shadowPanelPopup.Visible = false;
@@ -37,6 +41,13 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             home = new CMF_Home();
             addUserControl(home);
             currentCus = idCustomer;
+        }
+
+        private void reloadImageUser(string idPerson)
+        {
+            circlePictureBoxUser.Image = BLL_QLRapchieuphim.Instance.getImagebyIdPerson(idPerson);
+            if (circlePictureBoxUser.Image == null)
+                circlePictureBoxUser.Image = circlePictureBoxUser.ErrorImage;
         }
         //Add UserControl
         private void addUserControl(UserControl userControl)
@@ -203,14 +214,24 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
 
         private void guna2ButtonLogout_Click(object sender, EventArgs e)
         {
-
+            openLogin();
+            this.Close();
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-
+            uncheckAnotherButton();
+            CMF_Profile profile = new CMF_Profile(currentCus);
+            profile.setImageUser = setImageUser;
+            profile.openHome = guna2CirclePictureBoxLogo_Click;
+            profile.logOut = guna2ButtonLogout_Click;
+            addUserControl(profile);
         }
 
+        private void setImageUser(Image image)
+        {
+            circlePictureBoxUser.Image = image;
+        }
         private void guna2ControlBoxClose_Click(object sender, EventArgs e)
         {
             Application.Exit();

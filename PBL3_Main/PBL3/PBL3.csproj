@@ -81,8 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLL_QLRapchieuphim.cs" />
+    <Compile Include="BLL\BLL_QLRapchieuphim2.cs" />
     <Compile Include="DTO\DTO_View\CBBItem.cs" />
-    <Compile Include="DTO\DTO_View\CBBItem2.cs" />
+    <Compile Include="DTO\DTO_View\CBBItemS.cs" />
     <Compile Include="DTO\DTO_View\DTO_Format.cs" />
     <Compile Include="DTO\DTO_View\Order_Buffer.cs" />
     <Compile Include="EntityFramework\CreateDB.cs" />
@@ -406,6 +407,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Payment.resx">
       <DependentUpon>CMF_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Profile.resx">
+      <DependentUpon>CMF_Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.resx">
       <DependentUpon>CMF_Tickets.cs</DependentUpon>
