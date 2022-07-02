@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_PopcornDrink;
+using PBL3.BLL;
 using PBL3.DTO.DTO_PopcornDrink;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink;
@@ -32,13 +32,13 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 
         private void CMF_PopcornDrinks_Load(object sender, EventArgs e)
         {
-            List<PopcornDrink> popcornDrinks = BLL_PopcornDrink.Instance.getListPopcornDrink();
+            List<PopcornDrink> popcornDrinks = BLL_QLRapchieuphim.Instance.getListPopcornDrink();
             foreach (var popcornDrink in popcornDrinks)
             {
                 PopcornDrinkItem temp = new PopcornDrinkItem(popcornDrink.IdPopcornDrink);
                 temp.TitleText = popcornDrink.NamePopcornDrink;
                 temp.PriceText = popcornDrink.PricePopcornDrink.ToString();
-                temp.PosterImage = BLL_PopcornDrink.Instance.getImagebyIdPopcornDrink(popcornDrink.IdPopcornDrink);
+                temp.PosterImage = BLL_QLRapchieuphim.Instance.getImagebyIdPopcornDrink(popcornDrink.IdPopcornDrink);
                 temp.add_removeCart = add_removeCart;
                 listPopcornDrinkItem.Add(temp);
             }
@@ -48,7 +48,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         {
             if (isAdd)
             {
-                PopcornDrink popcornDrink = BLL_PopcornDrink.Instance.getPDbyidPD(idPopcornDrink);
+                PopcornDrink popcornDrink = BLL_QLRapchieuphim.Instance.getPDbyidPD(idPopcornDrink);
                 CartPopcornDrink temp = new CartPopcornDrink(popcornDrink.IdPopcornDrink);
                 temp.add_removeCart = add_removeCart;
                 temp.updateTotal = updateTotal;
@@ -60,7 +60,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
             }
             else
             {
-                PopcornDrink popcornDrink = BLL_PopcornDrink.Instance.getPDbyidPD(idPopcornDrink);
+                PopcornDrink popcornDrink = BLL_QLRapchieuphim.Instance.getPDbyidPD(idPopcornDrink);
                 listCartPopcornDrink = listCartPopcornDrink
                     .Where(cpd => cpd.currentPopcornDrink != popcornDrink.IdPopcornDrink).ToList();
                 flowLayoutPanelChose.Controls.Clear();

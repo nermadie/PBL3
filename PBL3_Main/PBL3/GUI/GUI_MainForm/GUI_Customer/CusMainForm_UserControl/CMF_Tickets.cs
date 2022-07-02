@@ -8,8 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.TextFormatting;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Showtimes;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets;
+using PBL3.BLL;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_Alert;
@@ -33,7 +32,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         public CMF_Tickets(string idRoom, DateTime time)
         {
             InitializeComponent();
-            showtime = BLL_Tickets.Instance.getShowTimebyidRoom_Time(idRoom, time);
+            showtime = BLL_QLRapchieuphim.Instance.getShowTimebyidRoom_Time(idRoom, time);
             ticket_Initial();
             bookingSeats = new List<string>();
             loadRightPanel();
@@ -42,7 +41,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         private void loadRightPanel()
         {
             //Load Right Panel
-            guna2PictureBoxPoster.Image = BLL_Showtimes.Instance.getImagebyIdMovie(showtime.IdMovie);
+            guna2PictureBoxPoster.Image = BLL_QLRapchieuphim.Instance.getImagebyIdMovie(showtime.IdMovie);
             textBoxRoom.Text = showtime.Room.NameRoom;
             textBoxTitle.Text = showtime.Movie.NameMovie;
             textBoxTime.Text = showtime.Time.ToString();
@@ -77,7 +76,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
                     }
                 }
             }
-
             for (int i = 0; i < showtime.Seat.Length; i++)
             {
                 if (showtime.Seat[i] == '1')

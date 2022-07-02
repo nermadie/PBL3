@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Movies;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Showtimes;
+using PBL3.BLL;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_AdditionalUserControl.UC_MovieItem;
@@ -27,7 +26,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         private void Movies_Load(object sender, EventArgs e)
         {
             loadDataFilmintoFlowLayoutPanel();
-            guna2ComboBoxCategory.Items.AddRange(BLL_Movies.Instance.getCBBCategory());
+            guna2ComboBoxCategory.Items.AddRange(BLL_QLRapchieuphim.Instance.getCBBCategory());
             guna2ComboBoxCategory.SelectedIndex = 0;
             guna2ComboBoxSortBy.SelectedIndex = 0;
             checkLoading = true;
@@ -35,12 +34,12 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         private void loadDataFilmintoFlowLayoutPanel(string text_Contains = "", string sortBy = "Latest", string category = "All")
         {
             flowLayoutPanel.Controls.Clear();
-            List<Movie> tempMovie = BLL_Movies.Instance.getMovies(text_Contains, sortBy, category);
+            List<Movie> tempMovie = BLL_QLRapchieuphim.Instance.getMovies(text_Contains, sortBy, category);
             foreach (Movie movie in tempMovie)
             {
                 MovieItem item = new MovieItem(movie.IdMovie);
                 item.callToOpenMovieDetail = openMovieDetail;
-                item.PosterImage = BLL_Showtimes.Instance.getImagebyIdMovie(movie.IdMovie);
+                item.PosterImage = BLL_QLRapchieuphim.Instance.getImagebyIdMovie(movie.IdMovie);
                 item.TitleText = movie.NameMovie;
                 item.ReleaseText = movie.ReleaseDate.ToShortDateString();
                 item.DurationText = movie.Duration.ToString();

@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Movies;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Showtimes;
+using PBL3.BLL;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.DelegateTemplate;
 
@@ -26,8 +25,8 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         }
         private void MovieDetail_Load(object sender, EventArgs e)
         {
-            Movie temp = BLL_MovieDetail.Instance.getMoviebyIdMovie(currentIdMovie);
-            pictureBoxPoster.Image = BLL_Showtimes.Instance.getImagebyIdMovie(currentIdMovie);
+            Movie temp = BLL_QLRapchieuphim.Instance.getMoviebyIdMovie(currentIdMovie);
+            pictureBoxPoster.Image = BLL_QLRapchieuphim.Instance.getImagebyIdMovie(currentIdMovie);
             textBoxTitle.Text = temp.NameMovie;
             textBoxDescription.Text = temp.Description;
             textBoxActor.Text = temp.Actor;
@@ -48,7 +47,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 
         private void guna2ButtonTicket_Click(object sender, EventArgs e)
         {
-            Movie temp = BLL_MovieDetail.Instance.getMoviebyIdMovie(currentIdMovie);
+            Movie temp = BLL_QLRapchieuphim.Instance.getMoviebyIdMovie(currentIdMovie);
             openShowtimes(temp.NameMovie);
         }
     }

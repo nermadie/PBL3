@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_MainForm.BLL_Admin;
+using PBL3.BLL;
 using PBL3.DTO.DTO_PopcornDrink;
 
 namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
@@ -24,7 +24,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
         {
             if (_IdPopcornDrink != null)
             {
-                PopcornDrink pd = BLL_Admin.Instance.Find_PopcornDrink_By_IdPopcornDrink(_IdPopcornDrink);
+                PopcornDrink pd = BLL_QLRapchieuphim.Instance.Find_PopcornDrink_By_IdPopcornDrink(_IdPopcornDrink);
                 textBoxName.Text = pd.NamePopcornDrink;
                 textBoxPrice.Text = pd.PricePopcornDrink.ToString();
             }
@@ -44,7 +44,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
                     NamePopcornDrink = textBoxName.Text,
                     PricePopcornDrink = Convert.ToInt32(textBoxPrice.Text)
                 };
-                MessageBox.Show(BLL_Admin.Instance.AddUpdate_PopcornDrink(pd));
+                MessageBox.Show(BLL_QLRapchieuphim.Instance.AddUpdate_PopcornDrink(pd));
                 DialogResult = DialogResult.OK;
                 Close();
             }

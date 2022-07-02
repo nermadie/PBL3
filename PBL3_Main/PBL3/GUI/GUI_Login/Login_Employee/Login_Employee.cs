@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_Login.BLL_Login_Admin;
-using PBL3.BLL.BLL_Login.BLL_Login_Employee;
+using PBL3.BLL;
 using PBL3.DTO.DTO_Person;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_Alert;
@@ -122,10 +121,10 @@ namespace PBL3.GUI.GUI_Login.Login_Employee
             }
 
             checkFirstTimeGenDB = true;
-            if (BLL_SignIn_Employee.Instance.checkUsernameSignIn(textBoxUser.Text))
+            if (BLL_QLRapchieuphim.Instance.checkUsernameSignInEmployee(textBoxUser.Text))
             {
                 Employee employee;
-                if ((employee = BLL_SignIn_Employee.Instance.checkAccountSignIn(textBoxUser.Text, textBoxPass.Text)) != null)
+                if ((employee = BLL_QLRapchieuphim.Instance.checkAccountSignInEmployee(textBoxUser.Text, textBoxPass.Text)) != null)
                 {
                     EmployeeMainForm amf = new EmployeeMainForm(employee);
                     amf.Show();

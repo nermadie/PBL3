@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_Login.BLL_Login_Admin;
+using PBL3.BLL;
 using PBL3.DTO.DTO_Person;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_Alert;
@@ -120,10 +120,10 @@ namespace PBL3.GUI.GUI_Login.Login_Admin
             }
 
             checkFirstTimeGenDB = true;
-            if (BLL_SignIn_Admin.Instance.checkUsernameSignIn(textBoxUser.Text))
+            if (BLL_QLRapchieuphim.Instance.checkUsernameSignInAdmin(textBoxUser.Text))
             {
                 Admin admin;
-                if ((admin = BLL_SignIn_Admin.Instance.checkAccountSignIn(textBoxUser.Text, textBoxPass.Text)) != null)
+                if ((admin = BLL_QLRapchieuphim.Instance.checkAccountSignInAdmin(textBoxUser.Text, textBoxPass.Text)) != null)
                 {
                     AdminMainForm amf = new AdminMainForm(admin);
                     amf.Show();

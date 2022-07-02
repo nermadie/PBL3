@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets;
+using PBL3.BLL;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink;
@@ -39,7 +39,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         public void saveDataTicket(string idRoom, DateTime time, List<string> seatsPurchased)
         {
             dataGridViewTicket.Rows.Clear();
-            ShowTime tempShowTime = BLL_Tickets.Instance.getShowTimebyidRoom_Time(idRoom, time);
+            ShowTime tempShowTime = BLL_QLRapchieuphim.Instance.getShowTimebyidRoom_Time(idRoom, time);
             currentShowTime = tempShowTime;
             currentseatsPurchased = seatsPurchased;
             foreach (var seat in seatsPurchased)

@@ -18,7 +18,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             if (disposing && (components != null))
             {
                 components.Dispose();
-                Application.Exit();
             }
             base.Dispose(disposing);
         }
@@ -32,8 +31,8 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation8 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation7 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerMainForm));
             this.shadowPanelPopup = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.buttonEdit = new Guna.UI2.WinForms.Guna2Button();
@@ -105,6 +104,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.buttonEdit.Size = new System.Drawing.Size(116, 32);
             this.buttonEdit.TabIndex = 3;
             this.buttonEdit.Text = "Edit profile";
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // panelTitle
             // 
@@ -173,6 +173,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.guna2ControlBoxClose.Name = "guna2ControlBoxClose";
             this.guna2ControlBoxClose.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBoxClose.TabIndex = 4;
+            this.guna2ControlBoxClose.Click += new System.EventHandler(this.guna2ControlBoxClose_Click);
             // 
             // guna2Elipse1
             // 
@@ -193,22 +194,22 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             // 
             this.guna2TransitionOpenPopup.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2TransitionOpenPopup.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2TransitionOpenPopup.DefaultAnimation = animation2;
+            animation8.AnimateOnlyDifferences = true;
+            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
+            animation8.LeafCoeff = 0F;
+            animation8.MaxTime = 1F;
+            animation8.MinTime = 0F;
+            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
+            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
+            animation8.MosaicSize = 0;
+            animation8.Padding = new System.Windows.Forms.Padding(0);
+            animation8.RotateCoeff = 0F;
+            animation8.RotateLimit = 0F;
+            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
+            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
+            animation8.TimeCoeff = 0F;
+            animation8.TransparencyCoeff = 0F;
+            this.guna2TransitionOpenPopup.DefaultAnimation = animation8;
             this.guna2TransitionOpenPopup.TimeStep = 0.05F;
             // 
             // panelNav
@@ -240,22 +241,22 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             // 
             this.guna2TransitionClosePopup.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
             this.guna2TransitionClosePopup.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2TransitionClosePopup.DefaultAnimation = animation1;
+            animation7.AnimateOnlyDifferences = true;
+            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
+            animation7.LeafCoeff = 0F;
+            animation7.MaxTime = 1F;
+            animation7.MinTime = 0F;
+            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
+            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
+            animation7.MosaicSize = 0;
+            animation7.Padding = new System.Windows.Forms.Padding(0);
+            animation7.RotateCoeff = 0F;
+            animation7.RotateLimit = 0F;
+            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
+            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
+            animation7.TimeCoeff = 0F;
+            animation7.TransparencyCoeff = 0F;
+            this.guna2TransitionClosePopup.DefaultAnimation = animation7;
             this.guna2TransitionClosePopup.TimeStep = 0.05F;
             // 
             // buttonClosePopup
@@ -298,6 +299,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.guna2ButtonLogout.Name = "guna2ButtonLogout";
             this.guna2ButtonLogout.Size = new System.Drawing.Size(27, 27);
             this.guna2ButtonLogout.TabIndex = 4;
+            this.guna2ButtonLogout.Click += new System.EventHandler(this.guna2ButtonLogout_Click);
             // 
             // buttonHistory
             // 
@@ -318,6 +320,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             this.buttonHistory.Name = "buttonHistory";
             this.buttonHistory.Size = new System.Drawing.Size(32, 32);
             this.buttonHistory.TabIndex = 4;
+            this.buttonHistory.Click += new System.EventHandler(this.buttonHistory_Click);
             // 
             // buttonShowtimes
             // 

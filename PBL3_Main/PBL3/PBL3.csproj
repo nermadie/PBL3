@@ -80,18 +80,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\BLL_Login\BLL_Login_Admin\BLL_SignIn_Admin.cs" />
-    <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_ForgotPassword_Customer.cs" />
-    <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignIn_Customer.cs" />
-    <Compile Include="BLL\BLL_Login\BLL_Login_Customer\BLL_SignUp_Customer.cs" />
-    <Compile Include="BLL\BLL_Login\BLL_Login_Employee\BLL_SignIn_Employee.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Admin\BLL_Admin.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_MovieDetail.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Payment\BLL_Payment.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_PopcornDrink\BLL_PopcornDrink.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Tickets\BLL_Tickets.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Movies\BLL_Movies.cs" />
-    <Compile Include="BLL\BLL_MainForm\BLL_Customer\BLL_Showtimes\BLL_Showtimes.cs" />
+    <Compile Include="BLL\BLL_QLRapchieuphim.cs" />
     <Compile Include="DTO\DTO_View\CBBItem.cs" />
     <Compile Include="DTO\DTO_View\CBBItem2.cs" />
     <Compile Include="DTO\DTO_View\DTO_Format.cs" />
@@ -253,6 +242,12 @@
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Cart.Designer.cs">
       <DependentUpon>CMF_Cart.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_History.Designer.cs">
+      <DependentUpon>CMF_History.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -403,6 +398,9 @@
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Cart.resx">
       <DependentUpon>CMF_Cart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_History.resx">
+      <DependentUpon>CMF_History.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.resx">
       <DependentUpon>CMF_MovieDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -465,7 +463,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\BLL_MainForm\BLL_Employee\" />
     <Folder Include="Image\Picture\PictureMovie\" />
     <Folder Include="Image\Picture\PicturePerson\Admin\" />
     <Folder Include="Image\Picture\PicturePerson\Customer\" />
