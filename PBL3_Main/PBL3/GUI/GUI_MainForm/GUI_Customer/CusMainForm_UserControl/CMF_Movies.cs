@@ -50,7 +50,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 
         public void searchMovies(string text)
         {
-            loadDataFilmintoFlowLayoutPanel(text);
+            loadDataFilmintoFlowLayoutPanel(text, guna2ComboBoxSortBy.Text, guna2ComboBoxCategory.Text);
             currentTextContains = text;
         }
 

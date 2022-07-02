@@ -137,24 +137,25 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ElipsePanelRoom = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2PanelCount = new Guna.UI2.WinForms.Guna2Panel();
+            this.textBoxSeats = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxTicketPrice = new System.Windows.Forms.TextBox();
-            this.textBoxSeats = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxTime = new System.Windows.Forms.TextBox();
             this.textBoxRoom = new System.Windows.Forms.TextBox();
             this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.guna2ElipseCount = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2PictureBoxPoster = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.buttonPayNow = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2PanelTotal = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ElipseTotal = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.textBoxTotal = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.guna2ElipseTotal = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.buttonSave = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2PictureBoxPoster = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelRoom.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
@@ -166,8 +167,8 @@
             this.guna2Panel1.SuspendLayout();
             this.guna2PanelScreen.SuspendLayout();
             this.guna2PanelCount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxPoster)).BeginInit();
             this.guna2PanelTotal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxPoster)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2PanelRoom
@@ -2435,12 +2436,12 @@
             // guna2PanelCount
             // 
             this.guna2PanelCount.BackColor = System.Drawing.Color.White;
+            this.guna2PanelCount.Controls.Add(this.textBoxSeats);
             this.guna2PanelCount.Controls.Add(this.label8);
             this.guna2PanelCount.Controls.Add(this.label7);
             this.guna2PanelCount.Controls.Add(this.label6);
             this.guna2PanelCount.Controls.Add(this.label5);
             this.guna2PanelCount.Controls.Add(this.textBoxTicketPrice);
-            this.guna2PanelCount.Controls.Add(this.textBoxSeats);
             this.guna2PanelCount.Controls.Add(this.textBox1);
             this.guna2PanelCount.Controls.Add(this.textBoxTime);
             this.guna2PanelCount.Controls.Add(this.textBoxRoom);
@@ -2449,6 +2450,28 @@
             this.guna2PanelCount.Name = "guna2PanelCount";
             this.guna2PanelCount.Size = new System.Drawing.Size(446, 521);
             this.guna2PanelCount.TabIndex = 1;
+            // 
+            // textBoxSeats
+            // 
+            this.textBoxSeats.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSeats.Font = new System.Drawing.Font("Cerebri Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSeats.Location = new System.Drawing.Point(229, 370);
+            this.textBoxSeats.Name = "textBoxSeats";
+            this.textBoxSeats.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBoxSeats.Size = new System.Drawing.Size(197, 96);
+            this.textBoxSeats.TabIndex = 6;
+            this.textBoxSeats.Text = "[Seats]";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cerebri Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label8.Location = new System.Drawing.Point(44, 477);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(136, 26);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Ticket Price:";
             // 
             // label7
             // 
@@ -2494,17 +2517,15 @@
             this.textBoxTicketPrice.TabIndex = 4;
             this.textBoxTicketPrice.Text = "[Ticket Price]";
             // 
-            // textBoxSeats
+            // textBox1
             // 
-            this.textBoxSeats.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSeats.Font = new System.Drawing.Font("Cerebri Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSeats.Location = new System.Drawing.Point(245, 370);
-            this.textBoxSeats.Multiline = true;
-            this.textBoxSeats.Name = "textBoxSeats";
-            this.textBoxSeats.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBoxSeats.Size = new System.Drawing.Size(172, 70);
-            this.textBoxSeats.TabIndex = 4;
-            this.textBoxSeats.Text = "[Seats]";
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Cerebri Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(412, 477);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(44, 27);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "đ";
             // 
             // textBoxTime
             // 
@@ -2543,45 +2564,22 @@
             this.guna2ElipseCount.BorderRadius = 15;
             this.guna2ElipseCount.TargetControl = this.guna2PanelCount;
             // 
-            // guna2GradientButton1
+            // buttonPayNow
             // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.BorderRadius = 10;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(915, 655);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(206, 45);
-            this.guna2GradientButton1.TabIndex = 2;
-            this.guna2GradientButton1.Text = "Continue";
-            // 
-            // guna2PictureBoxPoster
-            // 
-            this.guna2PictureBoxPoster.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBoxPoster.BorderRadius = 10;
-            this.guna2PictureBoxPoster.FillColor = System.Drawing.Color.RosyBrown;
-            this.guna2PictureBoxPoster.ImageRotate = 0F;
-            this.guna2PictureBoxPoster.Location = new System.Drawing.Point(826, 9);
-            this.guna2PictureBoxPoster.Name = "guna2PictureBoxPoster";
-            this.guna2PictureBoxPoster.Size = new System.Drawing.Size(200, 300);
-            this.guna2PictureBoxPoster.TabIndex = 5;
-            this.guna2PictureBoxPoster.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cerebri Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label8.Location = new System.Drawing.Point(44, 477);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(136, 26);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Ticket Price:";
+            this.buttonPayNow.Animated = true;
+            this.buttonPayNow.BorderRadius = 10;
+            this.buttonPayNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonPayNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonPayNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonPayNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonPayNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonPayNow.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPayNow.ForeColor = System.Drawing.Color.White;
+            this.buttonPayNow.Location = new System.Drawing.Point(989, 655);
+            this.buttonPayNow.Name = "buttonPayNow";
+            this.buttonPayNow.Size = new System.Drawing.Size(206, 45);
+            this.buttonPayNow.TabIndex = 2;
+            this.buttonPayNow.Text = "Pay Now";
             // 
             // label9
             // 
@@ -2605,11 +2603,6 @@
             this.guna2PanelTotal.Size = new System.Drawing.Size(446, 63);
             this.guna2PanelTotal.TabIndex = 6;
             // 
-            // guna2ElipseTotal
-            // 
-            this.guna2ElipseTotal.BorderRadius = 15;
-            this.guna2ElipseTotal.TargetControl = this.guna2PanelTotal;
-            // 
             // textBoxTotal
             // 
             this.textBoxTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -2621,16 +2614,6 @@
             this.textBoxTotal.TabIndex = 4;
             this.textBoxTotal.Text = "[Total]";
             // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Cerebri Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(412, 477);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(44, 27);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "đ";
-            // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -2641,16 +2624,54 @@
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "đ";
             // 
-            // BuyTicket
+            // guna2ElipseTotal
+            // 
+            this.guna2ElipseTotal.BorderRadius = 15;
+            this.guna2ElipseTotal.TargetControl = this.guna2PanelTotal;
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.Animated = true;
+            this.buttonSave.BorderRadius = 10;
+            this.buttonSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonSave.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(149)))));
+            this.buttonSave.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(182)))), ((int)(((byte)(150)))));
+            this.buttonSave.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.Location = new System.Drawing.Point(844, 655);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(129, 45);
+            this.buttonSave.TabIndex = 8;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // guna2PictureBoxPoster
+            // 
+            this.guna2PictureBoxPoster.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBoxPoster.BorderRadius = 10;
+            this.guna2PictureBoxPoster.FillColor = System.Drawing.Color.RosyBrown;
+            this.guna2PictureBoxPoster.ImageRotate = 0F;
+            this.guna2PictureBoxPoster.Location = new System.Drawing.Point(826, 9);
+            this.guna2PictureBoxPoster.Name = "guna2PictureBoxPoster";
+            this.guna2PictureBoxPoster.Size = new System.Drawing.Size(200, 300);
+            this.guna2PictureBoxPoster.TabIndex = 5;
+            this.guna2PictureBoxPoster.TabStop = false;
+            // 
+            // CMF_Tickets
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.guna2PanelTotal);
             this.Controls.Add(this.guna2PictureBoxPoster);
-            this.Controls.Add(this.guna2GradientButton1);
+            this.Controls.Add(this.buttonPayNow);
             this.Controls.Add(this.guna2PanelCount);
             this.Controls.Add(this.guna2PanelScreen);
             this.Controls.Add(this.guna2PanelRoom);
-            this.Name = "BuyTicket";
+            this.Name = "CMF_Tickets";
             this.Size = new System.Drawing.Size(1260, 750);
             this.guna2PanelRoom.ResumeLayout(false);
             this.guna2PanelRoom.PerformLayout();
@@ -2666,9 +2687,9 @@
             this.guna2PanelScreen.PerformLayout();
             this.guna2PanelCount.ResumeLayout(false);
             this.guna2PanelCount.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxPoster)).EndInit();
             this.guna2PanelTotal.ResumeLayout(false);
             this.guna2PanelTotal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxPoster)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2784,11 +2805,10 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2ElipsePanelRoom;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelCount;
         private Guna.UI2.WinForms.Guna2Elipse guna2ElipseCount;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonPayNow;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxPoster;
         private System.Windows.Forms.TextBox textBoxTitle;
         private System.Windows.Forms.TextBox textBoxTicketPrice;
-        private System.Windows.Forms.TextBox textBoxSeats;
         private System.Windows.Forms.TextBox textBoxTime;
         private System.Windows.Forms.TextBox textBoxRoom;
         private System.Windows.Forms.Label label7;
@@ -2801,5 +2821,7 @@
         private System.Windows.Forms.TextBox textBoxTotal;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RichTextBox textBoxSeats;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonSave;
     }
 }

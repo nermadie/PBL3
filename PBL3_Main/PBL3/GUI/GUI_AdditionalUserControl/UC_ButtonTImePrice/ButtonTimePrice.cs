@@ -41,6 +41,8 @@ namespace PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice
             this.guna2ButtonTimePrice.Text = hour_string + ":" + minute_string + " " + currentShowTime.TicketPrice / 1000 + "K";
             currentShowTime_IdRoom = currentShowTime.IdRoom;
             currentShowTime_Time = currentShowTime.Time;
+            if (currentShowTime.Time < DateTime.Now)
+                guna2ButtonTimePrice.Enabled = false;
         }
         private void guna2Button1TimePrice_Click(object sender, EventArgs e)
         {
