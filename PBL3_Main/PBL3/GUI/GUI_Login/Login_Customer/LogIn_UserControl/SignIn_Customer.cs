@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
-using PBL3.BLL.BLL_Login.BLL_Login_Admin;
+using PBL3.BLL;
 using PBL3.DTO.DTO_Person;
 using PBL3.GUI.GUI_Alert;
 using PBL3.GUI.DelegateTemplate;
@@ -93,10 +93,10 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl
             }
 
             LogIn_Customer.checkFirstTimeGenDB = true;
-            if (BLL_Login_Customer.Instance.checkUsernameSignIn(textBoxUser.Text))
+            if (BLL_QLRapchieuphim.Instance.checkUsernameSignInCustomer(textBoxUser.Text))
             {
                 Customer customer;
-                if ((customer = BLL_Login_Customer.Instance.checkAccountSignIn(textBoxUser.Text, textBoxPass.Text)) != null)
+                if ((customer = BLL_QLRapchieuphim.Instance.checkAccountSignInCustomer(textBoxUser.Text, textBoxPass.Text)) != null)
                 {
                     hideLoginForm(customer);
                     //In ra thong bao

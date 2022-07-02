@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_Login.BLL_Login_Admin;
+using PBL3.BLL;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_Alert;
 using PBL3.Properties;
@@ -152,9 +152,9 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl
             if (checkBoxAgree.Checked)
             {
                 LogIn_Customer.checkFirstTimeGenDB = true;
-                if (BLL_Login_Customer.Instance.checkUsernameSignUp(textBoxUser.Text))
+                if (BLL_QLRapchieuphim.Instance.checkUsernameSignUpCustomer(textBoxUser.Text))
                 {
-                    BLL_Login_Customer.Instance.addCustomertoDatabase(textBoxUser.Text, textBoxPass.Text, textBoxName.Text);
+                    BLL_QLRapchieuphim.Instance.addCustomertoDatabase(textBoxUser.Text, textBoxPass.Text, textBoxName.Text);
                     Alert aForm = new Alert();
                     aForm.showAlert("Congratulation", "Now use your account to sign in", Alert.enumType.Success);
                     backToSignIn(new object(), EventArgs.Empty);

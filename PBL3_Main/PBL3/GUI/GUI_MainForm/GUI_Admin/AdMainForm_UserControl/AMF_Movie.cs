@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_MainForm.BLL_Admin;
+using PBL3.BLL;
 
 namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
 {
@@ -20,7 +20,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
         }
         private void ShowDGV()
         {
-            dataGridViewShow.DataSource = BLL_Admin.Instance.GetAll_Movie();
+            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.GetAll_Movie();
         }
         private void buttonClose_Click(object sender, EventArgs e)
         {

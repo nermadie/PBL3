@@ -8,8 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Payment;
-using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets;
+using PBL3.BLL;
 using PBL3.DTO.DTO_Order;
 using PBL3.DTO.DTO_ShowTime;
 using PBL3.GUI.DelegateTemplate;
@@ -79,12 +78,12 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
                 //Tao 1 order moi
                 Order order = new Order
                 {
-                    IdOrder = BLL_Payment.Instance.findGoodIdOrder(),
+                    IdOrder = BLL_QLRapchieuphim.Instance.findGoodIdOrder(),
                     IdCustomer = currentCus,
                     TimeOrder = temp,
-                    Code = BLL_Payment.Instance.RandomString(8)
+                    Code = BLL_QLRapchieuphim.Instance.RandomString(8)
                 };
-                BLL_Payment.Instance.AddOrder(order);
+                BLL_QLRapchieuphim.Instance.AddOrder(order);
                 //tao ticketorder
                 if (showtime != null)
                 {
@@ -92,18 +91,18 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
                     {
                         TicketOrder ticketOrder = new TicketOrder
                         {
-                            IdTicketOrder = BLL_Payment.Instance.findGoodIdTicketOrder(), //8
+                            IdTicketOrder = BLL_QLRapchieuphim.Instance.findGoodIdTicketOrder(), //8
                             IdOrder = order.IdOrder,
                             IdRoom = showtime.IdRoom,
                             Time = showtime.Time,
                             SeatPurchased = seat
                         };
-                        BLL_Payment.Instance.AddTicketOrder(ticketOrder);
+                        BLL_QLRapchieuphim.Instance.AddTicketOrder(ticketOrder);
                     }
                     //Vao showtime chinh lai so ghe trong
                     foreach (string seat in seatsPurchased)
                     {
-                        BLL_Payment.Instance.UpdateShowtimeSeats(seat, showtime.IdRoom, showtime.Time);
+                        BLL_QLRapchieuphim.Instance.UpdateShowtimeSeats(seat, showtime.IdRoom, showtime.Time);
                     }
                 }
                 //tao pdorder
@@ -113,13 +112,13 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
                     {
                         PopcornDrinkOrder popcornDrinkOrder = new PopcornDrinkOrder
                         {
-                            IdPopcornDrinkOrder = BLL_Payment.Instance.findGoodIdPDOrder(),//8
+                            IdPopcornDrinkOrder = BLL_QLRapchieuphim.Instance.findGoodIdPDOrder(),//8
                             IdOrder = order.IdOrder,
                             NamePopcornDrink = row.Cells["NamePopcornDrink"].Value.ToString(),
                             PopcornDrinkPrice = Convert.ToInt32(row.Cells["PopcornDrinkPrice"].Value.ToString()),
                             Quantity = Convert.ToInt32(row.Cells["Quantity"].Value.ToString())
                         };
-                        BLL_Payment.Instance.AddPDOrder(popcornDrinkOrder);
+                        BLL_QLRapchieuphim.Instance.AddPDOrder(popcornDrinkOrder);
                     }
                 }
                 //Success and Turn back to home, flush Cart

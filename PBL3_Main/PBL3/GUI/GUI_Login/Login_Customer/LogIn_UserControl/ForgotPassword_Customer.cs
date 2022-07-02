@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PBL3.BLL.BLL_Login.BLL_Login_Admin;
+using PBL3.BLL;
 using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_Alert;
 
@@ -43,7 +43,7 @@ namespace PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl
         {
             LogIn_Customer.checkFirstTimeGenDB = true;
             string password = "";
-            if ((password = BLL_Login_Customer.Instance.checkUsernameForgot(textBoxUser.Text)) != "")
+            if ((password = BLL_QLRapchieuphim.Instance.checkUsernameForgotCustomer(textBoxUser.Text)) != "")
             {
                 Alert aForm = new Alert();
                 aForm.showAlert("Your Pass: " + password, "Now use your account to sign in", Alert.enumType.Success);

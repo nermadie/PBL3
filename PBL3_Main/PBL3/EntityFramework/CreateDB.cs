@@ -12,7 +12,7 @@ using PBL3.DTO.DTO_ShowTime;
 
 namespace PBL3.EntityFramework
 {
-    public class CreateDB : DropCreateDatabaseAlways<QLRapChieuPhim>
+    public class CreateDB : DropCreateDatabaseIfModelChanges<QLRapChieuPhim>
     {
         protected override void Seed(QLRapChieuPhim context)
         {

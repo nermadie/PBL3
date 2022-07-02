@@ -25,8 +25,9 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private CMF_MovieDetail movieDetail;
         private CMF_Cart cart;
         private CMF_Payment payment;
+        private CMF_History history;
         private string currentCus;
-        public CustomerMainForm(Customer cus)
+        public CustomerMainForm(string idCustomer)
         {
             InitializeComponent();
             cart = new CMF_Cart();
@@ -35,7 +36,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             buttonPayment.Visible = false;
             home = new CMF_Home();
             addUserControl(home);
-            currentCus = cus.IdPerson;
+            currentCus = idCustomer;
         }
         //Add UserControl
         private void addUserControl(UserControl userControl)
@@ -193,5 +194,26 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             }
         }
 
+        private void buttonHistory_Click(object sender, EventArgs e)
+        {
+            uncheckAnotherButton();
+            history = new CMF_History(currentCus);
+            addUserControl(history);
+        }
+
+        private void guna2ButtonLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBoxClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

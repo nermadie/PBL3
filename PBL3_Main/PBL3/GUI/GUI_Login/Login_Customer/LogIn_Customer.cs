@@ -49,7 +49,7 @@ namespace PBL3.GUI.GUI_Login.Login_Customer
         public void ShowMainForm(Customer cus)
         {
             this.Visible = false;
-            CustomerMainForm mForm = new CustomerMainForm(cus);
+            CustomerMainForm mForm = new CustomerMainForm(cus.IdPerson);
             mForm.Show();
         }
 
