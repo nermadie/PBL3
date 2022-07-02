@@ -50,7 +50,13 @@ namespace PBL3.GUI.GUI_Login.Login_Customer
         {
             this.Visible = false;
             CustomerMainForm mForm = new CustomerMainForm(cus.IdPerson);
+            mForm.openLogin = showLoginAgain;
             mForm.Show();
+        }
+
+        public void showLoginAgain()
+        {
+            this.Visible = true;
         }
 
         //============================================================//

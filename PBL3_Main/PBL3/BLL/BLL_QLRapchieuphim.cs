@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using PBL3.DTO.DTO_Order;
 using PBL3.DTO.DTO_Person;
 using PBL3.DTO.DTO_PopcornDrink;
@@ -16,7 +18,7 @@ using PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice;
 
 namespace PBL3.BLL
 {
-    public class BLL_QLRapchieuphim
+    public partial class BLL_QLRapchieuphim
     {
         private QLRapChieuPhim db = new QLRapChieuPhim();
         private static BLL_QLRapchieuphim _Instance;
@@ -699,13 +701,13 @@ namespace PBL3.BLL
             }
             return res;
         }
-        public List<CBBItem2> Get_CBBMovie()
+        public List<CBBItemS> Get_CBBMovie()
         {
-            List<CBBItem2> res = new List<CBBItem2>();
-            res.Add(new CBBItem2 { Value = "All", Text = "All" });
+            List<CBBItemS> res = new List<CBBItemS>();
+            res.Add(new CBBItemS { Value = "All", Text = "All" });
             foreach (Movie mv in db.Movies.ToList())
             {
-                res.Add(new CBBItem2 { Value = mv.IdMovie, Text = mv.NameMovie });
+                res.Add(new CBBItemS { Value = mv.IdMovie, Text = mv.NameMovie });
             }
             return res;
         }
@@ -724,12 +726,12 @@ namespace PBL3.BLL
                 return "code not found";
             }
         }
-        public List<CBBItem2> Get_CBBSort_Employee()
+        public List<CBBItemS> Get_CBBSort_Employee()
         {
-            List<CBBItem2> res = new List<CBBItem2>();
-            res.Add(new CBBItem2 { Value = "Name", Text = "Name" });
-            res.Add(new CBBItem2 { Value = "Wage", Text = "Wage" });
-            res.Add(new CBBItem2 { Value = "Shift", Text = "Shift" });
+            List<CBBItemS> res = new List<CBBItemS>();
+            res.Add(new CBBItemS { Value = "Name", Text = "Name" });
+            res.Add(new CBBItemS { Value = "Wage", Text = "Wage" });
+            res.Add(new CBBItemS { Value = "Shift", Text = "Shift" });
             return res;
         }
         public List<Employee> Sort_Employee(List<Employee> list, string sortby)
@@ -752,11 +754,11 @@ namespace PBL3.BLL
                     return list;
             }
         }
-        public List<CBBItem2> Get_CBBSort_Format_ShowTime()
+        public List<CBBItemS> Get_CBBSort_Format_ShowTime()
         {
-            List<CBBItem2> res = new List<CBBItem2>();
-            res.Add(new CBBItem2 { Value = "TicketPrice", Text = "TicketPrice" });
-            res.Add(new CBBItem2 { Value = "Time", Text = "Time" });
+            List<CBBItemS> res = new List<CBBItemS>();
+            res.Add(new CBBItemS { Value = "TicketPrice", Text = "TicketPrice" });
+            res.Add(new CBBItemS { Value = "Time", Text = "Time" });
             return res;
         }
         public List<Format_ShowTime> Sort_Format_ShowTime(List<Format_ShowTime> list, string sortby)
@@ -956,7 +958,43 @@ namespace PBL3.BLL
         }
         public Image getImagebyIdPopcornDrink(string idPopcornDrink)
         {
-            return Image.FromFile(@"..\..\Image\Picture\PicturePopcornDrink\" + idPopcornDrink + ".jpg");
+            try
+            {
+                using (FileStream stream = new FileStream(@"..\..\Image\Picture\PicturePopcornDrink\" + idPopcornDrink + ".jpg", FileMode.Open, FileAccess.Read))
+                {
+                    Image temp = Image.FromStream(stream);
+                    stream.Dispose();
+                    return temp;
+                }
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    using (FileStream stream = new FileStream(@"..\..\Image\Picture\PicturePopcornDrink\" + idPopcornDrink + ".png", FileMode.Open, FileAccess.Read))
+                    {
+                        Image temp = Image.FromStream(stream);
+                        stream.Dispose();
+                        return temp;
+                    }
+                }
+                catch (Exception e2)
+                {
+                    try
+                    {
+                        using (FileStream stream = new FileStream(@"..\..\Image\Picture\PicturePopcornDrink\" + idPopcornDrink + ".jpeg", FileMode.Open, FileAccess.Read))
+                        {
+                            Image temp = Image.FromStream(stream);
+                            stream.Dispose();
+                            return temp;
+                        }
+                    }
+                    catch (Exception e3)
+                    {
+                        return null;
+                    }
+                }
+            }
         }
 
         public PopcornDrink getPDbyidPD(string idPopcornDrink)
@@ -990,20 +1028,56 @@ namespace PBL3.BLL
         }
         public Image getImagebyIdMovie(string idMovie)
         {
-            return Image.FromFile(@"..\..\Image\Picture\PictureMovie\" + idMovie + ".jpeg");
+            try
+            {
+                using (FileStream stream = new FileStream(@"..\..\Image\Picture\PictureMovie\" + idMovie + ".jpg", FileMode.Open, FileAccess.Read))
+                {
+                    Image temp = Image.FromStream(stream);
+                    stream.Dispose();
+                    return temp;
+                }
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    using (FileStream stream = new FileStream(@"..\..\Image\Picture\PictureMovie\" + idMovie + ".png", FileMode.Open, FileAccess.Read))
+                    {
+                        Image temp = Image.FromStream(stream);
+                        stream.Dispose();
+                        return temp;
+                    }
+                }
+                catch (Exception e2)
+                {
+                    try
+                    {
+                        using (FileStream stream = new FileStream(@"..\..\Image\Picture\PictureMovie\" + idMovie + ".jpeg", FileMode.Open, FileAccess.Read))
+                        {
+                            Image temp = Image.FromStream(stream);
+                            stream.Dispose();
+                            return temp;
+                        }
+                    }
+                    catch (Exception e3)
+                    {
+                        return null;
+                    }
+                }
+            }
         }
         public ShowTime getShowTimebyidRoom_Time(string idRoom, DateTime time)
         {
             return db.ShowTimes.Include("Room").Include("Movie").FirstOrDefault(t => t.IdRoom == idRoom && t.Time == time);
         }
 
-        public CBBItem2[] GetCBBHistory(Customer currentCus)
+        public CBBItemS[] GetCBBHistory(Customer currentCus)
         {
-            List<CBBItem2> result = new List<CBBItem2>();
+            List<CBBItemS> result = new List<CBBItemS>();
             var orders = db.Orders.Where(o => o.IdCustomer == currentCus.IdPerson).OrderBy(o => o.TimeOrder).ToList();
             foreach (var order in orders)
             {
-                CBBItem2 temp = new CBBItem2
+                CBBItemS temp = new CBBItemS
                 {
                     Text = order.TimeOrder.ToString(),
                     Value = order.IdOrder
@@ -1031,6 +1105,69 @@ namespace PBL3.BLL
         public string getCodebyIdOrder(string idOrder)
         {
             return db.Orders.FirstOrDefault(o => o.IdOrder == idOrder).Code;
+        }
+
+        public Image getImagebyIdPerson(string idPerson)
+        {
+            try
+            {
+                using (FileStream stream = new FileStream(@"..\..\Image\Picture\PicturePerson\" + idPerson + ".jpg", FileMode.Open, FileAccess.Read))
+                {
+                    Image temp = Image.FromStream(stream);
+                    stream.Dispose();
+                    return temp;
+                }
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    using (FileStream stream = new FileStream(@"..\..\Image\Picture\PicturePerson\" + idPerson + ".png", FileMode.Open, FileAccess.Read))
+                    {
+                        Image temp = Image.FromStream(stream);
+                        stream.Dispose();
+                        return temp;
+                    }
+                }
+                catch (Exception e2)
+                {
+                    try
+                    {
+                        using (FileStream stream = new FileStream(@"..\..\Image\Picture\PicturePerson\" + idPerson + ".jpeg", FileMode.Open, FileAccess.Read))
+                        {
+                            Image temp = Image.FromStream(stream);
+                            stream.Dispose();
+                            return temp;
+                        }
+                    }
+                    catch (Exception e3)
+                    {
+                        return null;
+                    }
+                }
+            }
+        }
+
+        public void delImagebyIdPerson(string idPerson)
+        {
+            if (File.Exists(@"..\..\Image\Picture\PicturePerson\" + idPerson + ".jpg"))
+                File.Delete(@"..\..\Image\Picture\PicturePerson\" + idPerson + ".jpg");
+            else if (File.Exists(@"..\..\Image\Picture\PicturePerson\" + idPerson + ".png"))
+                File.Delete(@"..\..\Image\Picture\PicturePerson\" + idPerson + ".png");
+        }
+
+        public void updateCustomer(Customer cus)
+        {
+            Customer temp = db.Customers.FirstOrDefault(c => c.IdPerson == cus.IdPerson);
+            temp.IdPerson = cus.IdPerson;
+            temp.NamePerson = cus.NamePerson;
+            temp.Phone = cus.Phone;
+            temp.Address = cus.Address;
+            temp.Gender = cus.Gender;
+            temp.Birth = cus.Birth;
+            temp.Username = cus.Username;
+            temp.Password = cus.Password;
+            db.SaveChanges();
         }
     }
 }

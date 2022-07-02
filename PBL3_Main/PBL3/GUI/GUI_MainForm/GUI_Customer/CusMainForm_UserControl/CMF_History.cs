@@ -42,7 +42,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         private void guna2ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             //load PD
-            List<PopcornDrinkOrder> listPDO = BLL_QLRapchieuphim.Instance.getDataPDbyIdOrder(((CBBItem2)guna2ComboBox.SelectedItem).Value);
+            List<PopcornDrinkOrder> listPDO = BLL_QLRapchieuphim.Instance.getDataPDbyIdOrder(((CBBItemS)guna2ComboBox.SelectedItem).Value);
             dataGridViewPD.Rows.Clear();
             foreach (PopcornDrinkOrder popcornDrinkOrder in listPDO)
             {
@@ -56,7 +56,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
             }
             //load Ticket
             dataGridViewTicket.Rows.Clear();
-            List<TicketOrder> listTO = BLL_QLRapchieuphim.Instance.getDataTicketOrderbyIdOrder(((CBBItem2)guna2ComboBox.SelectedItem).Value);
+            List<TicketOrder> listTO = BLL_QLRapchieuphim.Instance.getDataTicketOrderbyIdOrder(((CBBItemS)guna2ComboBox.SelectedItem).Value);
             foreach (TicketOrder ticketOrder in listTO)
             {
                 dataGridViewTicket.Rows.Add(new object[]
@@ -70,8 +70,15 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
                 });
             }
             changePrice();
-            textBoxCode.Text =
-                BLL_QLRapchieuphim.Instance.getCodebyIdOrder(((CBBItem2)guna2ComboBox.SelectedItem).Value);
+            string code = BLL_QLRapchieuphim.Instance.getCodebyIdOrder(((CBBItemS)guna2ComboBox.SelectedItem).Value);
+            if (code != null)
+            {
+                textBoxCode.Text = code;
+            }
+            else
+            {
+                textBoxCode.Text = "Tickets received";
+            }
         }
         private void changePrice()
         {

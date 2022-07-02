@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,4 +24,6 @@ namespace PBL3.GUI.DelegateTemplate
 
     public delegate void Del_ListCartPopcornDrinks(List<CartPopcornDrink> listcaCartPopcornDrinks);
     public delegate void Del_ShowTimeListstringDataGridViewRow(ShowTime showtime, List<string> seatsPurchased, DataGridViewRowCollection dataGridViewRows, int ticketPrice, int pdPrice, int totalPrice);
+
+    public delegate void Del_Image(Image image);
 }
