@@ -148,7 +148,7 @@
             this.textBoxRoom = new System.Windows.Forms.TextBox();
             this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.guna2ElipseCount = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.buttonPayNow = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.buttonBuyNow = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2PanelTotal = new Guna.UI2.WinForms.Guna2Panel();
             this.textBoxTotal = new System.Windows.Forms.TextBox();
@@ -2564,22 +2564,23 @@
             this.guna2ElipseCount.BorderRadius = 15;
             this.guna2ElipseCount.TargetControl = this.guna2PanelCount;
             // 
-            // buttonPayNow
+            // buttonBuyNow
             // 
-            this.buttonPayNow.Animated = true;
-            this.buttonPayNow.BorderRadius = 10;
-            this.buttonPayNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonPayNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonPayNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonPayNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonPayNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonPayNow.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPayNow.ForeColor = System.Drawing.Color.White;
-            this.buttonPayNow.Location = new System.Drawing.Point(989, 655);
-            this.buttonPayNow.Name = "buttonPayNow";
-            this.buttonPayNow.Size = new System.Drawing.Size(206, 45);
-            this.buttonPayNow.TabIndex = 2;
-            this.buttonPayNow.Text = "Pay Now";
+            this.buttonBuyNow.Animated = true;
+            this.buttonBuyNow.BorderRadius = 10;
+            this.buttonBuyNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonBuyNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonBuyNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonBuyNow.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonBuyNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonBuyNow.Font = new System.Drawing.Font("Cerebri Sans Heavy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuyNow.ForeColor = System.Drawing.Color.White;
+            this.buttonBuyNow.Location = new System.Drawing.Point(989, 655);
+            this.buttonBuyNow.Name = "buttonBuyNow";
+            this.buttonBuyNow.Size = new System.Drawing.Size(206, 45);
+            this.buttonBuyNow.TabIndex = 2;
+            this.buttonBuyNow.Text = "Buy Now";
+            this.buttonBuyNow.Click += new System.EventHandler(this.buttonPayNow_Click);
             // 
             // label9
             // 
@@ -2667,7 +2668,7 @@
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.guna2PanelTotal);
             this.Controls.Add(this.guna2PictureBoxPoster);
-            this.Controls.Add(this.buttonPayNow);
+            this.Controls.Add(this.buttonBuyNow);
             this.Controls.Add(this.guna2PanelCount);
             this.Controls.Add(this.guna2PanelScreen);
             this.Controls.Add(this.guna2PanelRoom);
@@ -2805,7 +2806,7 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2ElipsePanelRoom;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelCount;
         private Guna.UI2.WinForms.Guna2Elipse guna2ElipseCount;
-        private Guna.UI2.WinForms.Guna2GradientButton buttonPayNow;
+        private Guna.UI2.WinForms.Guna2GradientButton buttonBuyNow;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxPoster;
         private System.Windows.Forms.TextBox textBoxTitle;
         private System.Windows.Forms.TextBox textBoxTicketPrice;

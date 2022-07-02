@@ -10,7 +10,9 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using PBL3.BLL.BLL_MainForm.BLL_Customer.BLL_Tickets;
 using PBL3.DTO.DTO_ShowTime;
+using PBL3.GUI.DelegateTemplate;
 using PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink;
+using PBL3.GUI.GUI_Alert;
 
 namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 {
@@ -18,10 +20,16 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
     {
         //Data of Ticket
         //Data of PopcornDrink
-        private int totalPrice = 0;
+        public Del_ShowTimeListstringDataGridViewRow openPayment { get; set; }
+        private ShowTime currentShowTime;
+        private List<string> currentseatsPurchased;
+        private int totalPrice;
+        private int ticketPrice;
+        private int pdPrice;
         public CMF_Cart()
         {
             InitializeComponent();
+            currentseatsPurchased = new List<string>();
         }
         private void CMF_Cart_Load(object sender, EventArgs e)
         {
@@ -32,6 +40,8 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         {
             dataGridViewTicket.Rows.Clear();
             ShowTime tempShowTime = BLL_Tickets.Instance.getShowTimebyidRoom_Time(idRoom, time);
+            currentShowTime = tempShowTime;
+            currentseatsPurchased = seatsPurchased;
             foreach (var seat in seatsPurchased)
             {
                 dataGridViewTicket.Rows.Add(new object[]
@@ -64,8 +74,8 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         }
         private void changePrice()
         {
-            int ticketPrice = 0;
-            int pdPrice = 0;
+            ticketPrice = 0;
+            pdPrice = 0;
             foreach (DataGridViewRow row in dataGridViewTicket.Rows)
             {
                 ticketPrice += Convert.ToInt32(row.Cells["TicketPrice"].Value);
@@ -93,6 +103,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         private void buttonResetTicket_Click(object sender, EventArgs e)
         {
             dataGridViewTicket.Rows.Clear();
+            currentseatsPurchased.Clear();
             changePrice();
         }
 
@@ -102,21 +113,29 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
             changePrice();
         }
 
-        private void buttonResetAll_Click(object sender, EventArgs e)
+        public void buttonResetAll_Click(object sender, EventArgs e)
         {
             dataGridViewTicket.Rows.Clear();
+            currentseatsPurchased.Clear();
             dataGridViewPD.Rows.Clear();
             changePrice();
         }
 
         private void buttonPayNow_Click(object sender, EventArgs e)
         {
-
+            if (currentseatsPurchased.Count != 0 || dataGridViewPD.Rows.Count != 0)
+                openPayment(currentShowTime, currentseatsPurchased, dataGridViewPD.Rows, ticketPrice, pdPrice, totalPrice);
+            else
+            {
+                Alert alert = new Alert();
+                alert.showAlert("Warning!", "Your cart is empty!", Alert.enumType.Warning);
+            }
         }
 
         private void dataGridViewTicket_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
         {
             changePrice();
+            currentseatsPurchased.RemoveAt(e.RowIndex);
         }
 
         private void dataGridViewPD_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)

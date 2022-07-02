@@ -21,6 +21,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         private List<CartPopcornDrink> listCartPopcornDrink;
         private List<PopcornDrinkItem> listPopcornDrinkItem;
         public Del_ListCartPopcornDrinks saveDataPD { get; set; }
+        public Del_ListCartPopcornDrinks openCartFromPD { get; set; }
 
         public CMF_PopcornDrinks()
         {
@@ -31,7 +32,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
 
         private void CMF_PopcornDrinks_Load(object sender, EventArgs e)
         {
-            listCartPopcornDrink = new List<CartPopcornDrink>();
             List<PopcornDrink> popcornDrinks = BLL_PopcornDrink.Instance.getListPopcornDrink();
             foreach (var popcornDrink in popcornDrinks)
             {
@@ -88,11 +88,17 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
             saveDataPD(listCartPopcornDrink);
             Alert alert = new Alert();
             alert.showAlert("Successful", "PopcornDrinks have been saved to Cart!", Alert.enumType.Success);
+            List<CartPopcornDrink> listCartPopcornDrinksTemp = new List<CartPopcornDrink>();
+            listCartPopcornDrinksTemp.AddRange(listCartPopcornDrink.ToArray());
+            listCartPopcornDrink = listCartPopcornDrinksTemp;
         }
 
         private void buttonPayNow_Click(object sender, EventArgs e)
         {
-
+            openCartFromPD(listCartPopcornDrink);
+            List<CartPopcornDrink> listCartPopcornDrinksTemp = new List<CartPopcornDrink>();
+            listCartPopcornDrinksTemp.AddRange(listCartPopcornDrink.ToArray());
+            listCartPopcornDrink = listCartPopcornDrinksTemp;
         }
     }
 }

@@ -19,6 +19,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
     public partial class CMF_Tickets : UserControl
     {
         public Del_ShowTimeListSeat saveDataTicket { get; set; }
+        public Del_ShowTimeListSeat openCartFromTicket { get; set; }
         private ShowTime showtime;
         private List<string> bookingSeats;
 
@@ -99,14 +100,22 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
         {
             if (((Guna.UI2.WinForms.Guna2Button)sender).Checked == false)
             {
-                ((Guna.UI2.WinForms.Guna2Button)sender).Checked = true;
-                string nameButton = ((Guna.UI2.WinForms.Guna2Button)sender).Name;
-                string seat = nameButton.Substring(11);
-                int seatNum = Convert.ToInt32(seat);
-                string res = "";
-                res += ((char)(seatNum / 10 + 65)).ToString();
-                res += "" + (seatNum % 10);
-                bookingSeats.Add(res);
+                if (bookingSeats.Count < 6)
+                {
+                    ((Guna.UI2.WinForms.Guna2Button)sender).Checked = true;
+                    string nameButton = ((Guna.UI2.WinForms.Guna2Button)sender).Name;
+                    string seat = nameButton.Substring(11);
+                    int seatNum = Convert.ToInt32(seat);
+                    string res = "";
+                    res += ((char)(seatNum / 10 + 65)).ToString();
+                    res += "" + (seatNum % 10);
+                    bookingSeats.Add(res);
+                }
+                else
+                {
+                    Alert alert = new Alert();
+                    alert.showAlert("Warning!", "Only 6 tickets can be booked at the same time.", Alert.enumType.Warning);
+                }
             }
             else
             {
@@ -128,6 +137,17 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl
             saveDataTicket(showtime.IdRoom, showtime.Time, bookingSeats);
             Alert alert = new Alert();
             alert.showAlert("Successful", "Tickets have been saved to cart!", Alert.enumType.Success);
+            List<string> bookingSeatsTemp = new List<string>();
+            bookingSeatsTemp.AddRange(bookingSeats.ToArray());
+            bookingSeats = bookingSeatsTemp;
+        }
+
+        private void buttonPayNow_Click(object sender, EventArgs e)
+        {
+            openCartFromTicket(showtime.IdRoom, showtime.Time, bookingSeats);
+            List<string> bookingSeatsTemp = new List<string>();
+            bookingSeatsTemp.AddRange(bookingSeats.ToArray());
+            bookingSeats = bookingSeatsTemp;
         }
     }
 }

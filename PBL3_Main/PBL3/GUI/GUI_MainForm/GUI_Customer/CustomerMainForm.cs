@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL3.DTO.DTO_Person;
 using PBL3.DTO.DTO_ShowTime;
+using PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink;
 using PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl;
 
 namespace PBL3.GUI.GUI_MainForm.GUI_Customer
@@ -23,18 +24,26 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         private CMF_Tickets tickets;
         private CMF_MovieDetail movieDetail;
         private CMF_Cart cart;
+        private CMF_Payment payment;
+        private string currentCus;
         public CustomerMainForm(Customer cus)
         {
             InitializeComponent();
             cart = new CMF_Cart();
+            cart.openPayment = openPayment;
             shadowPanelPopup.Visible = false;
             buttonPayment.Visible = false;
             home = new CMF_Home();
             addUserControl(home);
+            currentCus = cus.IdPerson;
         }
         //Add UserControl
         private void addUserControl(UserControl userControl)
         {
+            if (currentUserControl == payment)
+            {
+                buttonPayment.Visible = false;
+            }
             panelCenter.Controls.Clear();
             UserControl prevUserControl = currentUserControl;
             textBoxSearch.Text = "";
@@ -43,6 +52,23 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             panelCenter.Controls.Add(userControl);
             userControl.BringToFront();
             prevUserControl?.Dispose();
+        }
+
+        private void openPayment(ShowTime showtime, List<string> seatsPurchased, DataGridViewRowCollection dataGridViewRows, int ticketPrice, int pdPrice, int totalPrice)
+        {
+            uncheckAnotherButton();
+            payment = new CMF_Payment(currentCus, showtime, seatsPurchased, dataGridViewRows, ticketPrice, pdPrice, totalPrice);
+            payment.openHome = openHome;
+            payment.openCart_Cancel = buttonCart_Click;
+            addUserControl(payment);
+            buttonPayment.Visible = true;
+            buttonPayment.Checked = true;
+        }
+
+        private void openHome()
+        {
+            cart.buttonResetAll_Click(new object(), EventArgs.Empty);
+            guna2CirclePictureBoxLogo_Click(new object(), EventArgs.Empty);
         }
         private void circlePictureBoxOpenPopup_Click(object sender, EventArgs e)
         {
@@ -85,7 +111,14 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
         {
             tickets = new CMF_Tickets(idRoom, time);
             tickets.saveDataTicket = cart.saveDataTicket;
+            tickets.openCartFromTicket = openCartFromTicket;
             addUserControl(tickets);
+        }
+
+        private void openCartFromTicket(string idRoom, DateTime time, List<string> bookingSeats)
+        {
+            cart.saveDataTicket(idRoom, time, bookingSeats);
+            buttonCart_Click(new object(), EventArgs.Empty);
         }
         //MOVIES
         private void buttonMovies_Click(object sender, EventArgs e)
@@ -120,7 +153,14 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             buttonPopDrinks.Checked = true;
             popcornDrinks = new CMF_PopcornDrinks();
             popcornDrinks.saveDataPD = cart.saveDataPD;
+            popcornDrinks.openCartFromPD = openCartFromPD;
             addUserControl(popcornDrinks);
+        }
+
+        private void openCartFromPD(List<CartPopcornDrink> listCartPopcornDrinks)
+        {
+            cart.saveDataPD(listCartPopcornDrinks);
+            buttonCart_Click(new object(), EventArgs.Empty);
         }
         private void buttonCart_Click(object sender, EventArgs e)
         {
@@ -131,6 +171,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Customer
             panelCenter.Controls.Add(cart);
             cart.BringToFront();
             currentUserControl?.Dispose();
+            buttonPayment.Visible = false;
         }
 
         private void guna2CirclePictureBoxLogo_Click(object sender, EventArgs e)
