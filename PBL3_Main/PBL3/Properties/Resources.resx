@@ -121,8 +121,14 @@
   <data name="checklist_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parchment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\parchment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="man" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Customer\man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,6 +145,9 @@
   <data name="cancel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Employee\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="showtime" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\showtime.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +162,9 @@
   </data>
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customer (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\customer (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="confirmation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Customer\confirmation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,14 +181,17 @@
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="homeSolid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\homeSolid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Customer\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="movie_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="remove2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\Login_Icon\Employee\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="left-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\Login_Icon\Customer\left-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Alert_Icon\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,17 +199,23 @@
   <data name="ceo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Admin\ceo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\Alert_Icon\checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="remove2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\Login_Icon\Employee\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Credit-Card-PNG-Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Background\Credit-Card-PNG-Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cashless-payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="left-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\Login_Icon\Customer\left-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="man1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\man.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Alert_Icon\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\Alert_Icon\checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Employee_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Employee\Employee_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -216,6 +237,9 @@
   </data>
   <data name="awning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Background\awning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="man (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\man (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Customer\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,14 +271,11 @@
   <data name="movie-ticket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie-ticket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cashless-payment_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="parchment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\parchment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\Login_Icon\Customer\padlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cashless-payment_color" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment_color.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="star1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -286,7 +307,43 @@
   <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Credit-Card-PNG-Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Background\Credit-Card-PNG-Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cinema (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\cinema (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cinema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\cinema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clapperboard (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\clapperboard (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clapperboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\clapperboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\clipboard (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clipboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\clipboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoice (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\invoice (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\invoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="next1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popcorn (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\popcorn (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popcorn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rating (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\rating (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rating" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Icon\MainForm_Icon\AdminMainForm\MainForm\rating.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

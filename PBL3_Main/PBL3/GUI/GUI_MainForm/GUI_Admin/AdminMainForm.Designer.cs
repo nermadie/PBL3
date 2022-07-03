@@ -29,409 +29,737 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.labelTitleChildForm = new System.Windows.Forms.Label();
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.panelCenter = new System.Windows.Forms.Panel();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMainForm));
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.panelMenuAdmin = new Guna.UI2.WinForms.Guna2Panel();
+            this.buttonMenuPopcornDrinkOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonShowMenu = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.buttonMenuTicketOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonMenuRoom = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonMenuShowTime = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonMenuPopcornDrink = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonMenuOrder = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonMenuMovie = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonMenuEmployee = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonMenuCustomer = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonMenuHome = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
-            this.iconButtonStatistic = new FontAwesome.Sharp.IconButton();
-            this.iconButtonEmployee = new FontAwesome.Sharp.IconButton();
-            this.iconButtonCustomer = new FontAwesome.Sharp.IconButton();
-            this.iconButtonPCDrink = new FontAwesome.Sharp.IconButton();
-            this.iconButtonRoom = new FontAwesome.Sharp.IconButton();
-            this.iconButtonShowTime = new FontAwesome.Sharp.IconButton();
-            this.iconButtonMovie = new FontAwesome.Sharp.IconButton();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
-            this.buttonMenu = new FontAwesome.Sharp.IconButton();
-            this.panelMenu.SuspendLayout();
-            this.panelLogo.SuspendLayout();
-            this.panelTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelNameAdmin = new System.Windows.Forms.Label();
+            this.buttonMinimize = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBoxMax = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.panelContainerAdmin = new System.Windows.Forms.Panel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.buttonHideMenu = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.pictureBoxSmallMenu = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBoxBigMenu = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panelMenuAdmin.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBigMenu)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelMenu
+            // guna2Elipse1
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelMenu.Controls.Add(this.iconButtonStatistic);
-            this.panelMenu.Controls.Add(this.iconButtonEmployee);
-            this.panelMenu.Controls.Add(this.iconButtonCustomer);
-            this.panelMenu.Controls.Add(this.iconButtonPCDrink);
-            this.panelMenu.Controls.Add(this.iconButtonRoom);
-            this.panelMenu.Controls.Add(this.iconButtonShowTime);
-            this.panelMenu.Controls.Add(this.iconButtonMovie);
-            this.panelMenu.Controls.Add(this.panelLogo);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(230, 741);
-            this.panelMenu.TabIndex = 0;
+            this.guna2Elipse1.TargetControl = this;
             // 
-            // panelLogo
+            // panelMenuAdmin
             // 
-            this.panelLogo.Controls.Add(this.pictureBoxLogo);
-            this.panelLogo.Controls.Add(this.buttonMenu);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(230, 127);
-            this.panelLogo.TabIndex = 0;
+            this.panelMenuAdmin.BackColor = System.Drawing.Color.White;
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuPopcornDrinkOrder);
+            this.panelMenuAdmin.Controls.Add(this.buttonShowMenu);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuTicketOrder);
+            this.panelMenuAdmin.Controls.Add(this.buttonHideMenu);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuRoom);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuShowTime);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuPopcornDrink);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuOrder);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuMovie);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuEmployee);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuCustomer);
+            this.panelMenuAdmin.Controls.Add(this.buttonMenuHome);
+            this.panelMenuAdmin.Controls.Add(this.guna2Panel1);
+            this.panelMenuAdmin.Controls.Add(this.guna2Separator1);
+            this.guna2Transition1.SetDecoration(this.panelMenuAdmin, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panelMenuAdmin.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenuAdmin.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuAdmin.Name = "panelMenuAdmin";
+            this.panelMenuAdmin.Size = new System.Drawing.Size(234, 818);
+            this.panelMenuAdmin.TabIndex = 0;
             // 
-            // panelTitleBar
+            // buttonMenuPopcornDrinkOrder
             // 
-            this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panelTitleBar.Controls.Add(this.guna2ControlBox3);
-            this.panelTitleBar.Controls.Add(this.guna2ControlBox2);
-            this.panelTitleBar.Controls.Add(this.guna2ControlBox1);
-            this.panelTitleBar.Controls.Add(this.labelTitleChildForm);
-            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(230, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(1054, 60);
-            this.panelTitleBar.TabIndex = 1;
+            this.buttonMenuPopcornDrinkOrder.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuPopcornDrinkOrder.BorderRadius = 8;
+            this.buttonMenuPopcornDrinkOrder.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuPopcornDrinkOrder.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuPopcornDrinkOrder.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuPopcornDrinkOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuPopcornDrinkOrder.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuPopcornDrinkOrder.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuPopcornDrinkOrder.CustomImages.HoveredImage = global::PBL3.Properties.Resources.invoice__1_;
+            this.buttonMenuPopcornDrinkOrder.CustomImages.Image = global::PBL3.Properties.Resources.invoice;
+            this.buttonMenuPopcornDrinkOrder.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuPopcornDrinkOrder.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuPopcornDrinkOrder, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuPopcornDrinkOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuPopcornDrinkOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuPopcornDrinkOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuPopcornDrinkOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuPopcornDrinkOrder.FillColor = System.Drawing.Color.White;
+            this.buttonMenuPopcornDrinkOrder.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuPopcornDrinkOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuPopcornDrinkOrder.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuPopcornDrinkOrder.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuPopcornDrinkOrder.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuPopcornDrinkOrder.Location = new System.Drawing.Point(3, 552);
+            this.buttonMenuPopcornDrinkOrder.Name = "buttonMenuPopcornDrinkOrder";
+            this.buttonMenuPopcornDrinkOrder.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuPopcornDrinkOrder.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuPopcornDrinkOrder.TabIndex = 4;
+            this.buttonMenuPopcornDrinkOrder.Text = "Popcorn Drink Order";
+            this.buttonMenuPopcornDrinkOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuPopcornDrinkOrder.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuPopcornDrinkOrder.Click += new System.EventHandler(this.buttonMenuPopcornDrinkOrder_Click);
             // 
-            // guna2ControlBox3
+            // buttonShowMenu
             // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(904, 3);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox3.TabIndex = 2;
+            this.buttonShowMenu.Animated = true;
+            this.buttonShowMenu.BackColor = System.Drawing.Color.Transparent;
+            this.buttonShowMenu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonShowMenu.CustomImages.Image = global::PBL3.Properties.Resources.next1;
+            this.guna2Transition1.SetDecoration(this.buttonShowMenu, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonShowMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonShowMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonShowMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonShowMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonShowMenu.FillColor = System.Drawing.SystemColors.Control;
+            this.buttonShowMenu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonShowMenu.ForeColor = System.Drawing.Color.Black;
+            this.buttonShowMenu.Location = new System.Drawing.Point(20, 631);
+            this.buttonShowMenu.Name = "buttonShowMenu";
+            this.buttonShowMenu.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.buttonShowMenu.Size = new System.Drawing.Size(40, 40);
+            this.buttonShowMenu.TabIndex = 2;
+            this.buttonShowMenu.UseTransparentBackground = true;
+            this.buttonShowMenu.Visible = false;
+            this.buttonShowMenu.Click += new System.EventHandler(this.buttonShowMenu_Click);
             // 
-            // guna2ControlBox2
+            // buttonMenuTicketOrder
             // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(955, 3);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox2.TabIndex = 2;
+            this.buttonMenuTicketOrder.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuTicketOrder.BorderRadius = 8;
+            this.buttonMenuTicketOrder.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuTicketOrder.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuTicketOrder.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuTicketOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuTicketOrder.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuTicketOrder.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuTicketOrder.CustomImages.HoveredImage = global::PBL3.Properties.Resources.movie_ticket_color;
+            this.buttonMenuTicketOrder.CustomImages.Image = global::PBL3.Properties.Resources.movie_ticket;
+            this.buttonMenuTicketOrder.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuTicketOrder.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuTicketOrder, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuTicketOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuTicketOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuTicketOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuTicketOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuTicketOrder.FillColor = System.Drawing.Color.White;
+            this.buttonMenuTicketOrder.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuTicketOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuTicketOrder.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuTicketOrder.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuTicketOrder.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuTicketOrder.Location = new System.Drawing.Point(3, 501);
+            this.buttonMenuTicketOrder.Name = "buttonMenuTicketOrder";
+            this.buttonMenuTicketOrder.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuTicketOrder.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuTicketOrder.TabIndex = 5;
+            this.buttonMenuTicketOrder.Text = "Ticket Order";
+            this.buttonMenuTicketOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuTicketOrder.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuTicketOrder.Click += new System.EventHandler(this.buttonMenuTicketOrder_Click);
             // 
-            // guna2ControlBox1
+            // buttonMenuRoom
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1006, 3);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 2;
+            this.buttonMenuRoom.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuRoom.BorderRadius = 8;
+            this.buttonMenuRoom.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuRoom.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuRoom.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuRoom.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuRoom.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuRoom.CustomImages.HoveredImage = global::PBL3.Properties.Resources.cinema;
+            this.buttonMenuRoom.CustomImages.Image = global::PBL3.Properties.Resources.cinema__1_;
+            this.buttonMenuRoom.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuRoom.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuRoom, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuRoom.FillColor = System.Drawing.Color.White;
+            this.buttonMenuRoom.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuRoom.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuRoom.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuRoom.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuRoom.Location = new System.Drawing.Point(3, 450);
+            this.buttonMenuRoom.Name = "buttonMenuRoom";
+            this.buttonMenuRoom.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuRoom.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuRoom.TabIndex = 5;
+            this.buttonMenuRoom.Text = "Room";
+            this.buttonMenuRoom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuRoom.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuRoom.Click += new System.EventHandler(this.buttonMenuRoom_Click);
             // 
-            // labelTitleChildForm
+            // buttonMenuShowTime
             // 
-            this.labelTitleChildForm.AutoSize = true;
-            this.labelTitleChildForm.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.labelTitleChildForm.Location = new System.Drawing.Point(64, 13);
-            this.labelTitleChildForm.Name = "labelTitleChildForm";
-            this.labelTitleChildForm.Size = new System.Drawing.Size(72, 30);
-            this.labelTitleChildForm.TabIndex = 1;
-            this.labelTitleChildForm.Text = "Home";
+            this.buttonMenuShowTime.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuShowTime.BorderRadius = 8;
+            this.buttonMenuShowTime.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuShowTime.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuShowTime.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuShowTime.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuShowTime.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuShowTime.CustomImages.HoveredImage = global::PBL3.Properties.Resources.showtime_color;
+            this.buttonMenuShowTime.CustomImages.Image = global::PBL3.Properties.Resources.showtime;
+            this.buttonMenuShowTime.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuShowTime.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuShowTime, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuShowTime.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuShowTime.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuShowTime.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuShowTime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuShowTime.FillColor = System.Drawing.Color.White;
+            this.buttonMenuShowTime.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuShowTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuShowTime.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuShowTime.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuShowTime.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuShowTime.Location = new System.Drawing.Point(3, 399);
+            this.buttonMenuShowTime.Name = "buttonMenuShowTime";
+            this.buttonMenuShowTime.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuShowTime.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuShowTime.TabIndex = 4;
+            this.buttonMenuShowTime.Text = "ShowTime";
+            this.buttonMenuShowTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuShowTime.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuShowTime.Click += new System.EventHandler(this.buttonMenuShowTime_Click);
             // 
-            // panelShadow
+            // buttonMenuPopcornDrink
             // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(230, 60);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(1054, 9);
-            this.panelShadow.TabIndex = 2;
+            this.buttonMenuPopcornDrink.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuPopcornDrink.BorderRadius = 8;
+            this.buttonMenuPopcornDrink.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuPopcornDrink.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuPopcornDrink.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuPopcornDrink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuPopcornDrink.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuPopcornDrink.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuPopcornDrink.CustomImages.HoveredImage = global::PBL3.Properties.Resources.popcorn1;
+            this.buttonMenuPopcornDrink.CustomImages.Image = global::PBL3.Properties.Resources.popcorn__1_;
+            this.buttonMenuPopcornDrink.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuPopcornDrink.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuPopcornDrink, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuPopcornDrink.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuPopcornDrink.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuPopcornDrink.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuPopcornDrink.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuPopcornDrink.FillColor = System.Drawing.Color.White;
+            this.buttonMenuPopcornDrink.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuPopcornDrink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuPopcornDrink.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuPopcornDrink.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuPopcornDrink.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuPopcornDrink.Location = new System.Drawing.Point(3, 348);
+            this.buttonMenuPopcornDrink.Name = "buttonMenuPopcornDrink";
+            this.buttonMenuPopcornDrink.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuPopcornDrink.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuPopcornDrink.TabIndex = 3;
+            this.buttonMenuPopcornDrink.Text = "Popcorn Drink";
+            this.buttonMenuPopcornDrink.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuPopcornDrink.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuPopcornDrink.Click += new System.EventHandler(this.buttonMenuPopcornDrink_Click);
             // 
-            // panelCenter
+            // buttonMenuOrder
             // 
-            this.panelCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCenter.Location = new System.Drawing.Point(230, 69);
-            this.panelCenter.Name = "panelCenter";
-            this.panelCenter.Size = new System.Drawing.Size(1054, 672);
-            this.panelCenter.TabIndex = 3;
+            this.buttonMenuOrder.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuOrder.BorderRadius = 8;
+            this.buttonMenuOrder.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuOrder.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuOrder.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuOrder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuOrder.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuOrder.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuOrder.CustomImages.HoveredImage = global::PBL3.Properties.Resources.clipboard__1_;
+            this.buttonMenuOrder.CustomImages.Image = global::PBL3.Properties.Resources.clipboard;
+            this.buttonMenuOrder.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuOrder.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuOrder, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuOrder.FillColor = System.Drawing.Color.White;
+            this.buttonMenuOrder.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuOrder.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuOrder.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuOrder.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuOrder.Location = new System.Drawing.Point(3, 297);
+            this.buttonMenuOrder.Name = "buttonMenuOrder";
+            this.buttonMenuOrder.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuOrder.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuOrder.TabIndex = 3;
+            this.buttonMenuOrder.Text = "Order";
+            this.buttonMenuOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuOrder.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuOrder.Click += new System.EventHandler(this.buttonMenuOrder_Click);
+            // 
+            // buttonMenuMovie
+            // 
+            this.buttonMenuMovie.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuMovie.BorderRadius = 8;
+            this.buttonMenuMovie.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuMovie.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuMovie.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuMovie.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuMovie.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuMovie.CustomImages.HoveredImage = global::PBL3.Properties.Resources.clapperboard;
+            this.buttonMenuMovie.CustomImages.Image = global::PBL3.Properties.Resources.clapperboard__1_;
+            this.buttonMenuMovie.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuMovie.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuMovie, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuMovie.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuMovie.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuMovie.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuMovie.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuMovie.FillColor = System.Drawing.Color.White;
+            this.buttonMenuMovie.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuMovie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuMovie.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuMovie.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuMovie.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuMovie.Location = new System.Drawing.Point(3, 246);
+            this.buttonMenuMovie.Name = "buttonMenuMovie";
+            this.buttonMenuMovie.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuMovie.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuMovie.TabIndex = 3;
+            this.buttonMenuMovie.Text = "Movie";
+            this.buttonMenuMovie.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuMovie.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuMovie.Click += new System.EventHandler(this.buttonMenuMovie_Click);
+            // 
+            // buttonMenuEmployee
+            // 
+            this.buttonMenuEmployee.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuEmployee.BorderRadius = 8;
+            this.buttonMenuEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuEmployee.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuEmployee.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuEmployee.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuEmployee.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuEmployee.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuEmployee.CustomImages.HoveredImage = global::PBL3.Properties.Resources.customer__1_;
+            this.buttonMenuEmployee.CustomImages.Image = global::PBL3.Properties.Resources.customer;
+            this.buttonMenuEmployee.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuEmployee.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuEmployee, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuEmployee.FillColor = System.Drawing.Color.White;
+            this.buttonMenuEmployee.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuEmployee.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuEmployee.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuEmployee.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuEmployee.Location = new System.Drawing.Point(3, 195);
+            this.buttonMenuEmployee.Name = "buttonMenuEmployee";
+            this.buttonMenuEmployee.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuEmployee.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuEmployee.TabIndex = 3;
+            this.buttonMenuEmployee.Text = "Employee";
+            this.buttonMenuEmployee.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuEmployee.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuEmployee.Click += new System.EventHandler(this.buttonMenuEmployee_Click);
+            // 
+            // buttonMenuCustomer
+            // 
+            this.buttonMenuCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenuCustomer.BorderRadius = 8;
+            this.buttonMenuCustomer.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuCustomer.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuCustomer.CheckedState.FillColor = System.Drawing.Color.White;
+            this.buttonMenuCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuCustomer.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuCustomer.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuCustomer.CustomImages.HoveredImage = global::PBL3.Properties.Resources.man1;
+            this.buttonMenuCustomer.CustomImages.Image = global::PBL3.Properties.Resources.man__1_;
+            this.buttonMenuCustomer.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuCustomer.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuCustomer, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuCustomer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuCustomer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuCustomer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuCustomer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuCustomer.FillColor = System.Drawing.Color.White;
+            this.buttonMenuCustomer.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuCustomer.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuCustomer.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuCustomer.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuCustomer.Location = new System.Drawing.Point(3, 144);
+            this.buttonMenuCustomer.Name = "buttonMenuCustomer";
+            this.buttonMenuCustomer.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuCustomer.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuCustomer.TabIndex = 3;
+            this.buttonMenuCustomer.Text = "Customer";
+            this.buttonMenuCustomer.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuCustomer.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuCustomer.Click += new System.EventHandler(this.buttonMenuCustomer_Click);
+            // 
+            // buttonMenuHome
+            // 
+            this.buttonMenuHome.BackColor = System.Drawing.Color.White;
+            this.buttonMenuHome.BorderRadius = 8;
+            this.buttonMenuHome.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.buttonMenuHome.Checked = true;
+            this.buttonMenuHome.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenuHome.CustomBorderColor = System.Drawing.Color.White;
+            this.buttonMenuHome.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.buttonMenuHome.CustomImages.HoveredImage = global::PBL3.Properties.Resources.homeSolid;
+            this.buttonMenuHome.CustomImages.Image = global::PBL3.Properties.Resources.home;
+            this.buttonMenuHome.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuHome.CustomImages.ImageSize = new System.Drawing.Size(23, 23);
+            this.guna2Transition1.SetDecoration(this.buttonMenuHome, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMenuHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonMenuHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonMenuHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonMenuHome.FillColor = System.Drawing.Color.White;
+            this.buttonMenuHome.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold);
+            this.buttonMenuHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonMenuHome.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuHome.HoverState.Font = new System.Drawing.Font("Cerebri Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMenuHome.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(142)))), ((int)(((byte)(234)))));
+            this.buttonMenuHome.Location = new System.Drawing.Point(3, 93);
+            this.buttonMenuHome.Name = "buttonMenuHome";
+            this.buttonMenuHome.PressedColor = System.Drawing.Color.White;
+            this.buttonMenuHome.Size = new System.Drawing.Size(203, 45);
+            this.buttonMenuHome.TabIndex = 3;
+            this.buttonMenuHome.Text = "Home";
+            this.buttonMenuHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.buttonMenuHome.TextOffset = new System.Drawing.Point(30, 0);
+            this.buttonMenuHome.Click += new System.EventHandler(this.buttonMenuHome_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.pictureBoxSmallMenu);
+            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.pictureBoxBigMenu);
+            this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2Panel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(234, 91);
+            this.guna2Panel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Cerebri Sans", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(96, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 26);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "My Cinema";
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Transition1.SetDecoration(this.guna2Separator1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Separator1.Location = new System.Drawing.Point(12, 645);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(222, 10);
+            this.guna2Separator1.TabIndex = 6;
             // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.panelTitleBar;
+            this.guna2DragControl1.TargetControl = this;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
-            // iconCurrentChildForm
+            // guna2Transition1
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 40;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(21, 12);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
-            this.iconCurrentChildForm.TabIndex = 0;
-            this.iconCurrentChildForm.TabStop = false;
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
-            // iconButtonStatistic
+            // guna2Panel2
             // 
-            this.iconButtonStatistic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButtonStatistic.FlatAppearance.BorderSize = 0;
-            this.iconButtonStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonStatistic.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonStatistic.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonStatistic.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
-            this.iconButtonStatistic.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonStatistic.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonStatistic.IconSize = 32;
-            this.iconButtonStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonStatistic.Location = new System.Drawing.Point(0, 487);
-            this.iconButtonStatistic.Name = "iconButtonStatistic";
-            this.iconButtonStatistic.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonStatistic.Size = new System.Drawing.Size(230, 60);
-            this.iconButtonStatistic.TabIndex = 1;
-            this.iconButtonStatistic.Tag = "   Statistic";
-            this.iconButtonStatistic.Text = "Statistic";
-            this.iconButtonStatistic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonStatistic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonStatistic.UseVisualStyleBackColor = true;
-            this.iconButtonStatistic.Click += new System.EventHandler(this.iconButtonStatistic_Click);
-            this.iconButtonStatistic.MouseEnter += new System.EventHandler(this.iconButtonDivision_MouseEnter);
-            this.iconButtonStatistic.MouseLeave += new System.EventHandler(this.iconButtonDivision_MouseLeave);
+            this.guna2Panel2.Controls.Add(this.guna2Panel3);
+            this.guna2Panel2.Controls.Add(this.buttonMinimize);
+            this.guna2Panel2.Controls.Add(this.guna2ControlBoxMax);
+            this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
+            this.guna2Transition1.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(234, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(1088, 80);
+            this.guna2Panel2.TabIndex = 2;
             // 
-            // iconButtonEmployee
+            // guna2Panel3
             // 
-            this.iconButtonEmployee.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButtonEmployee.FlatAppearance.BorderSize = 0;
-            this.iconButtonEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonEmployee.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonEmployee.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonEmployee.IconChar = FontAwesome.Sharp.IconChar.PeopleCarry;
-            this.iconButtonEmployee.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonEmployee.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonEmployee.IconSize = 32;
-            this.iconButtonEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonEmployee.Location = new System.Drawing.Point(0, 427);
-            this.iconButtonEmployee.Name = "iconButtonEmployee";
-            this.iconButtonEmployee.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonEmployee.Size = new System.Drawing.Size(230, 60);
-            this.iconButtonEmployee.TabIndex = 1;
-            this.iconButtonEmployee.Tag = "   Employee";
-            this.iconButtonEmployee.Text = "Employee";
-            this.iconButtonEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonEmployee.UseVisualStyleBackColor = true;
-            this.iconButtonEmployee.Click += new System.EventHandler(this.iconButtonEmployee_Click);
-            this.iconButtonEmployee.MouseEnter += new System.EventHandler(this.iconButtonDivision_MouseEnter);
-            this.iconButtonEmployee.MouseLeave += new System.EventHandler(this.iconButtonDivision_MouseLeave);
+            this.guna2Panel3.Controls.Add(this.label4);
+            this.guna2Panel3.Controls.Add(this.labelNameAdmin);
+            this.guna2Panel3.Controls.Add(this.guna2PictureBox2);
+            this.guna2Panel3.Controls.Add(this.guna2PictureBox1);
+            this.guna2Transition1.SetDecoration(this.guna2Panel3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Panel3.Location = new System.Drawing.Point(822, 17);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(151, 64);
+            this.guna2Panel3.TabIndex = 7;
             // 
-            // iconButtonCustomer
+            // label4
             // 
-            this.iconButtonCustomer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButtonCustomer.FlatAppearance.BorderSize = 0;
-            this.iconButtonCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonCustomer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonCustomer.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonCustomer.IconChar = FontAwesome.Sharp.IconChar.Child;
-            this.iconButtonCustomer.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonCustomer.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonCustomer.IconSize = 32;
-            this.iconButtonCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonCustomer.Location = new System.Drawing.Point(0, 367);
-            this.iconButtonCustomer.Name = "iconButtonCustomer";
-            this.iconButtonCustomer.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonCustomer.Size = new System.Drawing.Size(230, 60);
-            this.iconButtonCustomer.TabIndex = 1;
-            this.iconButtonCustomer.Tag = "   Customer";
-            this.iconButtonCustomer.Text = "Customer";
-            this.iconButtonCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonCustomer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonCustomer.UseVisualStyleBackColor = true;
-            this.iconButtonCustomer.Click += new System.EventHandler(this.iconButtonCustomer_Click);
-            this.iconButtonCustomer.MouseEnter += new System.EventHandler(this.iconButtonDivision_MouseEnter);
-            this.iconButtonCustomer.MouseLeave += new System.EventHandler(this.iconButtonDivision_MouseLeave);
+            this.label4.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label4.Font = new System.Drawing.Font("Cerebri Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(44, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Manager";
             // 
-            // iconButtonPCDrink
+            // labelNameAdmin
             // 
-            this.iconButtonPCDrink.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButtonPCDrink.FlatAppearance.BorderSize = 0;
-            this.iconButtonPCDrink.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonPCDrink.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonPCDrink.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonPCDrink.IconChar = FontAwesome.Sharp.IconChar.Hamburger;
-            this.iconButtonPCDrink.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonPCDrink.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonPCDrink.IconSize = 32;
-            this.iconButtonPCDrink.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonPCDrink.Location = new System.Drawing.Point(0, 307);
-            this.iconButtonPCDrink.Name = "iconButtonPCDrink";
-            this.iconButtonPCDrink.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonPCDrink.Size = new System.Drawing.Size(230, 60);
-            this.iconButtonPCDrink.TabIndex = 1;
-            this.iconButtonPCDrink.Tag = "   PopcornDrink";
-            this.iconButtonPCDrink.Text = "PopcornDrink";
-            this.iconButtonPCDrink.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonPCDrink.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonPCDrink.UseVisualStyleBackColor = true;
-            this.iconButtonPCDrink.Click += new System.EventHandler(this.iconButtonPCDrink_Click);
-            this.iconButtonPCDrink.MouseEnter += new System.EventHandler(this.iconButtonDivision_MouseEnter);
-            this.iconButtonPCDrink.MouseLeave += new System.EventHandler(this.iconButtonDivision_MouseLeave);
+            this.labelNameAdmin.AutoSize = true;
+            this.guna2Transition1.SetDecoration(this.labelNameAdmin, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.labelNameAdmin.Font = new System.Drawing.Font("Cerebri Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameAdmin.Location = new System.Drawing.Point(44, 12);
+            this.labelNameAdmin.Name = "labelNameAdmin";
+            this.labelNameAdmin.Size = new System.Drawing.Size(46, 17);
+            this.labelNameAdmin.TabIndex = 1;
+            this.labelNameAdmin.Text = "Name";
             // 
-            // iconButtonRoom
+            // buttonMinimize
             // 
-            this.iconButtonRoom.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButtonRoom.FlatAppearance.BorderSize = 0;
-            this.iconButtonRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonRoom.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonRoom.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonRoom.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.iconButtonRoom.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonRoom.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonRoom.IconSize = 32;
-            this.iconButtonRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonRoom.Location = new System.Drawing.Point(0, 247);
-            this.iconButtonRoom.Name = "iconButtonRoom";
-            this.iconButtonRoom.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonRoom.Size = new System.Drawing.Size(230, 60);
-            this.iconButtonRoom.TabIndex = 1;
-            this.iconButtonRoom.Tag = "   Room";
-            this.iconButtonRoom.Text = "Room";
-            this.iconButtonRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonRoom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonRoom.UseVisualStyleBackColor = true;
-            this.iconButtonRoom.Click += new System.EventHandler(this.iconButtonRoom_Click);
-            this.iconButtonRoom.MouseEnter += new System.EventHandler(this.iconButtonDivision_MouseEnter);
-            this.iconButtonRoom.MouseLeave += new System.EventHandler(this.iconButtonDivision_MouseLeave);
+            this.buttonMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMinimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.buttonMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.buttonMinimize, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonMinimize.FillColor = System.Drawing.Color.Transparent;
+            this.buttonMinimize.IconColor = System.Drawing.Color.Black;
+            this.buttonMinimize.Location = new System.Drawing.Point(996, 5);
+            this.buttonMinimize.Name = "buttonMinimize";
+            this.buttonMinimize.Size = new System.Drawing.Size(25, 25);
+            this.buttonMinimize.TabIndex = 5;
             // 
-            // iconButtonShowTime
+            // guna2ControlBoxMax
             // 
-            this.iconButtonShowTime.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButtonShowTime.FlatAppearance.BorderSize = 0;
-            this.iconButtonShowTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonShowTime.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonShowTime.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonShowTime.IconChar = FontAwesome.Sharp.IconChar.Calendar;
-            this.iconButtonShowTime.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonShowTime.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonShowTime.IconSize = 32;
-            this.iconButtonShowTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonShowTime.Location = new System.Drawing.Point(0, 187);
-            this.iconButtonShowTime.Name = "iconButtonShowTime";
-            this.iconButtonShowTime.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonShowTime.Size = new System.Drawing.Size(230, 60);
-            this.iconButtonShowTime.TabIndex = 1;
-            this.iconButtonShowTime.Tag = "   ShowTime";
-            this.iconButtonShowTime.Text = "ShowTime";
-            this.iconButtonShowTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonShowTime.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonShowTime.UseVisualStyleBackColor = true;
-            this.iconButtonShowTime.Click += new System.EventHandler(this.iconButtonShowTime_Click);
-            this.iconButtonShowTime.MouseEnter += new System.EventHandler(this.iconButtonDivision_MouseEnter);
-            this.iconButtonShowTime.MouseLeave += new System.EventHandler(this.iconButtonDivision_MouseLeave);
+            this.guna2ControlBoxMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBoxMax.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBoxMax.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.guna2ControlBoxMax.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.guna2ControlBoxMax, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBoxMax.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBoxMax.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBoxMax.Location = new System.Drawing.Point(1027, 5);
+            this.guna2ControlBoxMax.Name = "guna2ControlBoxMax";
+            this.guna2ControlBoxMax.Size = new System.Drawing.Size(25, 25);
+            this.guna2ControlBoxMax.TabIndex = 6;
             // 
-            // iconButtonMovie
+            // guna2ControlBox1
             // 
-            this.iconButtonMovie.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButtonMovie.FlatAppearance.BorderSize = 0;
-            this.iconButtonMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButtonMovie.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButtonMovie.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonMovie.IconChar = FontAwesome.Sharp.IconChar.Film;
-            this.iconButtonMovie.IconColor = System.Drawing.Color.Gainsboro;
-            this.iconButtonMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButtonMovie.IconSize = 32;
-            this.iconButtonMovie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonMovie.Location = new System.Drawing.Point(0, 127);
-            this.iconButtonMovie.Name = "iconButtonMovie";
-            this.iconButtonMovie.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.iconButtonMovie.Size = new System.Drawing.Size(230, 60);
-            this.iconButtonMovie.TabIndex = 1;
-            this.iconButtonMovie.Tag = "   Movie";
-            this.iconButtonMovie.Text = "Movie";
-            this.iconButtonMovie.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButtonMovie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButtonMovie.UseVisualStyleBackColor = true;
-            this.iconButtonMovie.Click += new System.EventHandler(this.iconButtonMovie_Click);
-            this.iconButtonMovie.MouseEnter += new System.EventHandler(this.iconButtonDivision_MouseEnter);
-            this.iconButtonMovie.MouseLeave += new System.EventHandler(this.iconButtonDivision_MouseLeave);
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1058, 4);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(25, 25);
+            this.guna2ControlBox1.TabIndex = 1;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
-            // pictureBoxLogo
+            // panelContainerAdmin
             // 
-            this.pictureBoxLogo.Image = global::PBL3.Properties.Resources.film;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(38, 13);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(95, 86);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 2;
-            this.pictureBoxLogo.TabStop = false;
-            this.pictureBoxLogo.Click += new System.EventHandler(this.pictureBoxLogo_Click);
+            this.guna2Transition1.SetDecoration(this.panelContainerAdmin, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panelContainerAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainerAdmin.Location = new System.Drawing.Point(234, 80);
+            this.panelContainerAdmin.Name = "panelContainerAdmin";
+            this.panelContainerAdmin.Size = new System.Drawing.Size(1088, 738);
+            this.panelContainerAdmin.TabIndex = 3;
             // 
-            // buttonMenu
+            // guna2PictureBox2
             // 
-            this.buttonMenu.FlatAppearance.BorderSize = 0;
-            this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMenu.IconChar = FontAwesome.Sharp.IconChar.Bars;
-            this.buttonMenu.IconColor = System.Drawing.Color.Turquoise;
-            this.buttonMenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.buttonMenu.IconSize = 30;
-            this.buttonMenu.Location = new System.Drawing.Point(162, 2);
-            this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(55, 53);
-            this.buttonMenu.TabIndex = 1;
-            this.buttonMenu.UseVisualStyleBackColor = true;
-            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox2.Image = global::PBL3.Properties.Resources.ceo;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(3, 12);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(35, 35);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 0;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2Transition1.SetDecoration(this.guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(21, -161);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(35, 35);
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // buttonHideMenu
+            // 
+            this.buttonHideMenu.Animated = true;
+            this.buttonHideMenu.BackColor = System.Drawing.Color.Transparent;
+            this.buttonHideMenu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Transition1.SetDecoration(this.buttonHideMenu, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.buttonHideMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonHideMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonHideMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonHideMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonHideMenu.FillColor = System.Drawing.SystemColors.Control;
+            this.buttonHideMenu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonHideMenu.ForeColor = System.Drawing.Color.Black;
+            this.buttonHideMenu.Image = global::PBL3.Properties.Resources.left_arrow1;
+            this.buttonHideMenu.Location = new System.Drawing.Point(210, 631);
+            this.buttonHideMenu.Name = "buttonHideMenu";
+            this.buttonHideMenu.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.buttonHideMenu.Size = new System.Drawing.Size(40, 40);
+            this.buttonHideMenu.TabIndex = 1;
+            this.buttonHideMenu.UseTransparentBackground = true;
+            this.buttonHideMenu.Click += new System.EventHandler(this.buttonHideMenu_Click);
+            // 
+            // pictureBoxSmallMenu
+            // 
+            this.pictureBoxSmallMenu.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.pictureBoxSmallMenu, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.pictureBoxSmallMenu.Image = global::PBL3.Properties.Resources.film;
+            this.pictureBoxSmallMenu.ImageRotate = 0F;
+            this.pictureBoxSmallMenu.Location = new System.Drawing.Point(3, 17);
+            this.pictureBoxSmallMenu.Name = "pictureBoxSmallMenu";
+            this.pictureBoxSmallMenu.Size = new System.Drawing.Size(40, 40);
+            this.pictureBoxSmallMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSmallMenu.TabIndex = 2;
+            this.pictureBoxSmallMenu.TabStop = false;
+            this.pictureBoxSmallMenu.Visible = false;
+            // 
+            // pictureBoxBigMenu
+            // 
+            this.pictureBoxBigMenu.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.pictureBoxBigMenu, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.pictureBoxBigMenu.Image = global::PBL3.Properties.Resources.film;
+            this.pictureBoxBigMenu.ImageRotate = 0F;
+            this.pictureBoxBigMenu.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxBigMenu.Name = "pictureBoxBigMenu";
+            this.pictureBoxBigMenu.Size = new System.Drawing.Size(87, 77);
+            this.pictureBoxBigMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxBigMenu.TabIndex = 0;
+            this.pictureBoxBigMenu.TabStop = false;
+            this.pictureBoxBigMenu.UseTransparentBackground = true;
+            this.pictureBoxBigMenu.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // AdminMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 741);
-            this.Controls.Add(this.panelCenter);
-            this.Controls.Add(this.panelShadow);
-            this.Controls.Add(this.panelTitleBar);
-            this.Controls.Add(this.panelMenu);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1322, 818);
+            this.Controls.Add(this.panelContainerAdmin);
+            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.panelMenuAdmin);
+            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Font = new System.Drawing.Font("Cerebri Sans", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.KeyPreview = true;
             this.Name = "AdminMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
-            this.panelMenu.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
-            this.panelTitleBar.ResumeLayout(false);
-            this.panelTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.Text = "AdMainForm";
+            this.panelMenuAdmin.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBigMenu)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelMenu;
-        private FontAwesome.Sharp.IconButton iconButtonMovie;
-        private System.Windows.Forms.Panel panelLogo;
-        private FontAwesome.Sharp.IconButton iconButtonStatistic;
-        private FontAwesome.Sharp.IconButton iconButtonEmployee;
-        private FontAwesome.Sharp.IconButton iconButtonCustomer;
-        private FontAwesome.Sharp.IconButton iconButtonPCDrink;
-        private FontAwesome.Sharp.IconButton iconButtonRoom;
-        private FontAwesome.Sharp.IconButton iconButtonShowTime;
-        private System.Windows.Forms.Panel panelTitleBar;
-        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
-        private System.Windows.Forms.Label labelTitleChildForm;
-        private System.Windows.Forms.Panel panelShadow;
-        private System.Windows.Forms.Panel panelCenter;
-        private FontAwesome.Sharp.IconButton buttonMenu;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Panel panelMenuAdmin;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private Guna.UI2.WinForms.Guna2PictureBox pictureBoxBigMenu;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2CircleButton buttonHideMenu;
+        private Guna.UI2.WinForms.Guna2CircleButton buttonShowMenu;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
+        private Guna.UI2.WinForms.Guna2PictureBox pictureBoxSmallMenu;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuHome;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuCustomer;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuPopcornDrink;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuOrder;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuMovie;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuEmployee;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuRoom;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuPopcornDrinkOrder;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuTicketOrder;
+        private Guna.UI2.WinForms.Guna2Button buttonMenuShowTime;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.Panel panelContainerAdmin;
+        private Guna.UI2.WinForms.Guna2ControlBox buttonMinimize;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBoxMax;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelNameAdmin;
     }
 }

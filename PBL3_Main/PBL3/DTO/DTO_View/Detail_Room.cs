@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace PBL3.DTO.DTO_View
 {
-    public class Order_Buffer
+    public class Detail_Room
     {
-
+        public string IdRoom { get; set; }
+        public string NameRoom { get; set; }
+        public int NumberSeats { get; set; }
     }
 }

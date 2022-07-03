@@ -16,11 +16,43 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
         public AMF_Room()
         {
             InitializeComponent();
+            dataGridViewShow.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect;
             ShowDGV();
         }
         private void ShowDGV()
         {
-            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.GetAll_Room();
+            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.List_Room_To_List_Detail_Room(BLL_QLRapchieuphim.Instance.GetAll_Room());
+        }
+        private void guna2ButtonAdd_Click(object sender, EventArgs e)
+        {
+            Form_AddUpdate_Room f = new Form_AddUpdate_Room("");
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                ShowDGV();
+            }
+        }
+        private void guna2ButtonUpdate_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewShow.SelectedRows.Count == 1)
+            {
+                string _IdRoom = dataGridViewShow.SelectedRows[0].Cells[0].Value.ToString();
+                Form_AddUpdate_Room f = new Form_AddUpdate_Room(_IdRoom);
+                if (f.ShowDialog() == DialogResult.OK)
+                {
+                    ShowDGV();
+                }
+            }
+        }
+        private void guna2ButtonRemove_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewShow.SelectedRows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dataGridViewShow.SelectedRows)
+                {
+                    BLL_QLRapchieuphim.Instance.Delete_Room_By_IdRoom(row.Cells[0].Value.ToString());
+                }
+                ShowDGV();
+            }
         }
         private void buttonClose_Click(object sender, EventArgs e)
         {

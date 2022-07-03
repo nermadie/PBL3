@@ -58,3 +58,14 @@ C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_PDPayment.PDPayment.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_History.resources
 C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Profile.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Cart.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_History.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Home.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_MovieDetail.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Movies.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Payment.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_PopcornDrinks.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Profile.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Showtimes.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Tickets.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Home.resources

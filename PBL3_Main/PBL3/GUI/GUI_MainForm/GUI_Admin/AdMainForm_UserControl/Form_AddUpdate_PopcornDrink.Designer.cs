@@ -1,6 +1,6 @@
 ﻿namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
 {
-    partial class DetailForm_PopcornDrink
+    partial class Form_AddUpdate_PopcornDrink
     {
         /// <summary>
         /// Required designer variable.
@@ -59,7 +59,7 @@
             this.textBoxName.Location = new System.Drawing.Point(182, 23);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(247, 20);
-            this.textBoxName.TabIndex = 1;
+            this.textBoxName.TabIndex = 0;
             // 
             // textBoxPrice
             // 
@@ -83,11 +83,12 @@
             this.buttonCancel.Location = new System.Drawing.Point(288, 95);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancel.TabIndex = 2;
+            this.buttonCancel.TabIndex = 3;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // DetailForm_PopcornDrink
+            // Form_AddUpdate_PopcornDrink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -98,7 +99,7 @@
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "DetailForm_PopcornDrink";
+            this.Name = "Form_AddUpdate_PopcornDrink";
             this.Text = "DetailForm_PopcornDrink";
             this.ResumeLayout(false);
             this.PerformLayout();
