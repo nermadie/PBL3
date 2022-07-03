@@ -18,16 +18,14 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl
 {
     public partial class EMF_History : UserControl
     {
-        private Customer currentCus;
-        public EMF_History(string cus)
+        private Employee currentEmployee;
+        public EMF_History(string em)
         {
             InitializeComponent();
-            this.currentCus = BLL_QLRapchieuphim.Instance.getCustomerbyIDCus(cus);
+            this.currentEmployee = BLL_QLRapchieuphim.Instance.getEmployeebyIDEm(em);
         }
         private void EMF_History_Load(object sender, EventArgs e)
         {
-            //Load CBBItem
-            guna2ComboBox.Items.AddRange(BLL_QLRapchieuphim.Instance.GetCBBHistory(currentCus));
         }
         private void guna2DataGridViewPD_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
@@ -39,10 +37,10 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl
             dataGridViewTicket.Rows[e.RowIndex].Cells[0].Value = (e.RowIndex + 1).ToString();
         }
 
-        private void guna2ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void loadData()
         {
             //load PD
-            List<PopcornDrinkOrder> listPDO = BLL_QLRapchieuphim.Instance.getDataPDbyIdOrder(((CBBItemS)guna2ComboBox.SelectedItem).Value);
+            List<PopcornDrinkOrder> listPDO = BLL_QLRapchieuphim.Instance.getDataPDbyCode(textBoxCode.Text);
             dataGridViewPD.Rows.Clear();
             foreach (PopcornDrinkOrder popcornDrinkOrder in listPDO)
             {
@@ -56,7 +54,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl
             }
             //load Ticket
             dataGridViewTicket.Rows.Clear();
-            List<TicketOrder> listTO = BLL_QLRapchieuphim.Instance.getDataTicketOrderbyIdOrder(((CBBItemS)guna2ComboBox.SelectedItem).Value);
+            List<TicketOrder> listTO = BLL_QLRapchieuphim.Instance.getDataTicketOrderbyCode(textBoxCode.Text);
             foreach (TicketOrder ticketOrder in listTO)
             {
                 dataGridViewTicket.Rows.Add(new object[]
@@ -70,15 +68,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl
                 });
             }
             changePrice();
-            string code = BLL_QLRapchieuphim.Instance.getCodebyIdOrder(((CBBItemS)guna2ComboBox.SelectedItem).Value);
-            if (code != null)
-            {
-                textBoxCode.Text = code;
-            }
-            else
-            {
-                textBoxCode.Text = "Tickets received";
-            }
         }
         private void changePrice()
         {
@@ -98,5 +87,14 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl
             textBoxTotal.Text = (ticketPrice + pdPrice).ToString();
         }
 
+        private void buttonGetOrder_Click(object sender, EventArgs e)
+        {
+            loadData();
+        }
+
+        private void buttonCheck_Click(object sender, EventArgs e)
+        {
+            BLL_QLRapchieuphim.Instance.checkCodeforOrder(textBoxCode.Text);
+        }
     }
 }

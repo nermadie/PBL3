@@ -60,6 +60,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.helpProvider2 = new System.Windows.Forms.HelpProvider();
+            this.guna2PictureMovie = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GradientPanel9.SuspendLayout();
@@ -69,6 +70,7 @@
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -178,6 +180,7 @@
             // 
             this.guna2GradientPanel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel9.BorderRadius = 14;
+            this.guna2GradientPanel9.Controls.Add(this.guna2PictureMovie);
             this.guna2GradientPanel9.Controls.Add(this.labelReleaseDate);
             this.guna2GradientPanel9.Controls.Add(this.labelCategory);
             this.guna2GradientPanel9.Controls.Add(this.labelActor);
@@ -432,6 +435,15 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(447, 137);
             this.guna2GradientPanel2.TabIndex = 11;
             // 
+            // guna2PictureMovie
+            // 
+            this.guna2PictureMovie.ImageRotate = 0F;
+            this.guna2PictureMovie.Location = new System.Drawing.Point(814, -6);
+            this.guna2PictureMovie.Name = "guna2PictureMovie";
+            this.guna2PictureMovie.Size = new System.Drawing.Size(200, 300);
+            this.guna2PictureMovie.TabIndex = 8;
+            this.guna2PictureMovie.TabStop = false;
+            // 
             // AMF_Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -457,6 +469,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureMovie)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -493,5 +506,6 @@
         private System.Windows.Forms.Label labelActor;
         private System.Windows.Forms.Label labelDirector;
         private System.Windows.Forms.Label labelNameMovie;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureMovie;
     }
 }

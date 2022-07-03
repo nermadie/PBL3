@@ -234,12 +234,9 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Employee
 
         private void buttonCheckCode_Click(object sender, EventArgs e)
         {
-            //private void buttonHistory_Click(object sender, EventArgs e)
-            //{
-            //    uncheckAnotherButton();
-            //    history = new EMF_History(currentCus);
-            //    addUserControl(history);
-            //}
+            uncheckAnotherButton();
+            history = new EMF_History(currentEm);
+            addUserControl(history);
         }
     }
 }

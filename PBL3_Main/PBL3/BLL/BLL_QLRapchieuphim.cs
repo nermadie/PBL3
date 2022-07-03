@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using PBL3.DTO.DTO_Order;
 using PBL3.DTO.DTO_Person;
@@ -14,7 +15,7 @@ using PBL3.DTO.DTO_ShowTime;
 using PBL3.DTO.DTO_View;
 using PBL3.EntityFramework;
 using PBL3.GUI.DelegateTemplate;
-using PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice;
+using ListItem = PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice.ListItem;
 
 namespace PBL3.BLL
 {
@@ -557,6 +558,29 @@ namespace PBL3.BLL
         public Employee getEmployeebyIDEm(string idEmployee)
         {
             return db.Employees.FirstOrDefault(c => c.IdPerson == idEmployee);
+        }
+
+        public List<PopcornDrinkOrder> getDataPDbyCode(string text)
+        {
+            var order = db.Orders.FirstOrDefault(o => o.Code == text);
+            if (order != null)
+                return db.PopcornDrinkOrders.Where(pdo => pdo.IdOrder == order.IdOrder).ToList();
+            return new List<PopcornDrinkOrder>();
+        }
+
+        public List<TicketOrder> getDataTicketOrderbyCode(string text)
+        {
+            var order = db.Orders.FirstOrDefault(o => o.Code == text);
+            if (order != null)
+                return db.TicketOrders.Include("ShowTime.Movie").Include("ShowTime.Room").Include("ShowTime").Where(to => to.IdOrder == order.IdOrder).ToList();
+            return new List<TicketOrder>();
+        }
+
+        public void checkCodeforOrder(string text)
+        {
+            Order order = db.Orders.FirstOrDefault(o => o.Code == text);
+            order.Code = null;
+            db.SaveChanges();
         }
     }
 }

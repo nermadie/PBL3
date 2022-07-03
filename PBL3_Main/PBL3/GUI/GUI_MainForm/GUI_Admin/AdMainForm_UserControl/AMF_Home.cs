@@ -44,7 +44,7 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
             //labelDescription.Text = "Description: " + Top1Trending.Description;
             labelReleaseDate.Text = "Release date: " + Top1Trending.ReleaseDate.ToString();
             labelCategory.Text = "Category" + Top1Trending.Category;
-
+            guna2PictureMovie.Image = BLL_QLRapchieuphim.Instance.getImagebyIdMovie(Top1Trending.IdMovie);
         }
     }
 }
