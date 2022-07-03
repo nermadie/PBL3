@@ -17,12 +17,54 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
         public AMF_PopcornDrink()
         {
             InitializeComponent();
+            dataGridViewShow.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect;
+
             ShowDGV();
         }
-        private void ShowDGV()
+        private void ShowDGV(string _Keyword = "")
         {
-            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.GetAll_PopcornDrink();
+            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.Get_PopcornDrink_By_KeyWord(_Keyword);
         }
+        private void guna2ButtonSearch_Click(object sender, EventArgs e)
+        {
+            string _Keyword = textBoxSearch.Text;
+            ShowDGV(_Keyword);
+        }
+        private void guna2ButtonAdd_Click(object sender, EventArgs e)
+        {
+            Form_AddUpdate_PopcornDrink f = new Form_AddUpdate_PopcornDrink("");
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                ShowDGV();
+            }
+        }
+
+        private void guna2ButtonUpdate_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewShow.SelectedRows.Count == 1)
+            {
+                string _IdPopcornDrink = dataGridViewShow.SelectedRows[0].Cells[0].Value.ToString();
+                Form_AddUpdate_PopcornDrink f = new Form_AddUpdate_PopcornDrink(_IdPopcornDrink);
+                if (f.ShowDialog() == DialogResult.OK)
+                {
+                    ShowDGV();
+                }
+            }
+        }
+
+        private void guna2ButtonRemove_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewShow.SelectedRows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dataGridViewShow.SelectedRows)
+                {
+                    BLL_QLRapchieuphim.Instance.Delete_PopcornDrink_By_IdPopcornDrink(row.Cells[0].Value.ToString());
+                }
+                ShowDGV();
+            }
+        }
+
+
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Dispose();
@@ -62,40 +104,6 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
             catch (Exception)
             {
 
-            }
-        }
-
-        private void guna2ButtonAdd_Click(object sender, EventArgs e)
-        {
-            DetailForm_PopcornDrink f = new DetailForm_PopcornDrink(null);
-            if (f.ShowDialog() == DialogResult.OK)
-            {
-                ShowDGV();
-            }
-        }
-
-        private void guna2ButtonUpdate_Click(object sender, EventArgs e)
-        {
-            if (dataGridViewShow.SelectedRows.Count == 1)
-            {
-                string _IdPopcornDrink = dataGridViewShow.SelectedRows[0].Cells["0"].Value.ToString();
-                DetailForm_PopcornDrink f = new DetailForm_PopcornDrink(_IdPopcornDrink);
-                if (f.ShowDialog() == DialogResult.OK)
-                {
-                    ShowDGV();
-                }
-            }
-        }
-
-        private void guna2ButtonRemove_Click(object sender, EventArgs e)
-        {
-            if (dataGridViewShow.SelectedRows.Count > 0)
-            {
-                foreach (DataGridViewRow row in dataGridViewShow.SelectedRows)
-                {
-                    BLL_QLRapchieuphim.Instance.Delete_PopcornDrink_By_IdPopcornDrink(row.Cells["0"].Value.ToString());
-                }
-                ShowDGV();
             }
         }
     }

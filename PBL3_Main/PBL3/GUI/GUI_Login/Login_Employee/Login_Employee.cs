@@ -126,7 +126,7 @@ namespace PBL3.GUI.GUI_Login.Login_Employee
                 Employee employee;
                 if ((employee = BLL_QLRapchieuphim.Instance.checkAccountSignInEmployee(textBoxUser.Text, textBoxPass.Text)) != null)
                 {
-                    EmployeeMainForm amf = new EmployeeMainForm(employee);
+                    EmployeeMainForm amf = new EmployeeMainForm(employee.IdPerson);
                     amf.Show();
                     this.Visible = false;
                     //In ra thong bao

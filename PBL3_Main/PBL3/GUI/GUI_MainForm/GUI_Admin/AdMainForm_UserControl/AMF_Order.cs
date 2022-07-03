@@ -16,12 +16,30 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
         public AMF_Order()
         {
             InitializeComponent();
-            ShowDGV();
+            dataGridViewShow.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect;
+            ShowDGV(true);
         }
-        private void ShowDGV()
+        private void ShowDGV(bool IsAll)
         {
-            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.Get_Order_By_IdCustomer("All");
+            if (IsAll)
+            {
+                dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.List_Order_To_List_Detail_Order(BLL_QLRapchieuphim.Instance.Get_Order_By_IdCustomer("All"));
+            }
+            else
+            {
+                DateTime date = guna2DateTimePicker1.Value.Date;
+                if (BLL_QLRapchieuphim.Instance.Get_Order_By_Date(date) != null)
+                {
+                    dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.List_Order_To_List_Detail_Order(BLL_QLRapchieuphim.Instance.Get_Order_By_Date(date));
+                }
+            }
         }
+        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            ShowDGV(false);
+        }
+
+
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Dispose();

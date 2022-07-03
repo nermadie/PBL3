@@ -16,11 +16,12 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
         public AMF_TicketOrder()
         {
             InitializeComponent();
+            dataGridViewShow.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect;
             ShowDGV();
         }
         private void ShowDGV()
         {
-            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.Get_TicketOrder_By_IdOrder("All");
+            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.List_TicketOrder_To_List_Detail_TicketOrder(BLL_QLRapchieuphim.Instance.GetAll_TicketOrder());
         }
         private void buttonClose_Click(object sender, EventArgs e)
         {

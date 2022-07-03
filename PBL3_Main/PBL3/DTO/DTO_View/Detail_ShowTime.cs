@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace PBL3.DTO.DTO_View
 {
-    public class Format_ShowTime
+    public class Detail_ShowTime
     {
         public string NameMovie { get; set; }
         public string NameRoom { get; set; }
         public DateTime Time { get; set; }
-        public string SeatStatus { get; set; } //View the map
         public string SeatView { get; set; } //View the DGV
         public string SlotView { get; set; } //View the DGV
         public int TicketPrice { get; set; }
@@ -19,7 +18,6 @@ namespace PBL3.DTO.DTO_View
         public int Get_NumberSlots_From_SeatStatus(string _SeatStatus)
         {
             int res = 0;
-            int NumberSeats = _SeatStatus.Length;
             foreach (char i in _SeatStatus)
             {
                 if (i == '0')
@@ -35,7 +33,6 @@ namespace PBL3.DTO.DTO_View
             if (NumberSeats % 10 == 0 && NumberSeats != 0)
             {
                 string res = "";
-                string[,] SeatStatus = new string[10, 10];
                 int NumberRows = NumberSeats / 10;
                 for (int rowCount = 0; rowCount < NumberRows; rowCount++)
                 {
@@ -52,7 +49,7 @@ namespace PBL3.DTO.DTO_View
             }
             else
             {
-                return "input string co do dai khong chia het cho 10";
+                return "Error: length of _SeatStatus is not divided by 10";
             }
         }
         public string Get_SlotView_From_SeatStatus(string _SeatStatus)
@@ -61,7 +58,6 @@ namespace PBL3.DTO.DTO_View
             if (NumberSeats % 10 == 0 && NumberSeats != 0)
             {
                 string res = "";
-                string[,] SeatStatus = new string[10, 10];
                 int NumberRows = NumberSeats / 10;
                 for (int rowCount = 0; rowCount < NumberRows; rowCount++)
                 {
@@ -78,11 +74,8 @@ namespace PBL3.DTO.DTO_View
             }
             else
             {
-                return "input string co do dai khong chia het cho 10";
+                return "Error: length of _SeatStatus is not divided by 10";
             }
         }
-    }
-    public class Format_Bill
-    {
     }
 }

@@ -17,11 +17,12 @@ namespace PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl
         public AMF_PopcornDrinkOrder()
         {
             InitializeComponent();
+            dataGridViewShow.SelectionMode = DataGridViewSelectionMode.RowHeaderSelect;
             ShowDGV();
         }
         private void ShowDGV()
         {
-            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.GetAll_PopcornDrinkOrder();
+            dataGridViewShow.DataSource = BLL_QLRapchieuphim.Instance.List_PopcornDrinkOrder_To_List_Detail_PopcornDrinkOrder(BLL_QLRapchieuphim.Instance.GetAll_PopcornDrinkOrder());
         }
         private void buttonClose_Click(object sender, EventArgs e)
         {

@@ -125,7 +125,7 @@ namespace PBL3.GUI.GUI_Login.Login_Admin
                 Admin admin;
                 if ((admin = BLL_QLRapchieuphim.Instance.checkAccountSignInAdmin(textBoxUser.Text, textBoxPass.Text)) != null)
                 {
-                    AdminMainForm amf = new AdminMainForm(admin);
+                    AdminMainForm amf = new AdminMainForm();
                     amf.Show();
                     this.Visible = false;
                     //In ra thong bao
