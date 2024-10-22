@@ -18,21 +18,21 @@ The application also provides an admin interface for managing movies, showtimes,
 ### User Interface
 
 - **Home Page**: Display the list of movies that are currently showing.
-  ![alt text](images\image-1.png)
+  ![alt text](images/image-1.png)
 - **Movie Detail Page**: Display detailed information about a movie, including the title, description, poster, and showtimes.
-  ![alt text](images\image-2.png)
+  ![alt text](images/image-2.png)
 - **Showtime Page**: Display the showtimes of a movie.
-  ![alt text](images\image.png)
+  ![alt text](images/image.png)
 - **Booking Page**: Allow users to book tickets for a showtime.
-  ![alt text](images\image-3.png)
+  ![alt text](images/image-3.png)
 - **Booking History Page**: Display the booking history of the user.
-  ![alt text](images\image-4.png)
+  ![alt text](images/image-4.png)
 - **Admin Interface**: Allow admin to manage movies, showtimes, and bookings.
 - **Staff Interface**: Allow staff to check and manage bookings.
 
 ### Database
 
-![alt text](images\image-5.png)
+![alt text](images/image-5.png)
 
 ### Technologies
 
