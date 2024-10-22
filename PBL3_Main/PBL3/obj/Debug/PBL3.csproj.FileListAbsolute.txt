@@ -1,0 +1,142 @@
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.AssemblyReference.cache
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.SuggestedBindingRedirects.cache
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.Properties.Resources.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.GenerateResource.cache
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.CoreCompileInputs.cache
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\PBL3.exe.config
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\PBL3.exe
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\PBL3.pdb
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.xml
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.CopyComplete
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.exe
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.pdb
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Test.Form1.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Docking.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\bin\Debug\Guna.UI2.dll
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Alert.Alert.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.exe.licenses
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdminMainForm.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Admin.Login_Admin.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_Customer.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Employee.Login_Employee.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_ChooseRole.ChooseRole.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CustomerMainForm.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.ForgotPassword_Customer.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.SignIn_Customer.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.SignUp_Customer.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmployeeMainForm.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice.ButtonTimePrice.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice.ListItem.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_MovieItem.MovieItem.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_MovieDetail.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Tickets.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Home.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Movies.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_PopcornDrinks.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Showtimes.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Customer.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Employee.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Movie.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Order.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_PopcornDrink.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_PopcornDrinkOrder.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Room.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_ShowTime.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_TicketOrder.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_PopcornDrinkItem.PopcornDrinkItem.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink.CartPopcornDrink.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Cart.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Payment.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_PDPayment.PDPayment.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_History.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Profile.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Cart.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Home.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_MovieDetail.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Movies.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Payment.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_PopcornDrinks.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Profile.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Showtimes.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Tickets.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Home.resources
+C:\Users\minhh\OneDrive - The University of Technology\Incollege\Sophomore\PBL3\Code Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_CheckCode.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.exe
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.pdb
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\PBL3.exe.config
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\PBL3.exe
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\PBL3.pdb
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Docking.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.SqlServer.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\FontAwesome.Sharp.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\Guna.UI2.dll
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.xml
+D:\PBL3_Main\PBL3_Main\PBL3\bin\Debug\EntityFramework.SqlServer.xml
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.AssemblyReference.cache
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_CartPopcornDrink.CartPopcornDrink.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_MovieItem.MovieItem.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_PDPayment.PDPayment.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_PopcornDrinkItem.PopcornDrinkItem.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Alert.Alert.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_ChooseRole.ChooseRole.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Admin.Login_Admin.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_Customer.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.ForgotPassword_Customer.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.SignIn_Customer.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Customer.LogIn_UserControl.SignUp_Customer.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Login.Login_Employee.Login_Employee.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Customer.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Employee.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Home.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Movie.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Order.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_PopcornDrink.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_PopcornDrinkOrder.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_Room.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_ShowTime.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdMainForm_UserControl.AMF_TicketOrder.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Admin.AdminMainForm.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Cart.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_History.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_MovieDetail.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Payment.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Profile.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Tickets.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Home.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Movies.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_PopcornDrinks.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CusMainForm_UserControl.CMF_Showtimes.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Customer.CustomerMainForm.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Cart.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_CheckCode.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Home.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_MovieDetail.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Movies.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Payment.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_PopcornDrinks.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_PrintTicket.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Profile.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Showtimes.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmMainForm_UserControl.EMF_Tickets.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_MainForm.GUI_Employee.EmployeeMainForm.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_Test.Form1.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice.ButtonTimePrice.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.GUI.GUI_AdditionalUserControl.UC_ButtonTimePrice.ListItem.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.Properties.Resources.resources
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.GenerateResource.cache
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.exe.licenses
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.CoreCompileInputs.cache
+D:\PBL3_Main\PBL3_Main\PBL3\obj\Debug\PBL3.csproj.CopyComplete

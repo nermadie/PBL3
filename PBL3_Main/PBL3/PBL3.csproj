@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34CAFA06-E20C-4293-82AE-FE09AE54F1DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PBL3</RootNamespace>
+    <AssemblyName>PBL3</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>DLL\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>DLL\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>DLL\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>DLL\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>DLL\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.2, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BLL_QLRapchieuphim.cs" />
+    <Compile Include="BLL\BLL_QLRapchieuphim2.cs" />
+    <Compile Include="DTO\DTO_View\CBBItem.cs" />
+    <Compile Include="DTO\DTO_View\CBBItemS.cs" />
+    <Compile Include="DTO\DTO_View\Detail_Customer.cs" />
+    <Compile Include="DTO\DTO_View\Detail_Employee.cs" />
+    <Compile Include="DTO\DTO_View\Detail_Movie.cs" />
+    <Compile Include="DTO\DTO_View\Detail_Order.cs" />
+    <Compile Include="DTO\DTO_View\Detail_PopcornDrinkOrder.cs" />
+    <Compile Include="DTO\DTO_View\Detail_Room.cs" />
+    <Compile Include="DTO\DTO_View\Detail_ShowTime.cs" />
+    <Compile Include="DTO\DTO_View\Detail_TicketOrder.cs" />
+    <Compile Include="DTO\DTO_View\TimeSpanHelper.cs" />
+    <Compile Include="EntityFramework\CreateDB.cs" />
+    <Compile Include="DTO\DTO_Order\Order.cs" />
+    <Compile Include="DTO\DTO_Order\PopcornDrinkOrder.cs" />
+    <Compile Include="DTO\DTO_Order\TicketOrder.cs" />
+    <Compile Include="DTO\DTO_Person\Admin.cs" />
+    <Compile Include="DTO\DTO_Person\Customer.cs" />
+    <Compile Include="DTO\DTO_Person\Employee.cs" />
+    <Compile Include="DTO\DTO_Person\Person.cs" />
+    <Compile Include="DTO\DTO_PopcornDrink\PopcornDrink.cs" />
+    <Compile Include="DTO\DTO_ShowTIme\Movie.cs" />
+    <Compile Include="DTO\DTO_ShowTIme\Room.cs" />
+    <Compile Include="DTO\DTO_ShowTIme\ShowTime.cs" />
+    <Compile Include="GUI\DelegateTemplate\DelegateTemplate.cs" />
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_CartPopcornDrink\CartPopcornDrink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_CartPopcornDrink\CartPopcornDrink.Designer.cs">
+      <DependentUpon>CartPopcornDrink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_MovieItem\MovieItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_MovieItem\MovieItem.Designer.cs">
+      <DependentUpon>MovieItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_PDPayment\PDPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_PDPayment\PDPayment.Designer.cs">
+      <DependentUpon>PDPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_PopcornDrinkItem\PopcornDrinkItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_PopcornDrinkItem\PopcornDrinkItem.Designer.cs">
+      <DependentUpon>PopcornDrinkItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Alert\Alert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Alert\Alert.Designer.cs">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_ChooseRole\ChooseRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_ChooseRole\ChooseRole.Designer.cs">
+      <DependentUpon>ChooseRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Admin\Login_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Admin\Login_Admin.Designer.cs">
+      <DependentUpon>Login_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_Customer.Designer.cs">
+      <DependentUpon>LogIn_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\ForgotPassword_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\ForgotPassword_Customer.Designer.cs">
+      <DependentUpon>ForgotPassword_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignIn_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignIn_Customer.Designer.cs">
+      <DependentUpon>SignIn_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignUp_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignUp_Customer.Designer.cs">
+      <DependentUpon>SignUp_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Employee\Login_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Login\Login_Employee\Login_Employee.Designer.cs">
+      <DependentUpon>Login_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Customer.Designer.cs">
+      <DependentUpon>AMF_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Employee.Designer.cs">
+      <DependentUpon>AMF_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Home.Designer.cs">
+      <DependentUpon>AMF_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Movie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Movie.Designer.cs">
+      <DependentUpon>AMF_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Order.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Order.Designer.cs">
+      <DependentUpon>AMF_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrink.Designer.cs">
+      <DependentUpon>AMF_PopcornDrink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrinkOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrinkOrder.Designer.cs">
+      <DependentUpon>AMF_PopcornDrinkOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Room.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Room.Designer.cs">
+      <DependentUpon>AMF_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_ShowTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_ShowTime.Designer.cs">
+      <DependentUpon>AMF_ShowTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_TicketOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_TicketOrder.Designer.cs">
+      <DependentUpon>AMF_TicketOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_Employee.Designer.cs">
+      <DependentUpon>Form_AddUpdate_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_Movie.Designer.cs">
+      <DependentUpon>Form_AddUpdate_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_PopcornDrink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_PopcornDrink.Designer.cs">
+      <DependentUpon>Form_AddUpdate_PopcornDrink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_Room.Designer.cs">
+      <DependentUpon>Form_AddUpdate_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_ShowTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\Form_AddUpdate_ShowTime.Designer.cs">
+      <DependentUpon>Form_AddUpdate_ShowTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Cart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Cart.Designer.cs">
+      <DependentUpon>CMF_Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_History.Designer.cs">
+      <DependentUpon>CMF_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.Designer.cs">
+      <DependentUpon>CMF_MovieDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Payment.Designer.cs">
+      <DependentUpon>CMF_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.Designer.cs">
+      <DependentUpon>CMF_Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Home.Designer.cs">
+      <DependentUpon>CMF_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Movies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Movies.Designer.cs">
+      <DependentUpon>CMF_Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_PopcornDrinks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_PopcornDrinks.Designer.cs">
+      <DependentUpon>CMF_PopcornDrinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Profile.Designer.cs">
+      <DependentUpon>CMF_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Showtimes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Showtimes.Designer.cs">
+      <DependentUpon>CMF_Showtimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.Designer.cs">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Cart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Cart.Designer.cs">
+      <DependentUpon>EMF_Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_CheckCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_CheckCode.Designer.cs">
+      <DependentUpon>EMF_CheckCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Home.Designer.cs">
+      <DependentUpon>EMF_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_MovieDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_MovieDetail.Designer.cs">
+      <DependentUpon>EMF_MovieDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Movies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Movies.Designer.cs">
+      <DependentUpon>EMF_Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Payment.Designer.cs">
+      <DependentUpon>EMF_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_PopcornDrinks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_PopcornDrinks.Designer.cs">
+      <DependentUpon>EMF_PopcornDrinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_PrintTicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_PrintTicket.Designer.cs">
+      <DependentUpon>EMF_PrintTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Profile.Designer.cs">
+      <DependentUpon>EMF_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Showtimes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Showtimes.Designer.cs">
+      <DependentUpon>EMF_Showtimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Tickets.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Tickets.Designer.cs">
+      <DependentUpon>EMF_Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmployeeMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_MainForm\GUI_Employee\EmployeeMainForm.Designer.cs">
+      <DependentUpon>EmployeeMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_Test\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_Test\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_ButtonTImePrice\ButtonTimePrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_ButtonTImePrice\ButtonTimePrice.Designer.cs">
+      <DependentUpon>ButtonTimePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_ButtonTImePrice\ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AdditionalUserControl\UC_ButtonTImePrice\ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EntityFramework\QLRapChieuPhim.cs" />
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_CartPopcornDrink\CartPopcornDrink.resx">
+      <DependentUpon>CartPopcornDrink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_MovieItem\MovieItem.resx">
+      <DependentUpon>MovieItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_PDPayment\PDPayment.resx">
+      <DependentUpon>PDPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_PopcornDrinkItem\PopcornDrinkItem.resx">
+      <DependentUpon>PopcornDrinkItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Alert\Alert.resx">
+      <DependentUpon>Alert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_ChooseRole\ChooseRole.resx">
+      <DependentUpon>ChooseRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Admin\Login_Admin.resx">
+      <DependentUpon>Login_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_Customer.resx">
+      <DependentUpon>LogIn_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\ForgotPassword_Customer.resx">
+      <DependentUpon>ForgotPassword_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignIn_Customer.resx">
+      <DependentUpon>SignIn_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Customer\LogIn_UserControl\SignUp_Customer.resx">
+      <DependentUpon>SignUp_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Login\Login_Employee\Login_Employee.resx">
+      <DependentUpon>Login_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Customer.resx">
+      <DependentUpon>AMF_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Employee.resx">
+      <DependentUpon>AMF_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Home.resx">
+      <DependentUpon>AMF_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Movie.resx">
+      <DependentUpon>AMF_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Order.resx">
+      <DependentUpon>AMF_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrink.resx">
+      <DependentUpon>AMF_PopcornDrink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_PopcornDrinkOrder.resx">
+      <DependentUpon>AMF_PopcornDrinkOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_Room.resx">
+      <DependentUpon>AMF_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_ShowTime.resx">
+      <DependentUpon>AMF_ShowTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdMainForm_UserControl\AMF_TicketOrder.resx">
+      <DependentUpon>AMF_TicketOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Admin\AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Cart.resx">
+      <DependentUpon>CMF_Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_History.resx">
+      <DependentUpon>CMF_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_MovieDetail.resx">
+      <DependentUpon>CMF_MovieDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Payment.resx">
+      <DependentUpon>CMF_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Profile.resx">
+      <DependentUpon>CMF_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Tickets.resx">
+      <DependentUpon>CMF_Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Home.resx">
+      <DependentUpon>CMF_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Movies.resx">
+      <DependentUpon>CMF_Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_PopcornDrinks.resx">
+      <DependentUpon>CMF_PopcornDrinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CusMainForm_UserControl\CMF_Showtimes.resx">
+      <DependentUpon>CMF_Showtimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Customer\CustomerMainForm.resx">
+      <DependentUpon>CustomerMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Cart.resx">
+      <DependentUpon>EMF_Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_CheckCode.resx">
+      <DependentUpon>EMF_CheckCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Home.resx">
+      <DependentUpon>EMF_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_MovieDetail.resx">
+      <DependentUpon>EMF_MovieDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Movies.resx">
+      <DependentUpon>EMF_Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Payment.resx">
+      <DependentUpon>EMF_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_PopcornDrinks.resx">
+      <DependentUpon>EMF_PopcornDrinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_PrintTicket.resx">
+      <DependentUpon>EMF_PrintTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Profile.resx">
+      <DependentUpon>EMF_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Showtimes.resx">
+      <DependentUpon>EMF_Showtimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmMainForm_UserControl\EMF_Tickets.resx">
+      <DependentUpon>EMF_Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_MainForm\GUI_Employee\EmployeeMainForm.resx">
+      <DependentUpon>EmployeeMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_Test\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_ButtonTImePrice\ButtonTimePrice.resx">
+      <DependentUpon>ButtonTimePrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AdditionalUserControl\UC_ButtonTImePrice\ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\Picture\PictureMovie\" />
+    <Folder Include="Image\Picture\PicturePerson\Admin\" />
+    <Folder Include="Image\Picture\PicturePerson\Customer\" />
+    <Folder Include="Image\Picture\PicturePopcornDrink\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Logo\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Logo\TestLogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Logo\LogoTest1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\failed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\minus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\closemini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\maximizemini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\minimizemini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\confirmation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Alert_Icon\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Alert_Icon\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Alert_Icon\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Alert_Icon\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Alert_Icon\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\hello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\ceo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\Employee_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Admin\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\Login_Icon\Employee\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\search-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelAlert.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\showtime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\showtime_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\popcorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\popcorn_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie-ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\movie-ticket_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\help-desk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\parchment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Background\listmovies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listmovies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\Tickets_UserControl\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Picture\PictureHome\MainPic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\MovieDetail\tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\checklist_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Background\awning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\PopcornDrink\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\UserControl\PopcornDrink\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\shopping-cart_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\CustomerMainForm\MainForm\cashless-payment_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Background\Credit-Card-PNG-Pic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\homeSolid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\man %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\customer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\cinema %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\cinema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\clapperboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\clapperboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\clipboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\invoice %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\popcorn %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\popcorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\rating %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\AdminMainForm\MainForm\rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\EmployeeMainForm\code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\EmployeeMainForm\code_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\EmployeeMainForm\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image\Icon\MainForm_Icon\EmployeeMainForm\printer_color.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
